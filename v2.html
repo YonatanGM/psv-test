@@ -33,7 +33,9 @@
     "@photo-sphere-viewer/overlays-plugin": "./vendor/@photo-sphere-viewer/overlays-plugin/index.module.js",
     "@photo-sphere-viewer/gyroscope-plugin": "./vendor/@photo-sphere-viewer/gyroscope-plugin/index.module.js",
     "@photo-sphere-viewer/stereo-plugin": "./vendor/@photo-sphere-viewer/stereo-plugin/index.module.js",
-    "@photo-sphere-viewer/equirectangular-tiles-adapter": "./vendor/@photo-sphere-viewer/equirectangular-tiles-adapter/index.module.js"
+    "@photo-sphere-viewer/equirectangular-tiles-adapter": "./vendor/@photo-sphere-viewer/equirectangular-tiles-adapter/index.module.js",
+    "@photo-sphere-viewer/cubemap-adapter": "./vendor/@photo-sphere-viewer/cubemap-adapter/index.module.js",
+    "@photo-sphere-viewer/cubemap-tiles-adapter": "./vendor/@photo-sphere-viewer/cubemap-tiles-adapter/index.module.js"
   }
 }
 </script>
@@ -83,6 +85,7 @@ import { OverlaysPlugin } from '@photo-sphere-viewer/overlays-plugin';
 import { GyroscopePlugin } from '@photo-sphere-viewer/gyroscope-plugin';
 import { StereoPlugin } from '@photo-sphere-viewer/stereo-plugin';
 import { EquirectangularTilesAdapter } from '@photo-sphere-viewer/equirectangular-tiles-adapter';
+import { CubemapTilesAdapter } from '@photo-sphere-viewer/cubemap-tiles-adapter';
 
 const tour = await fetch('tour-v2.json').then(r => r.json());
 const START = tour.nodes.find(n => n.id === tour.startNodeId);
@@ -162,12 +165,21 @@ function prepareNode(src) {
       : node.data.tiles;
     node.panorama = { ...t, tileUrl: (col, row, level) => t.tileUrl.replace('{level}', level).replace('{col}', col).replace('{row}', row) };
   }
+  if (S.image === 'cube') {          // numbered CUBE tiles: 6 flat faces, CubemapTilesAdapter (tools/make_debug_tiles.py)
+    const faces = ['left', 'front', 'right', 'back', 'top', 'bottom'];
+    node.panorama = {
+      baseUrl: Object.fromEntries(faces.map(f => [f, `cubetiles-debug/base/${f}.jpg`])),
+      levels: [{ faceSize: 1024, nbTiles: 2 }, { faceSize: 2048, nbTiles: 4 }, { faceSize: 4096, nbTiles: 8 }],
+      tileUrl: (face, col, row, level) => `cubetiles-debug/${level}/${face}_${col}_${row}.jpg`,
+    };
+  }
   if (!S.descriptions) delete node.description;
   if (S.positionMode === 'gps') node.links.forEach(l => { delete l.position; delete l.linkOffset; });
   if (S.arrowStyle === 'default') node.links.forEach(l => delete l.arrowStyle);
 
   const markers = [];
   for (const m of node.markers) {
+    if (S.image === 'cube' && (m.polygonPixels || m.polylinePixels)) continue;   // pixel positions need a cube face there
     const json = escapeHtml(prettyJson(m));      // the marker exactly as written in tour-v2.json
     m.data = { ...m.data, tip: m.tooltip, json };
     for (const key of ['polygonPixels', 'polylinePixels'])
@@ -326,6 +338,7 @@ function build() {
   viewer = new Viewer({
     container: 'viewer',
     ...(S.image === 'tiles' || S.image === 'debug' ? { adapter: EquirectangularTilesAdapter } : {}),
+    ...(S.image === 'cube' ? { adapter: CubemapTilesAdapter } : {}),
     defaultYaw: keep.yaw, defaultPitch: keep.pitch, defaultZoomLvl: keep.zoom,
     ...viewerOptions(),
     plugins,
@@ -513,6 +526,8 @@ new PerformanceObserver(list => {
   for (const e of list.getEntries()) {
     const m = /\/tiles(-debug)?\/(?:[a-z0-9-]+\/)?(\d)\/\d+_\d+\.jpg/.exec(e.name);
     if (m && !tileLevels.has(m[2])) { tileLevels.add(m[2]); log(`tiles: level ${m[2]} (${[2048, 4096, 8192, 16384][m[2]]} px wide) requested`); }
+    const c = /\/cubetiles-debug\/(\d)\//.exec(e.name);
+    if (c && !tileLevels.has('cube' + c[1])) { tileLevels.add('cube' + c[1]); log(`cube tiles: level ${c[1]} (faces ${[1024, 2048, 4096][c[1]]} px) requested`); }
   }
 }).observe({ type: 'resource', buffered: true });
 
@@ -551,7 +566,7 @@ const add = (folder, key, label, ...args) => folder.add(S, key, ...args).name(la
 const color = (folder, key, label) => folder.addColor(S, key).name(label).onFinishChange(() => change(key));
 
 let f = gui.addFolder('Panorama · adapter').close();
-add(f, 'image', 'panorama', { '4K JPEG': '4k', '8K JPEG': '8k', 'tiles to 16K · EquirectangularTilesAdapter': 'tiles', 'numbered debug tiles (same layout)': 'debug' });
+add(f, 'image', 'panorama', { '4K JPEG': '4k', '8K JPEG': '8k', 'tiles to 16K · EquirectangularTilesAdapter': 'tiles', 'numbered debug tiles (same layout)': 'debug', 'numbered CUBE tiles · CubemapTilesAdapter': 'cube' });
 
 f = gui.addFolder('Virtual tour · VirtualTourPlugin').close();
 add(f, 'linkTooltip', 'link hover (tooltip)', { 'label only · getLinkTooltip': 'name', 'image + label · PSV default': 'default', 'label + distance + room · getLinkTooltip': 'distance', 'none · showLinkTooltip: false': 'off' });
