@@ -1,0 +1,204 @@
+{
+ "id": "hallway-03",
+ "name": "Hallway 03",
+ "caption": "Hallway 03",
+ "panorama": "panos/hallway-03.jpg",
+ "thumbnail": "thumbs/hallway-03.jpg",
+ "sphereCorrection": {
+  "pan": "-107.17deg"
+ },
+ "links": [
+  {
+   "nodeId": "hallway-01",
+   "position": {
+    "yaw": "77.03deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.292
+   },
+   "gps": [
+    8.6340224,
+    50.1017791,
+    58.32
+   ],
+   "data": {
+    "distance": 3.3,
+    "room": "Hallway"
+   }
+  },
+  {
+   "nodeId": "west-side-01",
+   "position": {
+    "yaw": "-97.17deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.314
+   },
+   "gps": [
+    8.6339329,
+    50.1017688,
+    58.32
+   ],
+   "data": {
+    "distance": 3.2,
+    "room": "West side"
+   }
+  }
+ ],
+ "description": "<h2>Hallway 03</h2><p>The corridor along the lifts and the stairwell. It joins the east and the west side.</p>",
+ "gps": [
+  8.6339768,
+  50.1017724,
+  60.0
+ ],
+ "map": {
+  "x": 402.5,
+  "y": 1395.4
+ },
+ "data": {
+  "room": "Hallway",
+  "xy": [
+   2.727,
+   -16.585
+  ],
+  "tiles": {
+   "baseUrl": "tiles/hallway-03/base.jpg",
+   "tileUrl": "tiles/hallway-03/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": [
+  {
+   "id": "room-west-side",
+   "html": "West side",
+   "className": "room-label",
+   "position": {
+    "yaw": "-97.17deg",
+    "pitch": "6deg"
+   },
+   "anchor": "bottom center",
+   "listContent": "West side",
+   "data": {
+    "group": "rooms"
+   },
+   "content": "<h2>West side</h2>"
+  },
+  {
+   "id": "route",
+   "polyline": [
+    [
+     "77.03deg",
+     "-48.24deg"
+    ],
+    [
+     "77.03deg",
+     "-40.03deg"
+    ],
+    [
+     "77.03deg",
+     "-33.9deg"
+    ],
+    [
+     "77.03deg",
+     "-29.25deg"
+    ],
+    [
+     "77.03deg",
+     "-26.71deg"
+    ],
+    [
+     "68.6deg",
+     "-27.69deg"
+    ],
+    [
+     "59.63deg",
+     "-28.17deg"
+    ],
+    [
+     "50.51deg",
+     "-28.05deg"
+    ],
+    [
+     "41.71deg",
+     "-27.36deg"
+    ],
+    [
+     "33.57deg",
+     "-26.22deg"
+    ],
+    [
+     "26.46deg",
+     "-24.82deg"
+    ],
+    [
+     "32.66deg",
+     "-23.2deg"
+    ],
+    [
+     "37.96deg",
+     "-21.57deg"
+    ],
+    [
+     "42.46deg",
+     "-20.03deg"
+    ],
+    [
+     "46.3deg",
+     "-18.6deg"
+    ],
+    [
+     "49.57deg",
+     "-17.3deg"
+    ],
+    [
+     "52.38deg",
+     "-16.12deg"
+    ],
+    [
+     "54.81deg",
+     "-15.07deg"
+    ],
+    [
+     "55.93deg",
+     "-14.57deg"
+    ]
+   ],
+   "tooltip": "The way to the kitchen",
+   "svgStyle": {
+    "stroke": "#f0b35a",
+    "strokeWidth": "5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "strokeDasharray": "2 12"
+   },
+   "listContent": "Way to the kitchen",
+   "data": {
+    "group": "route"
+   },
+   "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+  }
+ ]
+}

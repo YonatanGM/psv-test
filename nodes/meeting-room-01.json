@@ -1,0 +1,279 @@
+{
+ "id": "meeting-room-01",
+ "name": "Meeting Room 01",
+ "caption": "Meeting Room 01",
+ "panorama": "panos/meeting-room-01.jpg",
+ "thumbnail": "thumbs/meeting-room-01.jpg",
+ "sphereCorrection": {
+  "pan": "85.22deg"
+ },
+ "links": [
+  {
+   "nodeId": "meeting-room-02",
+   "position": {
+    "yaw": "-27.82deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.302
+   },
+   "gps": [
+    8.6338827,
+    50.1018132,
+    58.32
+   ],
+   "data": {
+    "distance": 3.3,
+    "room": "Meeting room"
+   }
+  },
+  {
+   "nodeId": "meeting-room-03",
+   "position": {
+    "yaw": "48.91deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.181
+   },
+   "gps": [
+    8.6339517,
+    50.1018141,
+    58.32
+   ],
+   "data": {
+    "distance": 4.5,
+    "room": "Meeting room"
+   }
+  },
+  {
+   "nodeId": "west-side-03",
+   "position": {
+    "yaw": "170.26deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.316
+   },
+   "gps": [
+    8.6339114,
+    50.1017595,
+    58.32
+   ],
+   "data": {
+    "distance": 3.1,
+    "room": "West side"
+   }
+  }
+ ],
+ "description": "<h2>Meeting Room 01</h2><p>The meeting room, closed off with glass walls.</p>",
+ "gps": [
+  8.633904,
+  50.1017874,
+  60.0
+ ],
+ "map": {
+  "x": 252.1,
+  "y": 1681.0
+ },
+ "data": {
+  "room": "Meeting room",
+  "xy": [
+   0.179,
+   -21.42
+  ],
+  "tiles": {
+   "baseUrl": "tiles/meeting-room-01/base.jpg",
+   "tileUrl": "tiles/meeting-room-01/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": [
+  {
+   "id": "room-west-side",
+   "html": "West side",
+   "className": "room-label",
+   "position": {
+    "yaw": "170.26deg",
+    "pitch": "6deg"
+   },
+   "anchor": "bottom center",
+   "listContent": "West side",
+   "data": {
+    "group": "rooms"
+   },
+   "content": "<h2>West side</h2>"
+  },
+  {
+   "id": "route",
+   "polyline": [
+    [
+     "170.26deg",
+     "-48.24deg"
+    ],
+    [
+     "170.26deg",
+     "-40.03deg"
+    ],
+    [
+     "170.26deg",
+     "-33.9deg"
+    ],
+    [
+     "170.26deg",
+     "-29.25deg"
+    ],
+    [
+     "170.26deg",
+     "-28.13deg"
+    ],
+    [
+     "161.43deg",
+     "-29.47deg"
+    ],
+    [
+     "151.8deg",
+     "-30.24deg"
+    ],
+    [
+     "141.83deg",
+     "-30.3deg"
+    ],
+    [
+     "134.93deg",
+     "-29.89deg"
+    ],
+    [
+     "127.97deg",
+     "-27.31deg"
+    ],
+    [
+     "122.36deg",
+     "-24.87deg"
+    ],
+    [
+     "117.82deg",
+     "-22.67deg"
+    ],
+    [
+     "114.12deg",
+     "-20.72deg"
+    ],
+    [
+     "111.06deg",
+     "-19.01deg"
+    ],
+    [
+     "108.52deg",
+     "-17.52deg"
+    ],
+    [
+     "107.79deg",
+     "-17.09deg"
+    ],
+    [
+     "105.31deg",
+     "-15.89deg"
+    ],
+    [
+     "103.17deg",
+     "-14.83deg"
+    ],
+    [
+     "101.31deg",
+     "-13.88deg"
+    ],
+    [
+     "99.69deg",
+     "-13.04deg"
+    ],
+    [
+     "98.26deg",
+     "-12.28deg"
+    ],
+    [
+     "96.99deg",
+     "-11.59deg"
+    ],
+    [
+     "96.21deg",
+     "-11.17deg"
+    ],
+    [
+     "93.51deg",
+     "-11.58deg"
+    ],
+    [
+     "90.6deg",
+     "-11.99deg"
+    ],
+    [
+     "87.49deg",
+     "-12.39deg"
+    ],
+    [
+     "84.16deg",
+     "-12.79deg"
+    ],
+    [
+     "80.61deg",
+     "-13.16deg"
+    ],
+    [
+     "76.95deg",
+     "-13.49deg"
+    ],
+    [
+     "77.44deg",
+     "-12.63deg"
+    ],
+    [
+     "77.87deg",
+     "-11.87deg"
+    ],
+    [
+     "78.25deg",
+     "-11.19deg"
+    ],
+    [
+     "78.59deg",
+     "-10.59deg"
+    ]
+   ],
+   "tooltip": "The way to the kitchen",
+   "svgStyle": {
+    "stroke": "#f0b35a",
+    "strokeWidth": "5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "strokeDasharray": "2 12"
+   },
+   "listContent": "Way to the kitchen",
+   "data": {
+    "group": "route"
+   },
+   "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+  }
+ ]
+}

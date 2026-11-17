@@ -1,0 +1,261 @@
+{
+ "id": "sr-18",
+ "name": "SR 18",
+ "caption": "SR 18",
+ "panorama": "panos/sr-18.jpg",
+ "thumbnail": "thumbs/sr-18.jpg",
+ "sphereCorrection": {
+  "pan": "87.99deg"
+ },
+ "links": [
+  {
+   "nodeId": "sr-17",
+   "position": {
+    "yaw": "169.02deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.082
+   },
+   "gps": [
+    8.6338262,
+    50.1017238,
+    58.32
+   ],
+   "data": {
+    "distance": 6.4,
+    "room": "SR"
+   }
+  },
+  {
+   "nodeId": "sr-19",
+   "position": {
+    "yaw": "23.57deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.238
+   },
+   "gps": [
+    8.6338306,
+    50.1018119,
+    58.32
+   ],
+   "data": {
+    "distance": 3.8,
+    "room": "SR"
+   }
+  },
+  {
+   "nodeId": "west-side-05",
+   "position": {
+    "yaw": "120.98deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.218
+   },
+   "gps": [
+    8.6338578,
+    50.1017615,
+    58.32
+   ],
+   "data": {
+    "distance": 4.1,
+    "room": "West side"
+   }
+  },
+  {
+   "nodeId": "west-side-06",
+   "position": {
+    "yaw": "216.34deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.207
+   },
+   "gps": [
+    8.6337744,
+    50.10175,
+    58.32
+   ],
+   "data": {
+    "distance": 4.2,
+    "room": "West side"
+   }
+  },
+  {
+   "nodeId": "west-side-07",
+   "position": {
+    "yaw": "36.11deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.281
+   },
+   "gps": [
+    8.6338374,
+    50.1018052,
+    58.32
+   ],
+   "data": {
+    "distance": 3.4,
+    "room": "West side"
+   }
+  }
+ ],
+ "description": "<h2>SR 18</h2><p>Part of the west side, the scans named \"SR\".</p>",
+ "gps": [
+  8.6338091,
+  50.1017803,
+  60.0
+ ],
+ "map": {
+  "x": 228.5,
+  "y": 2082.8
+ },
+ "data": {
+  "room": "SR",
+  "xy": [
+   -0.22,
+   -28.225
+  ],
+  "tiles": {
+   "baseUrl": "tiles/sr-18/base.jpg",
+   "tileUrl": "tiles/sr-18/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": [
+  {
+   "id": "room-west-side",
+   "html": "West side",
+   "className": "room-label",
+   "position": {
+    "yaw": "36.11deg",
+    "pitch": "6deg"
+   },
+   "anchor": "bottom center",
+   "listContent": "West side",
+   "data": {
+    "group": "rooms"
+   },
+   "content": "<h2>West side</h2>"
+  },
+  {
+   "id": "route",
+   "polyline": [
+    [
+     "120.98deg",
+     "-48.24deg"
+    ],
+    [
+     "120.98deg",
+     "-40.03deg"
+    ],
+    [
+     "120.98deg",
+     "-33.9deg"
+    ],
+    [
+     "120.98deg",
+     "-29.25deg"
+    ],
+    [
+     "120.98deg",
+     "-25.64deg"
+    ],
+    [
+     "120.98deg",
+     "-22.78deg"
+    ],
+    [
+     "120.98deg",
+     "-22.51deg"
+    ],
+    [
+     "118.03deg",
+     "-20.46deg"
+    ],
+    [
+     "115.61deg",
+     "-18.7deg"
+    ],
+    [
+     "113.61deg",
+     "-17.2deg"
+    ],
+    [
+     "111.92deg",
+     "-15.9deg"
+    ],
+    [
+     "110.49deg",
+     "-14.76deg"
+    ],
+    [
+     "109.26deg",
+     "-13.77deg"
+    ],
+    [
+     "108.18deg",
+     "-12.9deg"
+    ],
+    [
+     "107.55deg",
+     "-12.37deg"
+    ],
+    [
+     "104.74deg",
+     "-11.89deg"
+    ],
+    [
+     "102.15deg",
+     "-11.42deg"
+    ],
+    [
+     "99.77deg",
+     "-10.96deg"
+    ],
+    [
+     "98.21deg",
+     "-10.65deg"
+    ]
+   ],
+   "tooltip": "The way to the kitchen",
+   "svgStyle": {
+    "stroke": "#f0b35a",
+    "strokeWidth": "5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "strokeDasharray": "2 12"
+   },
+   "listContent": "Way to the kitchen",
+   "data": {
+    "group": "route"
+   },
+   "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+  }
+ ]
+}

@@ -1,0 +1,225 @@
+{
+ "id": "meeting-room-02",
+ "name": "Meeting Room 02",
+ "caption": "Meeting Room 02",
+ "panorama": "panos/meeting-room-02.jpg",
+ "thumbnail": "thumbs/meeting-room-02.jpg",
+ "sphereCorrection": {
+  "pan": "12.86deg"
+ },
+ "links": [
+  {
+   "nodeId": "meeting-room-01",
+   "position": {
+    "yaw": "152.18deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.302
+   },
+   "gps": [
+    8.633904,
+    50.1017874,
+    58.32
+   ],
+   "data": {
+    "distance": 3.3,
+    "room": "Meeting room"
+   }
+  },
+  {
+   "nodeId": "meeting-room-03",
+   "position": {
+    "yaw": "88.87deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.154
+   },
+   "gps": [
+    8.6339517,
+    50.1018141,
+    58.32
+   ],
+   "data": {
+    "distance": 4.9,
+    "room": "Meeting room"
+   }
+  }
+ ],
+ "description": "<h2>Meeting Room 02</h2><p>The meeting room, closed off with glass walls.</p>",
+ "gps": [
+  8.6338827,
+  50.1018132,
+  60.0
+ ],
+ "map": {
+  "x": 69.3,
+  "y": 1739.7
+ },
+ "data": {
+  "room": "Meeting room",
+  "xy": [
+   -2.916,
+   -22.415
+  ],
+  "tiles": {
+   "baseUrl": "tiles/meeting-room-02/base.jpg",
+   "tileUrl": "tiles/meeting-room-02/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": [
+  {
+   "id": "route",
+   "polyline": [
+    [
+     "152.18deg",
+     "-48.24deg"
+    ],
+    [
+     "152.18deg",
+     "-40.03deg"
+    ],
+    [
+     "152.18deg",
+     "-33.9deg"
+    ],
+    [
+     "152.18deg",
+     "-29.25deg"
+    ],
+    [
+     "152.18deg",
+     "-27.33deg"
+    ],
+    [
+     "154.56deg",
+     "-24.25deg"
+    ],
+    [
+     "156.4deg",
+     "-21.74deg"
+    ],
+    [
+     "157.86deg",
+     "-19.67deg"
+    ],
+    [
+     "159.05deg",
+     "-17.94deg"
+    ],
+    [
+     "160.03deg",
+     "-16.47deg"
+    ],
+    [
+     "160.85deg",
+     "-15.22deg"
+    ],
+    [
+     "161.06deg",
+     "-14.9deg"
+    ],
+    [
+     "156.6deg",
+     "-15.15deg"
+    ],
+    [
+     "152.0deg",
+     "-15.32deg"
+    ],
+    [
+     "147.32deg",
+     "-15.39deg"
+    ],
+    [
+     "144.02deg",
+     "-15.39deg"
+    ],
+    [
+     "140.07deg",
+     "-14.8deg"
+    ],
+    [
+     "136.44deg",
+     "-14.19deg"
+    ],
+    [
+     "133.12deg",
+     "-13.59deg"
+    ],
+    [
+     "130.09deg",
+     "-12.99deg"
+    ],
+    [
+     "127.33deg",
+     "-12.42deg"
+    ],
+    [
+     "124.82deg",
+     "-11.87deg"
+    ],
+    [
+     "124.07deg",
+     "-11.7deg"
+    ],
+    [
+     "121.59deg",
+     "-11.23deg"
+    ],
+    [
+     "119.31deg",
+     "-10.78deg"
+    ],
+    [
+     "101.19deg",
+     "-10.84deg"
+    ],
+    [
+     "98.82deg",
+     "-11.26deg"
+    ],
+    [
+     "98.01deg",
+     "-10.66deg"
+    ]
+   ],
+   "tooltip": "The way to the kitchen",
+   "svgStyle": {
+    "stroke": "#f0b35a",
+    "strokeWidth": "5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "strokeDasharray": "2 12"
+   },
+   "listContent": "Way to the kitchen",
+   "data": {
+    "group": "route"
+   },
+   "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+  }
+ ]
+}

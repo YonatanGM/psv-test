@@ -1,0 +1,8841 @@
+{
+ "defaultYaw": "-8.0deg",
+ "defaultPitch": "-6deg",
+ "startNodeId": "east-side-04",
+ "map": {
+  "imageUrl": "assets/floorplan.jpg",
+  "size": {
+   "width": 1106,
+   "height": 2333
+  }
+ },
+ "mapRotation": "-80deg",
+ "highlights": [
+  {
+   "position": {
+    "yaw": "-101.0deg",
+    "pitch": "-1deg"
+   },
+   "tooltip": "The corridor to the kitchen and the meeting room",
+   "pause": 2500
+  },
+  {
+   "position": {
+    "yaw": "-233.4deg",
+    "pitch": "4deg"
+   },
+   "tooltip": "The folding wall",
+   "pause": 2500
+  },
+  {
+   "position": {
+    "yaw": "-39.7deg",
+    "pitch": "-16deg"
+   },
+   "tooltip": "A screen",
+   "pause": 2500
+  },
+  {
+   "position": {
+    "yaw": "31.0deg",
+    "pitch": "-3deg"
+   },
+   "tooltip": "The posters",
+   "pause": 2500
+  }
+ ],
+ "nodes": [
+  {
+   "id": "east-side-01",
+   "name": "East Side 01",
+   "caption": "East Side 01",
+   "panorama": "panos/east-side-01.jpg",
+   "thumbnail": "thumbs/east-side-01.jpg",
+   "sphereCorrection": {
+    "pan": "58.56deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-02",
+     "position": {
+      "yaw": "220.01deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.275
+     },
+     "gps": [
+      8.6342176,
+      50.101751,
+      58.32
+     ],
+     "data": {
+      "distance": 3.5,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-03",
+     "position": {
+      "yaw": "94.74deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.35
+     },
+     "gps": [
+      8.6342895,
+      50.1017728,
+      58.32
+     ],
+     "data": {
+      "distance": 2.9,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-04",
+     "position": {
+      "yaw": "25.49deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.193
+     },
+     "gps": [
+      8.6342753,
+      50.1018104,
+      58.32
+     ],
+     "data": {
+      "distance": 4.4,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-05",
+     "position": {
+      "yaw": "-8.84deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.063
+     },
+     "gps": [
+      8.634234,
+      50.1018367,
+      58.32
+     ],
+     "data": {
+      "distance": 7.0,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-08",
+     "position": {
+      "yaw": "-50.32deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.184
+     },
+     "gps": [
+      8.6342007,
+      50.1018007,
+      58.32
+     ],
+     "data": {
+      "distance": 4.5,
+      "room": "East side"
+     }
+    }
+   ],
+   "description": "<h2>East Side 01</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+   "gps": [
+    8.634249,
+    50.101775,
+    60.0
+   ],
+   "map": {
+    "x": 585.0,
+    "y": 262.4
+   },
+   "data": {
+    "room": "East side",
+    "xy": [
+     5.817,
+     2.601
+    ],
+    "tiles": {
+     "baseUrl": "tiles/east-side-01/base.jpg",
+     "tileUrl": "tiles/east-side-01/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "-50.32deg",
+       "-48.24deg"
+      ],
+      [
+       "-50.32deg",
+       "-40.03deg"
+      ],
+      [
+       "-50.32deg",
+       "-33.9deg"
+      ],
+      [
+       "-50.32deg",
+       "-29.25deg"
+      ],
+      [
+       "-50.32deg",
+       "-25.64deg"
+      ],
+      [
+       "-50.32deg",
+       "-22.78deg"
+      ],
+      [
+       "-50.32deg",
+       "-20.56deg"
+      ],
+      [
+       "-54.86deg",
+       "-19.23deg"
+      ],
+      [
+       "-58.78deg",
+       "-17.96deg"
+      ],
+      [
+       "-62.17deg",
+       "-16.79deg"
+      ],
+      [
+       "-65.11deg",
+       "-15.71deg"
+      ],
+      [
+       "-67.68deg",
+       "-14.74deg"
+      ],
+      [
+       "-69.56deg",
+       "-13.99deg"
+      ],
+      [
+       "-71.69deg",
+       "-13.19deg"
+      ],
+      [
+       "-73.57deg",
+       "-12.45deg"
+      ],
+      [
+       "-75.25deg",
+       "-11.79deg"
+      ],
+      [
+       "-76.74deg",
+       "-11.18deg"
+      ],
+      [
+       "-78.09deg",
+       "-10.62deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "east-side-02",
+   "name": "East Side 02",
+   "caption": "East Side 02",
+   "panorama": "panos/east-side-02.jpg",
+   "thumbnail": "thumbs/east-side-02.jpg",
+   "sphereCorrection": {
+    "pan": "53.37deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-01",
+     "position": {
+      "yaw": "40.01deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.275
+     },
+     "gps": [
+      8.634249,
+      50.101775,
+      58.32
+     ],
+     "data": {
+      "distance": 3.5,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-03",
+     "position": {
+      "yaw": "64.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.113
+     },
+     "gps": [
+      8.6342895,
+      50.1017728,
+      58.32
+     ],
+     "data": {
+      "distance": 5.7,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-08",
+     "position": {
+      "yaw": "-12.34deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.114
+     },
+     "gps": [
+      8.6342007,
+      50.1018007,
+      58.32
+     ],
+     "data": {
+      "distance": 5.7,
+      "room": "East side"
+     }
+    }
+   ],
+   "description": "<h2>East Side 02</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+   "gps": [
+    8.6342176,
+    50.101751,
+    60.0
+   ],
+   "map": {
+    "x": 717.1,
+    "y": 419.9
+   },
+   "data": {
+    "room": "East side",
+    "xy": [
+     8.054,
+     -0.066
+    ],
+    "tiles": {
+     "baseUrl": "tiles/east-side-02/base.jpg",
+     "tileUrl": "tiles/east-side-02/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "-12.34deg",
+       "-48.24deg"
+      ],
+      [
+       "-12.34deg",
+       "-40.03deg"
+      ],
+      [
+       "-12.34deg",
+       "-33.9deg"
+      ],
+      [
+       "-12.34deg",
+       "-29.25deg"
+      ],
+      [
+       "-12.34deg",
+       "-25.64deg"
+      ],
+      [
+       "-12.34deg",
+       "-22.78deg"
+      ],
+      [
+       "-12.34deg",
+       "-20.47deg"
+      ],
+      [
+       "-12.34deg",
+       "-18.57deg"
+      ],
+      [
+       "-12.34deg",
+       "-16.99deg"
+      ],
+      [
+       "-12.34deg",
+       "-16.54deg"
+      ],
+      [
+       "-17.37deg",
+       "-16.42deg"
+      ],
+      [
+       "-22.29deg",
+       "-16.19deg"
+      ],
+      [
+       "-27.03deg",
+       "-15.87deg"
+      ],
+      [
+       "-31.54deg",
+       "-15.46deg"
+      ],
+      [
+       "-35.79deg",
+       "-14.98deg"
+      ],
+      [
+       "-39.09deg",
+       "-14.56deg"
+      ],
+      [
+       "-42.88deg",
+       "-14.05deg"
+      ],
+      [
+       "-46.39deg",
+       "-13.52deg"
+      ],
+      [
+       "-49.63deg",
+       "-12.99deg"
+      ],
+      [
+       "-52.6deg",
+       "-12.47deg"
+      ],
+      [
+       "-55.33deg",
+       "-11.95deg"
+      ],
+      [
+       "-55.9deg",
+       "-11.84deg"
+      ],
+      [
+       "-58.15deg",
+       "-11.32deg"
+      ],
+      [
+       "-60.2deg",
+       "-10.82deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "east-side-03",
+   "name": "East Side 03",
+   "caption": "East Side 03",
+   "panorama": "panos/east-side-03.jpg",
+   "thumbnail": "thumbs/east-side-03.jpg",
+   "sphereCorrection": {
+    "pan": "61.84deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-01",
+     "position": {
+      "yaw": "-85.26deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.35
+     },
+     "gps": [
+      8.634249,
+      50.101775,
+      58.32
+     ],
+     "data": {
+      "distance": 2.9,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-02",
+     "position": {
+      "yaw": "244.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.113
+     },
+     "gps": [
+      8.6342176,
+      50.101751,
+      58.32
+     ],
+     "data": {
+      "distance": 5.7,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-04",
+     "position": {
+      "yaw": "-13.65deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.198
+     },
+     "gps": [
+      8.6342753,
+      50.1018104,
+      58.32
+     ],
+     "data": {
+      "distance": 4.3,
+      "room": "East side"
+     }
+    }
+   ],
+   "description": "<h2>East Side 03</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+   "gps": [
+    8.6342895,
+    50.1017728,
+    60.0
+   ],
+   "map": {
+    "x": 628.7,
+    "y": 96.5
+   },
+   "data": {
+    "room": "East side",
+    "xy": [
+     6.556,
+     5.41
+    ],
+    "tiles": {
+     "baseUrl": "tiles/east-side-03/base.jpg",
+     "tileUrl": "tiles/east-side-03/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "-85.26deg",
+       "-48.24deg"
+      ],
+      [
+       "-85.26deg",
+       "-40.03deg"
+      ],
+      [
+       "-85.26deg",
+       "-33.9deg"
+      ],
+      [
+       "-85.26deg",
+       "-30.04deg"
+      ],
+      [
+       "-80.32deg",
+       "-26.79deg"
+      ],
+      [
+       "-76.52deg",
+       "-24.03deg"
+      ],
+      [
+       "-73.52deg",
+       "-21.7deg"
+      ],
+      [
+       "-71.11deg",
+       "-19.72deg"
+      ],
+      [
+       "-69.14deg",
+       "-18.05deg"
+      ],
+      [
+       "-67.5deg",
+       "-16.61deg"
+      ],
+      [
+       "-66.11deg",
+       "-15.37deg"
+      ],
+      [
+       "-64.93deg",
+       "-14.29deg"
+      ],
+      [
+       "-63.95deg",
+       "-13.39deg"
+      ],
+      [
+       "-66.21deg",
+       "-12.68deg"
+      ],
+      [
+       "-68.23deg",
+       "-12.02deg"
+      ],
+      [
+       "-70.04deg",
+       "-11.42deg"
+      ],
+      [
+       "-71.68deg",
+       "-10.86deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "east-side-04",
+   "name": "East Side 04",
+   "caption": "East Side 04",
+   "panorama": "panos/east-side-04.jpg",
+   "thumbnail": "thumbs/east-side-04.jpg",
+   "sphereCorrection": {
+    "pan": "83.4deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-01",
+     "position": {
+      "yaw": "205.49deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.193
+     },
+     "gps": [
+      8.634249,
+      50.101775,
+      58.32
+     ],
+     "data": {
+      "distance": 4.4,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-03",
+     "position": {
+      "yaw": "166.35deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.198
+     },
+     "gps": [
+      8.6342895,
+      50.1017728,
+      58.32
+     ],
+     "data": {
+      "distance": 4.3,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-05",
+     "position": {
+      "yaw": "-45.17deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.21
+     },
+     "gps": [
+      8.634234,
+      50.1018367,
+      58.32
+     ],
+     "data": {
+      "distance": 4.2,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-06",
+     "position": {
+      "yaw": "-3.06deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.132
+     },
+     "gps": [
+      8.6342713,
+      50.1018579,
+      58.32
+     ],
+     "data": {
+      "distance": 5.3,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-08",
+     "position": {
+      "yaw": "258.52deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.125
+     },
+     "gps": [
+      8.6342007,
+      50.1018007,
+      58.32
+     ],
+     "data": {
+      "distance": 5.4,
+      "room": "East side"
+     }
+    }
+   ],
+   "description": "<h2>East Side 04</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+   "gps": [
+    8.6342753,
+    50.1018104,
+    60.0
+   ],
+   "map": {
+    "x": 375.1,
+    "y": 112.7
+   },
+   "data": {
+    "room": "East side",
+    "xy": [
+     2.262,
+     5.136
+    ],
+    "tiles": {
+     "baseUrl": "tiles/east-side-04/base.jpg",
+     "tileUrl": "tiles/east-side-04/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "258.52deg",
+       "-48.24deg"
+      ],
+      [
+       "258.52deg",
+       "-40.03deg"
+      ],
+      [
+       "258.52deg",
+       "-33.9deg"
+      ],
+      [
+       "258.52deg",
+       "-29.25deg"
+      ],
+      [
+       "258.52deg",
+       "-25.64deg"
+      ],
+      [
+       "258.52deg",
+       "-22.78deg"
+      ],
+      [
+       "258.52deg",
+       "-20.47deg"
+      ],
+      [
+       "258.52deg",
+       "-18.57deg"
+      ],
+      [
+       "258.52deg",
+       "-17.18deg"
+      ],
+      [
+       "258.65deg",
+       "-15.81deg"
+      ],
+      [
+       "258.75deg",
+       "-14.63deg"
+      ],
+      [
+       "258.84deg",
+       "-13.62deg"
+      ],
+      [
+       "258.92deg",
+       "-12.73deg"
+      ],
+      [
+       "258.99deg",
+       "-11.96deg"
+      ],
+      [
+       "259.04deg",
+       "-11.38deg"
+      ],
+      [
+       "259.0deg",
+       "-10.75deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    },
+    {
+     "id": "monitor",
+     "videoLayer": "assets/clip.mp4",
+     "position": [
+      {
+       "yaw": "-49.4deg",
+       "pitch": "-9.3deg"
+      },
+      {
+       "yaw": "-30.0deg",
+       "pitch": "-11.4deg"
+      },
+      {
+       "yaw": "-30.1deg",
+       "pitch": "-23.7deg"
+      },
+      {
+       "yaw": "-49.4deg",
+       "pitch": "-20.0deg"
+      }
+     ],
+     "style": {
+      "cursor": "pointer"
+     },
+     "tooltip": "Click to play / pause",
+     "listContent": "Monitor (videoLayer)",
+     "data": {
+      "group": "media"
+     },
+     "content": "<h2>Monitor (videoLayer)</h2><p>Click to play / pause</p><video src=\"assets/clip.mp4\" controls muted loop autoplay playsinline></video>"
+    },
+    {
+     "id": "poster-plan",
+     "imageLayer": "assets/plan-2021.jpg",
+     "position": [
+      {
+       "yaw": "24.1deg",
+       "pitch": "8.5deg"
+      },
+      {
+       "yaw": "37.2deg",
+       "pitch": "11.4deg"
+      },
+      {
+       "yaw": "38.1deg",
+       "pitch": "-18.7deg"
+      },
+      {
+       "yaw": "24.4deg",
+       "pitch": "-14.6deg"
+      }
+     ],
+     "tooltip": "The 17th-floor plan, October 2021",
+     "listContent": "Poster (imageLayer)",
+     "data": {
+      "group": "media",
+      "map": {
+       "distance": 136,
+       "color": "#f0b35a"
+      },
+      "compass": "#f0b35a"
+     },
+     "content": "<h2>Poster (imageLayer)</h2><p>The 17th-floor plan, October 2021</p><img src=\"assets/plan-2021.jpg\" alt=\"\">"
+    },
+    {
+     "id": "folding-wall-pin",
+     "image": "assets/info.svg",
+     "size": {
+      "width": 34,
+      "height": 34
+     },
+     "position": {
+      "yaw": "-233.4deg",
+      "pitch": "4deg"
+     },
+     "tooltip": "Folding wall",
+     "content": "<h2>Folding wall</h2><p>The open studio can be split in two. This folding wall (Faltwand) is drawn on the studio plan from 2019 and on the 17th-floor plan from 2021.</p><img src='assets/plan-studio-2019.jpg' alt=''>",
+     "listContent": "Folding wall",
+     "data": {
+      "group": "info",
+      "map": {
+       "distance": 189,
+       "color": "#f0b35a"
+      },
+      "compass": "#f0b35a"
+     }
+    },
+    {
+     "id": "poster-outline",
+     "polygon": [
+      [
+       "10.5deg",
+       "5.2deg"
+      ],
+      [
+       "15.9deg",
+       "6.3deg"
+      ],
+      [
+       "16.2deg",
+       "-11.0deg"
+      ],
+      [
+       "10.7deg",
+       "-9.6deg"
+      ]
+     ],
+     "svgStyle": {
+      "fill": "rgba(125,221,255,0.15)",
+      "stroke": "#7df",
+      "strokeWidth": "2px"
+     },
+     "tooltip": "polygon · corners in yaw/pitch",
+     "listContent": "Poster (polygon)",
+     "data": {
+      "group": "shapes"
+     },
+     "content": "<h2>Poster (polygon)</h2><p>polygon · corners in yaw/pitch</p>"
+    },
+    {
+     "id": "poster-pixels",
+     "polygonPixels": [
+      [
+       4128,
+       1993
+      ],
+      [
+       4258,
+       1995
+      ],
+      [
+       4260,
+       2169
+      ],
+      [
+       4128,
+       2173
+      ]
+     ],
+     "svgStyle": {
+      "fill": "rgba(125,221,255,0.15)",
+      "stroke": "#7df",
+      "strokeWidth": "2px"
+     },
+     "tooltip": "polygonPixels · corners in image pixels",
+     "listContent": "Poster (polygonPixels)",
+     "data": {
+      "group": "shapes"
+     },
+     "content": "<h2>Poster (polygonPixels)</h2><p>polygonPixels · corners in image pixels</p>"
+    },
+    {
+     "id": "track",
+     "polylinePixels": [
+      [
+       1315,
+       1151
+      ],
+      [
+       1814,
+       1131
+      ],
+      [
+       2289,
+       1222
+      ],
+      [
+       2683,
+       1381
+      ],
+      [
+       3079,
+       1586
+      ],
+      [
+       3395,
+       1807
+      ]
+     ],
+     "svgStyle": {
+      "stroke": "#7df",
+      "strokeWidth": "4px",
+      "strokeLinecap": "round"
+     },
+     "tooltip": "polylinePixels · the folding wall's ceiling track",
+     "listContent": "Ceiling track (polylinePixels)",
+     "data": {
+      "group": "shapes"
+     },
+     "content": "<h2>Ceiling track (polylinePixels)</h2><p>polylinePixels · the folding wall's ceiling track</p>"
+    },
+    {
+     "id": "smoke-detector",
+     "circle": 16,
+     "position": {
+      "yaw": "-104.2deg",
+      "pitch": "47.2deg"
+     },
+     "svgStyle": {
+      "fill": "rgba(125,221,255,0.15)",
+      "stroke": "#7df",
+      "strokeWidth": "2px"
+     },
+     "tooltip": "circle · smoke detector",
+     "listContent": "Smoke detector (circle)",
+     "data": {
+      "group": "shapes"
+     },
+     "content": "<h2>Smoke detector (circle)</h2><p>circle · smoke detector</p>"
+    },
+    {
+     "id": "speaker",
+     "ellipse": {
+      "rx": 26,
+      "ry": 38
+     },
+     "position": {
+      "yaw": "-183.9deg",
+      "pitch": "0.5deg"
+     },
+     "svgStyle": {
+      "fill": "none",
+      "stroke": "#7df",
+      "strokeWidth": "2px",
+      "strokeDasharray": "6 4"
+     },
+     "tooltip": "ellipse · speaker",
+     "listContent": "Speaker (ellipse)",
+     "data": {
+      "group": "shapes"
+     },
+     "content": "<h2>Speaker (ellipse)</h2><p>ellipse · speaker</p>"
+    },
+    {
+     "id": "thermostat",
+     "square": 18,
+     "position": {
+      "yaw": "-123.0deg",
+      "pitch": "-1.4deg"
+     },
+     "svgStyle": {
+      "fill": "rgba(125,221,255,0.15)",
+      "stroke": "#7df",
+      "strokeWidth": "2px"
+     },
+     "tooltip": "square · thermostat",
+     "listContent": "Thermostat (square)",
+     "data": {
+      "group": "shapes"
+     },
+     "content": "<h2>Thermostat (square)</h2><p>square · thermostat</p>"
+    },
+    {
+     "id": "exit-sign",
+     "rect": {
+      "width": 30,
+      "height": 16
+     },
+     "position": {
+      "yaw": "-101.0deg",
+      "pitch": "3.4deg"
+     },
+     "svgStyle": {
+      "fill": "none",
+      "stroke": "#7df",
+      "strokeWidth": "2px"
+     },
+     "tooltip": "rect · exit sign",
+     "listContent": "Exit sign (rect)",
+     "data": {
+      "group": "shapes"
+     },
+     "content": "<h2>Exit sign (rect)</h2><p>rect · exit sign</p>"
+    },
+    {
+     "id": "corridor-arrow",
+     "path": "M 0 12 L 24 12 L 24 0 L 44 20 L 24 40 L 24 28 L 0 28 Z",
+     "position": {
+      "yaw": "-108.4deg",
+      "pitch": "-3deg"
+     },
+     "anchor": "center right",
+     "svgStyle": {
+      "fill": "#7df",
+      "stroke": "#0b2530",
+      "strokeWidth": "2px"
+     },
+     "tooltip": "path · to the corridor",
+     "listContent": "Arrow (path)",
+     "data": {
+      "group": "shapes"
+     },
+     "content": "<h2>Arrow (path)</h2><p>path · to the corridor</p>"
+    }
+   ]
+  },
+  {
+   "id": "east-side-05",
+   "name": "East Side 05",
+   "caption": "East Side 05",
+   "panorama": "panos/east-side-05.jpg",
+   "thumbnail": "thumbs/east-side-05.jpg",
+   "sphereCorrection": {
+    "pan": "-239.29deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-01",
+     "position": {
+      "yaw": "171.16deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.063
+     },
+     "gps": [
+      8.634249,
+      50.101775,
+      58.32
+     ],
+     "data": {
+      "distance": 7.0,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-04",
+     "position": {
+      "yaw": "134.83deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.21
+     },
+     "gps": [
+      8.6342753,
+      50.1018104,
+      58.32
+     ],
+     "data": {
+      "distance": 4.2,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-06",
+     "position": {
+      "yaw": "48.39deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.266
+     },
+     "gps": [
+      8.6342713,
+      50.1018579,
+      58.32
+     ],
+     "data": {
+      "distance": 3.6,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-07",
+     "position": {
+      "yaw": "-66.75deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.25
+     },
+     "gps": [
+      8.6341862,
+      50.1018499,
+      58.32
+     ],
+     "data": {
+      "distance": 3.7,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-08",
+     "position": {
+      "yaw": "210.67deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.171
+     },
+     "gps": [
+      8.6342007,
+      50.1018007,
+      58.32
+     ],
+     "data": {
+      "distance": 4.7,
+      "room": "East side"
+     }
+    }
+   ],
+   "description": "<h2>East Side 05</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+   "gps": [
+    8.634234,
+    50.1018367,
+    60.0
+   ],
+   "map": {
+    "x": 174.5,
+    "y": 254.1
+   },
+   "data": {
+    "room": "East side",
+    "xy": [
+     -1.135,
+     2.742
+    ],
+    "tiles": {
+     "baseUrl": "tiles/east-side-05/base.jpg",
+     "tileUrl": "tiles/east-side-05/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "210.67deg",
+       "-48.24deg"
+      ],
+      [
+       "210.67deg",
+       "-40.03deg"
+      ],
+      [
+       "210.67deg",
+       "-33.9deg"
+      ],
+      [
+       "210.67deg",
+       "-29.25deg"
+      ],
+      [
+       "210.67deg",
+       "-25.64deg"
+      ],
+      [
+       "210.67deg",
+       "-22.78deg"
+      ],
+      [
+       "210.67deg",
+       "-20.47deg"
+      ],
+      [
+       "210.67deg",
+       "-19.81deg"
+      ],
+      [
+       "215.02deg",
+       "-18.56deg"
+      ],
+      [
+       "218.79deg",
+       "-17.38deg"
+      ],
+      [
+       "222.07deg",
+       "-16.28deg"
+      ],
+      [
+       "224.93deg",
+       "-15.26deg"
+      ],
+      [
+       "227.44deg",
+       "-14.34deg"
+      ],
+      [
+       "229.28deg",
+       "-13.64deg"
+      ],
+      [
+       "231.17deg",
+       "-12.85deg"
+      ],
+      [
+       "232.85deg",
+       "-12.13deg"
+      ],
+      [
+       "234.34deg",
+       "-11.49deg"
+      ],
+      [
+       "235.67deg",
+       "-10.9deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "east-side-06",
+   "name": "East Side 06",
+   "caption": "East Side 06",
+   "panorama": "panos/east-side-06.jpg",
+   "thumbnail": "thumbs/east-side-06.jpg",
+   "sphereCorrection": {
+    "pan": "-245.42deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-04",
+     "position": {
+      "yaw": "176.94deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.132
+     },
+     "gps": [
+      8.6342753,
+      50.1018104,
+      58.32
+     ],
+     "data": {
+      "distance": 5.3,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-05",
+     "position": {
+      "yaw": "228.39deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.266
+     },
+     "gps": [
+      8.634234,
+      50.1018367,
+      58.32
+     ],
+     "data": {
+      "distance": 3.6,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-07",
+     "position": {
+      "yaw": "-98.42deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.092
+     },
+     "gps": [
+      8.6341862,
+      50.1018499,
+      58.32
+     ],
+     "data": {
+      "distance": 6.1,
+      "room": "East side"
+     }
+    }
+   ],
+   "description": "<h2>East Side 06</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+   "gps": [
+    8.6342713,
+    50.1018579,
+    60.0
+   ],
+   "map": {
+    "x": 64.2,
+    "y": 74.8
+   },
+   "data": {
+    "room": "East side",
+    "xy": [
+     -3.003,
+     5.777
+    ],
+    "tiles": {
+     "baseUrl": "tiles/east-side-06/base.jpg",
+     "tileUrl": "tiles/east-side-06/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "228.39deg",
+       "-48.24deg"
+      ],
+      [
+       "228.39deg",
+       "-40.03deg"
+      ],
+      [
+       "228.39deg",
+       "-33.9deg"
+      ],
+      [
+       "228.39deg",
+       "-29.25deg"
+      ],
+      [
+       "228.39deg",
+       "-25.64deg"
+      ],
+      [
+       "228.39deg",
+       "-25.24deg"
+      ],
+      [
+       "226.23deg",
+       "-22.56deg"
+      ],
+      [
+       "224.53deg",
+       "-20.36deg"
+      ],
+      [
+       "223.16deg",
+       "-18.53deg"
+      ],
+      [
+       "222.04deg",
+       "-16.98deg"
+      ],
+      [
+       "221.1deg",
+       "-15.66deg"
+      ],
+      [
+       "220.3deg",
+       "-14.52deg"
+      ],
+      [
+       "219.61deg",
+       "-13.53deg"
+      ],
+      [
+       "219.01deg",
+       "-12.67deg"
+      ],
+      [
+       "218.49deg",
+       "-11.9deg"
+      ],
+      [
+       "218.34deg",
+       "-11.67deg"
+      ],
+      [
+       "220.57deg",
+       "-11.17deg"
+      ],
+      [
+       "222.62deg",
+       "-10.69deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "east-side-07",
+   "name": "East Side 07",
+   "caption": "East Side 07",
+   "panorama": "panos/east-side-07.jpg",
+   "thumbnail": "thumbs/east-side-07.jpg",
+   "sphereCorrection": {
+    "pan": "-252.31deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-05",
+     "position": {
+      "yaw": "113.25deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.25
+     },
+     "gps": [
+      8.634234,
+      50.1018367,
+      58.32
+     ],
+     "data": {
+      "distance": 3.7,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-06",
+     "position": {
+      "yaw": "81.58deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.092
+     },
+     "gps": [
+      8.6342713,
+      50.1018579,
+      58.32
+     ],
+     "data": {
+      "distance": 6.1,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-08",
+     "position": {
+      "yaw": "169.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.118
+     },
+     "gps": [
+      8.6342007,
+      50.1018007,
+      58.32
+     ],
+     "data": {
+      "distance": 5.6,
+      "room": "East side"
+     }
+    }
+   ],
+   "description": "<h2>East Side 07</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+   "gps": [
+    8.6341862,
+    50.1018499,
+    60.0
+   ],
+   "map": {
+    "x": 54.2,
+    "y": 437.6
+   },
+   "data": {
+    "room": "East side",
+    "xy": [
+     -3.172,
+     -0.365
+    ],
+    "tiles": {
+     "baseUrl": "tiles/east-side-07/base.jpg",
+     "tileUrl": "tiles/east-side-07/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "169.3deg",
+       "-48.24deg"
+      ],
+      [
+       "169.3deg",
+       "-40.03deg"
+      ],
+      [
+       "169.3deg",
+       "-33.9deg"
+      ],
+      [
+       "169.3deg",
+       "-29.25deg"
+      ],
+      [
+       "169.3deg",
+       "-25.64deg"
+      ],
+      [
+       "169.3deg",
+       "-22.78deg"
+      ],
+      [
+       "169.3deg",
+       "-20.47deg"
+      ],
+      [
+       "169.3deg",
+       "-18.57deg"
+      ],
+      [
+       "169.3deg",
+       "-16.99deg"
+      ],
+      [
+       "169.3deg",
+       "-16.77deg"
+      ],
+      [
+       "174.43deg",
+       "-16.73deg"
+      ],
+      [
+       "179.49deg",
+       "-16.56deg"
+      ],
+      [
+       "184.41deg",
+       "-16.27deg"
+      ],
+      [
+       "189.12deg",
+       "-15.9deg"
+      ],
+      [
+       "193.57deg",
+       "-15.44deg"
+      ],
+      [
+       "197.05deg",
+       "-15.03deg"
+      ],
+      [
+       "200.91deg",
+       "-14.46deg"
+      ],
+      [
+       "204.46deg",
+       "-13.89deg"
+      ],
+      [
+       "207.72deg",
+       "-13.31deg"
+      ],
+      [
+       "210.7deg",
+       "-12.74deg"
+      ],
+      [
+       "213.43deg",
+       "-12.19deg"
+      ],
+      [
+       "213.99deg",
+       "-12.07deg"
+      ],
+      [
+       "216.63deg",
+       "-11.59deg"
+      ],
+      [
+       "219.05deg",
+       "-11.12deg"
+      ],
+      [
+       "221.27deg",
+       "-10.67deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "east-side-08",
+   "name": "East Side 08",
+   "caption": "East Side 08",
+   "panorama": "panos/east-side-08.jpg",
+   "thumbnail": "thumbs/east-side-08.jpg",
+   "sphereCorrection": {
+    "pan": "-235.65deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-01",
+     "position": {
+      "yaw": "129.68deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.184
+     },
+     "gps": [
+      8.634249,
+      50.101775,
+      58.32
+     ],
+     "data": {
+      "distance": 4.5,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-02",
+     "position": {
+      "yaw": "167.66deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.114
+     },
+     "gps": [
+      8.6342176,
+      50.101751,
+      58.32
+     ],
+     "data": {
+      "distance": 5.7,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-04",
+     "position": {
+      "yaw": "78.52deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.125
+     },
+     "gps": [
+      8.6342753,
+      50.1018104,
+      58.32
+     ],
+     "data": {
+      "distance": 5.4,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-05",
+     "position": {
+      "yaw": "30.67deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.171
+     },
+     "gps": [
+      8.634234,
+      50.1018367,
+      58.32
+     ],
+     "data": {
+      "distance": 4.7,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-07",
+     "position": {
+      "yaw": "-10.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.118
+     },
+     "gps": [
+      8.6341862,
+      50.1018499,
+      58.32
+     ],
+     "data": {
+      "distance": 5.6,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-09",
+     "position": {
+      "yaw": "260.0deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.348
+     },
+     "gps": [
+      8.6341605,
+      50.1017961,
+      58.32
+     ],
+     "data": {
+      "distance": 2.9,
+      "room": "East side"
+     }
+    }
+   ],
+   "description": "<h2>East Side 08</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+   "gps": [
+    8.6342007,
+    50.1018007,
+    60.0
+   ],
+   "map": {
+    "x": 383.4,
+    "y": 433.5
+   },
+   "data": {
+    "room": "East side",
+    "xy": [
+     2.402,
+     -0.297
+    ],
+    "tiles": {
+     "baseUrl": "tiles/east-side-08/base.jpg",
+     "tileUrl": "tiles/east-side-08/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "260.0deg",
+       "-48.24deg"
+      ],
+      [
+       "260.0deg",
+       "-40.03deg"
+      ],
+      [
+       "260.0deg",
+       "-33.9deg"
+      ],
+      [
+       "260.0deg",
+       "-29.96deg"
+      ],
+      [
+       "259.76deg",
+       "-26.2deg"
+      ],
+      [
+       "259.57deg",
+       "-23.23deg"
+      ],
+      [
+       "259.43deg",
+       "-20.84deg"
+      ],
+      [
+       "259.32deg",
+       "-18.88deg"
+      ],
+      [
+       "259.23deg",
+       "-17.24deg"
+      ],
+      [
+       "259.21deg",
+       "-16.92deg"
+      ],
+      [
+       "259.51deg",
+       "-15.59deg"
+      ],
+      [
+       "259.77deg",
+       "-14.45deg"
+      ],
+      [
+       "259.99deg",
+       "-13.46deg"
+      ],
+      [
+       "-99.82deg",
+       "-12.59deg"
+      ],
+      [
+       "-99.66deg",
+       "-11.83deg"
+      ],
+      [
+       "-99.51deg",
+       "-11.16deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    },
+    {
+     "id": "folding-wall",
+     "polygon": [
+      [
+       "176.55deg",
+       "52deg"
+      ],
+      [
+       "209.65deg",
+       "52deg"
+      ],
+      [
+       "209.65deg",
+       "-59deg"
+      ],
+      [
+       "176.55deg",
+       "-59deg"
+      ]
+     ],
+     "svgStyle": {
+      "fill": "rgba(240,179,90,0.14)",
+      "stroke": "#f0b35a",
+      "strokeWidth": "2px"
+     },
+     "tooltip": "Folding wall",
+     "content": "<h2>Folding wall</h2><p>The open studio can be split in two. This folding wall (Faltwand) is drawn on the studio plan from 2019.</p><img src='assets/plan-studio-2019.jpg' alt=''>",
+     "listContent": "Folding wall",
+     "data": {
+      "group": "info",
+      "map": {
+       "distance": 71,
+       "color": "#f0b35a"
+      },
+      "compass": "#f0b35a"
+     }
+    }
+   ]
+  },
+  {
+   "id": "east-side-09",
+   "name": "East Side 09",
+   "caption": "East Side 09",
+   "panorama": "panos/east-side-09.jpg",
+   "thumbnail": "thumbs/east-side-09.jpg",
+   "sphereCorrection": {
+    "pan": "-238.26deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-08",
+     "position": {
+      "yaw": "80.0deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.348
+     },
+     "gps": [
+      8.6342007,
+      50.1018007,
+      58.32
+     ],
+     "data": {
+      "distance": 2.9,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-10",
+     "position": {
+      "yaw": "-19.65deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.099
+     },
+     "gps": [
+      8.6341324,
+      50.1018467,
+      58.32
+     ],
+     "data": {
+      "distance": 6.0,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-11",
+     "position": {
+      "yaw": "258.33deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.397
+     },
+     "gps": [
+      8.6341247,
+      50.1017914,
+      58.32
+     ],
+     "data": {
+      "distance": 2.6,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "storage-01",
+     "position": {
+      "yaw": "166.95deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.211
+     },
+     "gps": [
+      8.6341736,
+      50.1017599,
+      58.32
+     ],
+     "data": {
+      "distance": 4.1,
+      "room": "Storage"
+     }
+    }
+   ],
+   "description": "<h2>East Side 09</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+   "gps": [
+    8.6341605,
+    50.1017961,
+    60.0
+   ],
+   "map": {
+    "x": 383.4,
+    "y": 605.6
+   },
+   "data": {
+    "room": "East side",
+    "xy": [
+     2.402,
+     -3.211
+    ],
+    "tiles": {
+     "baseUrl": "tiles/east-side-09/base.jpg",
+     "tileUrl": "tiles/east-side-09/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-storage",
+     "html": "Storage",
+     "className": "room-label",
+     "position": {
+      "yaw": "166.95deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "Storage",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>Storage</h2>"
+    },
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "258.33deg",
+       "-48.24deg"
+      ],
+      [
+       "258.33deg",
+       "-40.03deg"
+      ],
+      [
+       "258.33deg",
+       "-33.9deg"
+      ],
+      [
+       "258.33deg",
+       "-32.77deg"
+      ],
+      [
+       "259.06deg",
+       "-28.39deg"
+      ],
+      [
+       "259.58deg",
+       "-24.97deg"
+      ],
+      [
+       "259.98deg",
+       "-22.25deg"
+      ],
+      [
+       "-99.71deg",
+       "-20.04deg"
+      ],
+      [
+       "-99.46deg",
+       "-18.21deg"
+      ],
+      [
+       "-99.25deg",
+       "-16.68deg"
+      ],
+      [
+       "-99.08deg",
+       "-15.38deg"
+      ],
+      [
+       "-99.02deg",
+       "-14.91deg"
+      ],
+      [
+       "-99.38deg",
+       "-13.86deg"
+      ],
+      [
+       "-99.7deg",
+       "-12.95deg"
+      ],
+      [
+       "-99.97deg",
+       "-12.15deg"
+      ],
+      [
+       "259.79deg",
+       "-11.44deg"
+      ],
+      [
+       "259.57deg",
+       "-10.8deg"
+      ],
+      [
+       "-83.93deg",
+       "-11.11deg"
+      ],
+      [
+       "-83.21deg",
+       "-11.76deg"
+      ],
+      [
+       "-82.81deg",
+       "-12.12deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "east-side-10",
+   "name": "East Side 10",
+   "caption": "East Side 10",
+   "panorama": "panos/east-side-10.jpg",
+   "thumbnail": "thumbs/east-side-10.jpg",
+   "sphereCorrection": {
+    "pan": "-73.47deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-09",
+     "position": {
+      "yaw": "160.35deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.099
+     },
+     "gps": [
+      8.6341605,
+      50.1017961,
+      58.32
+     ],
+     "data": {
+      "distance": 6.0,
+      "room": "East side"
+     }
+    }
+   ],
+   "description": "<h2>East Side 10</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+   "gps": [
+    8.6341324,
+    50.1018467,
+    60.0
+   ],
+   "map": {
+    "x": 35.3,
+    "y": 664.8
+   },
+   "data": {
+    "room": "East side",
+    "xy": [
+     -3.491,
+     -4.213
+    ],
+    "tiles": {
+     "baseUrl": "tiles/east-side-10/base.jpg",
+     "tileUrl": "tiles/east-side-10/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "160.35deg",
+       "-48.24deg"
+      ],
+      [
+       "160.35deg",
+       "-40.03deg"
+      ],
+      [
+       "160.35deg",
+       "-33.9deg"
+      ],
+      [
+       "160.35deg",
+       "-29.25deg"
+      ],
+      [
+       "160.35deg",
+       "-25.64deg"
+      ],
+      [
+       "160.35deg",
+       "-22.78deg"
+      ],
+      [
+       "160.35deg",
+       "-20.47deg"
+      ],
+      [
+       "160.35deg",
+       "-18.57deg"
+      ],
+      [
+       "160.35deg",
+       "-16.99deg"
+      ],
+      [
+       "160.35deg",
+       "-15.7deg"
+      ],
+      [
+       "165.14deg",
+       "-15.82deg"
+      ],
+      [
+       "169.98deg",
+       "-15.84deg"
+      ],
+      [
+       "174.79deg",
+       "-15.75deg"
+      ],
+      [
+       "179.51deg",
+       "-15.56deg"
+      ],
+      [
+       "184.09deg",
+       "-15.28deg"
+      ],
+      [
+       "185.07deg",
+       "-15.2deg"
+      ],
+      [
+       "189.51deg",
+       "-14.92deg"
+      ],
+      [
+       "193.76deg",
+       "-14.56deg"
+      ],
+      [
+       "197.78deg",
+       "-14.15deg"
+      ],
+      [
+       "201.55deg",
+       "-13.71deg"
+      ],
+      [
+       "205.07deg",
+       "-13.24deg"
+      ],
+      [
+       "208.34deg",
+       "-12.76deg"
+      ],
+      [
+       "211.36deg",
+       "-12.27deg"
+      ],
+      [
+       "212.54deg",
+       "-12.08deg"
+      ],
+      [
+       "214.94deg",
+       "-11.55deg"
+      ],
+      [
+       "217.12deg",
+       "-11.05deg"
+      ],
+      [
+       "219.12deg",
+       "-10.57deg"
+      ],
+      [
+       "237.24deg",
+       "-10.67deg"
+      ],
+      [
+       "235.7deg",
+       "-11.22deg"
+      ],
+      [
+       "233.99deg",
+       "-11.81deg"
+      ],
+      [
+       "232.09deg",
+       "-12.45deg"
+      ],
+      [
+       "231.04deg",
+       "-12.8deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "east-side-11",
+   "name": "East Side 11",
+   "caption": "East Side 11",
+   "panorama": "panos/east-side-11.jpg",
+   "thumbnail": "thumbs/east-side-11.jpg",
+   "sphereCorrection": {
+    "pan": "25.88deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-09",
+     "position": {
+      "yaw": "78.33deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.397
+     },
+     "gps": [
+      8.6341605,
+      50.1017961,
+      58.32
+     ],
+     "data": {
+      "distance": 2.6,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-12",
+     "position": {
+      "yaw": "176.27deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.422
+     },
+     "gps": [
+      8.634127,
+      50.1017692,
+      58.32
+     ],
+     "data": {
+      "distance": 2.5,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-13",
+     "position": {
+      "yaw": "-13.69deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.227
+     },
+     "gps": [
+      8.6341116,
+      50.1018259,
+      58.32
+     ],
+     "data": {
+      "distance": 4.0,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "hallway-02",
+     "position": {
+      "yaw": "-97.15deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.251
+     },
+     "gps": [
+      8.6340732,
+      50.1017872,
+      58.32
+     ],
+     "data": {
+      "distance": 3.7,
+      "room": "Hallway"
+     }
+    }
+   ],
+   "description": "<h2>East Side 11</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+   "gps": [
+    8.6341247,
+    50.1017914,
+    60.0
+   ],
+   "map": {
+    "x": 387.8,
+    "y": 759.7
+   },
+   "data": {
+    "room": "East side",
+    "xy": [
+     2.478,
+     -5.82
+    ],
+    "tiles": {
+     "baseUrl": "tiles/east-side-11/base.jpg",
+     "tileUrl": "tiles/east-side-11/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-hallway",
+     "html": "Hallway",
+     "className": "room-label",
+     "position": {
+      "yaw": "-97.15deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "Hallway",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>Hallway</h2>"
+    },
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "-97.15deg",
+       "-48.24deg"
+      ],
+      [
+       "-97.15deg",
+       "-40.03deg"
+      ],
+      [
+       "-97.15deg",
+       "-33.9deg"
+      ],
+      [
+       "-97.15deg",
+       "-29.25deg"
+      ],
+      [
+       "-97.15deg",
+       "-25.64deg"
+      ],
+      [
+       "-97.15deg",
+       "-24.39deg"
+      ],
+      [
+       "-97.97deg",
+       "-21.79deg"
+      ],
+      [
+       "-98.6deg",
+       "-19.67deg"
+      ],
+      [
+       "-99.12deg",
+       "-17.91deg"
+      ],
+      [
+       "-99.55deg",
+       "-16.43deg"
+      ],
+      [
+       "-99.91deg",
+       "-15.17deg"
+      ],
+      [
+       "259.79deg",
+       "-14.09deg"
+      ],
+      [
+       "259.53deg",
+       "-13.15deg"
+      ],
+      [
+       "259.41deg",
+       "-12.74deg"
+      ],
+      [
+       "-97.12deg",
+       "-12.41deg"
+      ],
+      [
+       "-93.85deg",
+       "-12.05deg"
+      ],
+      [
+       "-90.77deg",
+       "-11.68deg"
+      ],
+      [
+       "-87.89deg",
+       "-11.3deg"
+      ],
+      [
+       "-85.21deg",
+       "-10.93deg"
+      ],
+      [
+       "-82.0deg",
+       "-11.15deg"
+      ],
+      [
+       "-81.16deg",
+       "-11.8deg"
+      ],
+      [
+       "-80.21deg",
+       "-12.53deg"
+      ],
+      [
+       "-79.13deg",
+       "-13.35deg"
+      ],
+      [
+       "-77.9deg",
+       "-14.28deg"
+      ],
+      [
+       "-76.47deg",
+       "-15.34deg"
+      ],
+      [
+       "-74.81deg",
+       "-16.55deg"
+      ],
+      [
+       "-73.85deg",
+       "-17.23deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "east-side-12",
+   "name": "East Side 12",
+   "caption": "East Side 12",
+   "panorama": "panos/east-side-12.jpg",
+   "thumbnail": "thumbs/east-side-12.jpg",
+   "sphereCorrection": {
+    "pan": "18.19deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-11",
+     "position": {
+      "yaw": "-3.73deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.422
+     },
+     "gps": [
+      8.6341247,
+      50.1017914,
+      58.32
+     ],
+     "data": {
+      "distance": 2.5,
+      "room": "East side"
+     }
+    }
+   ],
+   "description": "<h2>East Side 12</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+   "gps": [
+    8.634127,
+    50.1017692,
+    60.0
+   ],
+   "map": {
+    "x": 533.0,
+    "y": 775.6
+   },
+   "data": {
+    "room": "East side",
+    "xy": [
+     4.936,
+     -6.09
+    ],
+    "tiles": {
+     "baseUrl": "tiles/east-side-12/base.jpg",
+     "tileUrl": "tiles/east-side-12/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "-3.73deg",
+       "-48.24deg"
+      ],
+      [
+       "-3.73deg",
+       "-40.03deg"
+      ],
+      [
+       "-3.73deg",
+       "-34.19deg"
+      ],
+      [
+       "-15.28deg",
+       "-33.97deg"
+      ],
+      [
+       "-26.2deg",
+       "-32.75deg"
+      ],
+      [
+       "-35.87deg",
+       "-30.83deg"
+      ],
+      [
+       "-44.04deg",
+       "-28.56deg"
+      ],
+      [
+       "-50.78deg",
+       "-26.23deg"
+      ],
+      [
+       "-56.28deg",
+       "-24.01deg"
+      ],
+      [
+       "-60.79deg",
+       "-21.98deg"
+      ],
+      [
+       "-62.4deg",
+       "-21.2deg"
+      ],
+      [
+       "-66.44deg",
+       "-19.61deg"
+      ],
+      [
+       "-69.85deg",
+       "-18.16deg"
+      ],
+      [
+       "-72.75deg",
+       "-16.86deg"
+      ],
+      [
+       "-75.24deg",
+       "-15.7deg"
+      ],
+      [
+       "-77.39deg",
+       "-14.67deg"
+      ],
+      [
+       "-79.25deg",
+       "-13.74deg"
+      ],
+      [
+       "-80.89deg",
+       "-12.92deg"
+      ],
+      [
+       "-81.6deg",
+       "-12.55deg"
+      ],
+      [
+       "-78.88deg",
+       "-12.03deg"
+      ],
+      [
+       "-76.39deg",
+       "-11.52deg"
+      ],
+      [
+       "-74.12deg",
+       "-11.03deg"
+      ],
+      [
+       "-72.03deg",
+       "-10.58deg"
+      ],
+      [
+       "-65.45deg",
+       "-10.68deg"
+      ],
+      [
+       "-63.75deg",
+       "-11.2deg"
+      ],
+      [
+       "-61.87deg",
+       "-11.77deg"
+      ],
+      [
+       "-59.79deg",
+       "-12.38deg"
+      ],
+      [
+       "-57.47deg",
+       "-13.04deg"
+      ],
+      [
+       "-54.89deg",
+       "-13.75deg"
+      ],
+      [
+       "-53.46deg",
+       "-14.12deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "east-side-13",
+   "name": "East Side 13",
+   "caption": "East Side 13",
+   "panorama": "panos/east-side-13.jpg",
+   "thumbnail": "thumbs/east-side-13.jpg",
+   "sphereCorrection": {
+    "pan": "-158.02deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-11",
+     "position": {
+      "yaw": "166.31deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.227
+     },
+     "gps": [
+      8.6341247,
+      50.1017914,
+      58.32
+     ],
+     "data": {
+      "distance": 4.0,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "east-side-14",
+     "position": {
+      "yaw": "220.94deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.42
+     },
+     "gps": [
+      8.6340888,
+      50.101809,
+      58.32
+     ],
+     "data": {
+      "distance": 2.5,
+      "room": "East side"
+     }
+    }
+   ],
+   "description": "<h2>East Side 13</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+   "gps": [
+    8.6341116,
+    50.1018259,
+    60.0
+   ],
+   "map": {
+    "x": 154.6,
+    "y": 774.8
+   },
+   "data": {
+    "room": "East side",
+    "xy": [
+     -1.471,
+     -6.075
+    ],
+    "tiles": {
+     "baseUrl": "tiles/east-side-13/base.jpg",
+     "tileUrl": "tiles/east-side-13/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "166.31deg",
+       "-48.24deg"
+      ],
+      [
+       "166.31deg",
+       "-40.03deg"
+      ],
+      [
+       "166.31deg",
+       "-33.9deg"
+      ],
+      [
+       "166.31deg",
+       "-29.25deg"
+      ],
+      [
+       "166.31deg",
+       "-25.64deg"
+      ],
+      [
+       "166.31deg",
+       "-23.0deg"
+      ],
+      [
+       "173.56deg",
+       "-23.14deg"
+      ],
+      [
+       "180.8deg",
+       "-22.94deg"
+      ],
+      [
+       "187.79deg",
+       "-22.43deg"
+      ],
+      [
+       "194.35deg",
+       "-21.68deg"
+      ],
+      [
+       "200.38deg",
+       "-20.75deg"
+      ],
+      [
+       "205.81deg",
+       "-19.72deg"
+      ],
+      [
+       "210.64deg",
+       "-18.66deg"
+      ],
+      [
+       "212.47deg",
+       "-18.22deg"
+      ],
+      [
+       "216.07deg",
+       "-17.05deg"
+      ],
+      [
+       "219.21deg",
+       "-15.97deg"
+      ],
+      [
+       "221.94deg",
+       "-14.98deg"
+      ],
+      [
+       "224.34deg",
+       "-14.08deg"
+      ],
+      [
+       "226.45deg",
+       "-13.26deg"
+      ],
+      [
+       "228.32deg",
+       "-12.52deg"
+      ],
+      [
+       "229.98deg",
+       "-11.84deg"
+      ],
+      [
+       "230.71deg",
+       "-11.54deg"
+      ],
+      [
+       "234.19deg",
+       "-11.59deg"
+      ],
+      [
+       "237.69deg",
+       "-11.6deg"
+      ],
+      [
+       "241.18deg",
+       "-11.57deg"
+      ],
+      [
+       "244.64deg",
+       "-11.5deg"
+      ],
+      [
+       "248.05deg",
+       "-11.39deg"
+      ],
+      [
+       "251.31deg",
+       "-11.25deg"
+      ],
+      [
+       "250.5deg",
+       "-11.91deg"
+      ],
+      [
+       "249.58deg",
+       "-12.66deg"
+      ],
+      [
+       "248.54deg",
+       "-13.5deg"
+      ],
+      [
+       "247.34deg",
+       "-14.46deg"
+      ],
+      [
+       "245.95deg",
+       "-15.54deg"
+      ],
+      [
+       "244.33deg",
+       "-16.79deg"
+      ],
+      [
+       "242.41deg",
+       "-18.23deg"
+      ],
+      [
+       "241.29deg",
+       "-19.05deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    },
+    {
+     "id": "tv",
+     "imageLayer": "assets/screen.jpg",
+     "position": [
+      {
+       "yaw": "33.82deg",
+       "pitch": "1.4deg"
+      },
+      {
+       "yaw": "104.92deg",
+       "pitch": "2.6deg"
+      },
+      {
+       "yaw": "105.32deg",
+       "pitch": "-37.3deg"
+      },
+      {
+       "yaw": "34.02deg",
+       "pitch": "-30.1deg"
+      }
+     ],
+     "tooltip": "Screen",
+     "listContent": "TV (imageLayer / videoLayer / elementLayer)",
+     "data": {
+      "group": "media",
+      "tv": true,
+      "map": {
+       "distance": 83,
+       "color": "#f0b35a"
+      },
+      "compass": "#f0b35a",
+      "elementLayer": {
+       "_about": "for the YouTube variant (elementLayer is placed by centre + rotation + size, not corners); fitted to the 4 corners above",
+       "position": {
+        "yaw": "63.6deg",
+        "pitch": "-20.88deg"
+       },
+       "rotation": {
+        "yaw": "17.43deg",
+        "pitch": "0deg",
+        "roll": "-0.52deg"
+       },
+       "width": 1358,
+       "height": 789
+      }
+     },
+     "content": "<h2>TV</h2><p>One screen, three marker types: <code>imageLayer</code> (this plan), <code>videoLayer</code> (a clip) or <code>elementLayer</code> (YouTube's own player). Switch in Options → Screens.</p><img src='assets/screen.jpg' alt=''>"
+    }
+   ]
+  },
+  {
+   "id": "east-side-14",
+   "name": "East Side 14",
+   "caption": "East Side 14",
+   "panorama": "panos/east-side-14.jpg",
+   "thumbnail": "thumbs/east-side-14.jpg",
+   "sphereCorrection": {
+    "pan": "-67.19deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-13",
+     "position": {
+      "yaw": "40.94deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.42
+     },
+     "gps": [
+      8.6341116,
+      50.1018259,
+      58.32
+     ],
+     "data": {
+      "distance": 2.5,
+      "room": "East side"
+     }
+    }
+   ],
+   "description": "<h2>East Side 14</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+   "gps": [
+    8.6340888,
+    50.101809,
+    60.0
+   ],
+   "map": {
+    "x": 247.1,
+    "y": 888.7
+   },
+   "data": {
+    "room": "East side",
+    "xy": [
+     0.095,
+     -8.005
+    ],
+    "tiles": {
+     "baseUrl": "tiles/east-side-14/base.jpg",
+     "tileUrl": "tiles/east-side-14/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "40.94deg",
+       "-48.24deg"
+      ],
+      [
+       "40.94deg",
+       "-40.03deg"
+      ],
+      [
+       "40.94deg",
+       "-34.06deg"
+      ],
+      [
+       "51.46deg",
+       "-36.95deg"
+      ],
+      [
+       "64.1deg",
+       "-39.01deg"
+      ],
+      [
+       "78.05deg",
+       "-39.64deg"
+      ],
+      [
+       "91.79deg",
+       "-38.62deg"
+      ],
+      [
+       "103.95deg",
+       "-36.29deg"
+      ],
+      [
+       "113.92deg",
+       "-33.29deg"
+      ],
+      [
+       "121.79deg",
+       "-30.16deg"
+      ],
+      [
+       "127.48deg",
+       "-27.46deg"
+      ],
+      [
+       "134.44deg",
+       "-30.1deg"
+      ],
+      [
+       "143.05deg",
+       "-32.69deg"
+      ],
+      [
+       "153.43deg",
+       "-34.9deg"
+      ],
+      [
+       "165.31deg",
+       "-36.25deg"
+      ],
+      [
+       "177.86deg",
+       "-36.38deg"
+      ],
+      [
+       "189.96deg",
+       "-35.25deg"
+      ],
+      [
+       "200.68deg",
+       "-33.19deg"
+      ],
+      [
+       "204.58deg",
+       "-32.17deg"
+      ],
+      [
+       "212.05deg",
+       "-29.18deg"
+      ],
+      [
+       "217.93deg",
+       "-26.39deg"
+      ],
+      [
+       "222.6deg",
+       "-23.89deg"
+      ],
+      [
+       "226.34deg",
+       "-21.72deg"
+      ],
+      [
+       "229.39deg",
+       "-19.83deg"
+      ],
+      [
+       "231.9deg",
+       "-18.19deg"
+      ],
+      [
+       "234.0deg",
+       "-16.78deg"
+      ],
+      [
+       "234.88deg",
+       "-16.17deg"
+      ],
+      [
+       "239.83deg",
+       "-16.16deg"
+      ],
+      [
+       "244.73deg",
+       "-16.04deg"
+      ],
+      [
+       "249.51deg",
+       "-15.81deg"
+      ],
+      [
+       "254.13deg",
+       "-15.48deg"
+      ],
+      [
+       "258.52deg",
+       "-15.09deg"
+      ],
+      [
+       "-97.42deg",
+       "-14.65deg"
+      ],
+      [
+       "-97.57deg",
+       "-15.82deg"
+      ],
+      [
+       "-97.75deg",
+       "-17.19deg"
+      ],
+      [
+       "-97.96deg",
+       "-18.82deg"
+      ],
+      [
+       "-98.22deg",
+       "-20.77deg"
+      ],
+      [
+       "-98.54deg",
+       "-23.14deg"
+      ],
+      [
+       "-98.96deg",
+       "-26.09deg"
+      ],
+      [
+       "-99.53deg",
+       "-29.81deg"
+      ],
+      [
+       "-99.89deg",
+       "-32.1deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "hallway-01",
+   "name": "Hallway 01",
+   "caption": "Hallway 01",
+   "panorama": "panos/hallway-01.jpg",
+   "thumbnail": "thumbs/hallway-01.jpg",
+   "sphereCorrection": {
+    "pan": "-150.6deg"
+   },
+   "links": [
+    {
+     "nodeId": "hallway-02",
+     "position": {
+      "yaw": "76.01deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.248
+     },
+     "gps": [
+      8.6340732,
+      50.1017872,
+      58.32
+     ],
+     "data": {
+      "distance": 3.7,
+      "room": "Hallway"
+     }
+    },
+    {
+     "nodeId": "hallway-03",
+     "position": {
+      "yaw": "257.03deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.292
+     },
+     "gps": [
+      8.6339768,
+      50.1017724,
+      58.32
+     ],
+     "data": {
+      "distance": 3.3,
+      "room": "Hallway"
+     }
+    },
+    {
+     "nodeId": "kitchen-01",
+     "position": {
+      "yaw": "-33.19deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.337
+     },
+     "gps": [
+      8.6339995,
+      50.1018016,
+      58.32
+     ],
+     "data": {
+      "distance": 3.0,
+      "room": "Kitchen"
+     }
+    }
+   ],
+   "description": "<h2>Hallway 01</h2><p>The corridor along the lifts and the stairwell. It joins the east and the west side.</p>",
+   "gps": [
+    8.6340224,
+    50.1017791,
+    60.0
+   ],
+   "map": {
+    "x": 392.3,
+    "y": 1198.5
+   },
+   "data": {
+    "room": "Hallway",
+    "xy": [
+     2.554,
+     -13.25
+    ],
+    "tiles": {
+     "baseUrl": "tiles/hallway-01/base.jpg",
+     "tileUrl": "tiles/hallway-01/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-kitchen",
+     "html": "Kitchen",
+     "className": "room-label",
+     "position": {
+      "yaw": "-33.19deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "Kitchen",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>Kitchen</h2>"
+    },
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "-33.19deg",
+       "-48.24deg"
+      ],
+      [
+       "-33.19deg",
+       "-40.03deg"
+      ],
+      [
+       "-33.19deg",
+       "-33.9deg"
+      ],
+      [
+       "-33.19deg",
+       "-29.33deg"
+      ],
+      [
+       "-24.05deg",
+       "-31.02deg"
+      ],
+      [
+       "-13.85deg",
+       "-32.1deg"
+      ],
+      [
+       "-3.1deg",
+       "-32.34deg"
+      ],
+      [
+       "7.47deg",
+       "-31.68deg"
+      ],
+      [
+       "17.21deg",
+       "-30.28deg"
+      ],
+      [
+       "25.74deg",
+       "-28.41deg"
+      ],
+      [
+       "32.97deg",
+       "-26.34deg"
+      ],
+      [
+       "36.17deg",
+       "-25.27deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "hallway-02",
+   "name": "Hallway 02",
+   "caption": "Hallway 02",
+   "panorama": "panos/hallway-02.jpg",
+   "thumbnail": "thumbs/hallway-02.jpg",
+   "sphereCorrection": {
+    "pan": "29.69deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-11",
+     "position": {
+      "yaw": "82.85deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.251
+     },
+     "gps": [
+      8.6341247,
+      50.1017914,
+      58.32
+     ],
+     "data": {
+      "distance": 3.7,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "hallway-01",
+     "position": {
+      "yaw": "256.01deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.248
+     },
+     "gps": [
+      8.6340224,
+      50.1017791,
+      58.32
+     ],
+     "data": {
+      "distance": 3.7,
+      "room": "Hallway"
+     }
+    }
+   ],
+   "description": "<h2>Hallway 02</h2><p>The corridor along the lifts and the stairwell. It joins the east and the west side.</p>",
+   "gps": [
+    8.6340732,
+    50.1017872,
+    60.0
+   ],
+   "map": {
+    "x": 377.0,
+    "y": 978.3
+   },
+   "data": {
+    "room": "Hallway",
+    "xy": [
+     2.294,
+     -9.521
+    ],
+    "tiles": {
+     "baseUrl": "tiles/hallway-02/base.jpg",
+     "tileUrl": "tiles/hallway-02/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-east-side",
+     "html": "East side",
+     "className": "room-label",
+     "position": {
+      "yaw": "82.85deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "East side",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>East side</h2>"
+    },
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "256.01deg",
+       "-48.24deg"
+      ],
+      [
+       "256.01deg",
+       "-40.03deg"
+      ],
+      [
+       "256.01deg",
+       "-33.9deg"
+      ],
+      [
+       "256.01deg",
+       "-29.25deg"
+      ],
+      [
+       "256.01deg",
+       "-25.64deg"
+      ],
+      [
+       "256.01deg",
+       "-24.2deg"
+      ],
+      [
+       "-97.09deg",
+       "-23.14deg"
+      ],
+      [
+       "-90.92deg",
+       "-21.92deg"
+      ],
+      [
+       "-85.48deg",
+       "-20.63deg"
+      ],
+      [
+       "-80.74deg",
+       "-19.35deg"
+      ],
+      [
+       "-76.62deg",
+       "-18.12deg"
+      ],
+      [
+       "-73.11deg",
+       "-16.98deg"
+      ],
+      [
+       "-70.93deg",
+       "-18.43deg"
+      ],
+      [
+       "-68.32deg",
+       "-20.09deg"
+      ],
+      [
+       "-65.15deg",
+       "-22.01deg"
+      ],
+      [
+       "-61.25deg",
+       "-24.23deg"
+      ],
+      [
+       "-56.39deg",
+       "-26.75deg"
+      ],
+      [
+       "-50.26deg",
+       "-29.55deg"
+      ],
+      [
+       "-42.49deg",
+       "-32.51deg"
+      ],
+      [
+       "-37.8deg",
+       "-33.99deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "hallway-03",
+   "name": "Hallway 03",
+   "caption": "Hallway 03",
+   "panorama": "panos/hallway-03.jpg",
+   "thumbnail": "thumbs/hallway-03.jpg",
+   "sphereCorrection": {
+    "pan": "-107.17deg"
+   },
+   "links": [
+    {
+     "nodeId": "hallway-01",
+     "position": {
+      "yaw": "77.03deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.292
+     },
+     "gps": [
+      8.6340224,
+      50.1017791,
+      58.32
+     ],
+     "data": {
+      "distance": 3.3,
+      "room": "Hallway"
+     }
+    },
+    {
+     "nodeId": "west-side-01",
+     "position": {
+      "yaw": "-97.17deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.314
+     },
+     "gps": [
+      8.6339329,
+      50.1017688,
+      58.32
+     ],
+     "data": {
+      "distance": 3.2,
+      "room": "West side"
+     }
+    }
+   ],
+   "description": "<h2>Hallway 03</h2><p>The corridor along the lifts and the stairwell. It joins the east and the west side.</p>",
+   "gps": [
+    8.6339768,
+    50.1017724,
+    60.0
+   ],
+   "map": {
+    "x": 402.5,
+    "y": 1395.4
+   },
+   "data": {
+    "room": "Hallway",
+    "xy": [
+     2.727,
+     -16.585
+    ],
+    "tiles": {
+     "baseUrl": "tiles/hallway-03/base.jpg",
+     "tileUrl": "tiles/hallway-03/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-west-side",
+     "html": "West side",
+     "className": "room-label",
+     "position": {
+      "yaw": "-97.17deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "West side",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>West side</h2>"
+    },
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "77.03deg",
+       "-48.24deg"
+      ],
+      [
+       "77.03deg",
+       "-40.03deg"
+      ],
+      [
+       "77.03deg",
+       "-33.9deg"
+      ],
+      [
+       "77.03deg",
+       "-29.25deg"
+      ],
+      [
+       "77.03deg",
+       "-26.71deg"
+      ],
+      [
+       "68.6deg",
+       "-27.69deg"
+      ],
+      [
+       "59.63deg",
+       "-28.17deg"
+      ],
+      [
+       "50.51deg",
+       "-28.05deg"
+      ],
+      [
+       "41.71deg",
+       "-27.36deg"
+      ],
+      [
+       "33.57deg",
+       "-26.22deg"
+      ],
+      [
+       "26.46deg",
+       "-24.82deg"
+      ],
+      [
+       "32.66deg",
+       "-23.2deg"
+      ],
+      [
+       "37.96deg",
+       "-21.57deg"
+      ],
+      [
+       "42.46deg",
+       "-20.03deg"
+      ],
+      [
+       "46.3deg",
+       "-18.6deg"
+      ],
+      [
+       "49.57deg",
+       "-17.3deg"
+      ],
+      [
+       "52.38deg",
+       "-16.12deg"
+      ],
+      [
+       "54.81deg",
+       "-15.07deg"
+      ],
+      [
+       "55.93deg",
+       "-14.57deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "kitchen-01",
+   "name": "Kitchen 01",
+   "caption": "Kitchen 01",
+   "panorama": "panos/kitchen-01.jpg",
+   "thumbnail": "thumbs/kitchen-01.jpg",
+   "sphereCorrection": {
+    "pan": "-172.27deg"
+   },
+   "links": [
+    {
+     "nodeId": "hallway-01",
+     "position": {
+      "yaw": "146.81deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.337
+     },
+     "gps": [
+      8.6340224,
+      50.1017791,
+      58.32
+     ],
+     "data": {
+      "distance": 3.0,
+      "room": "Hallway"
+     }
+    },
+    {
+     "nodeId": "kitchen-02",
+     "position": {
+      "yaw": "25.4deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.266
+     },
+     "gps": [
+      8.6340209,
+      50.1018305,
+      58.32
+     ],
+     "data": {
+      "distance": 3.6,
+      "room": "Kitchen"
+     }
+    },
+    {
+     "nodeId": "kitchen-03",
+     "position": {
+      "yaw": "84.34deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.246
+     },
+     "gps": [
+      8.6340518,
+      50.1018049,
+      58.32
+     ],
+     "data": {
+      "distance": 3.8,
+      "room": "Kitchen"
+     }
+    }
+   ],
+   "description": "<h2>Kitchen 01</h2><p>The kitchen. A serving hatch with a window looks into the meeting room.</p>",
+   "gps": [
+    8.6339995,
+    50.1018016,
+    60.0
+   ],
+   "map": {
+    "x": 230.0,
+    "y": 1268.0
+   },
+   "data": {
+    "room": "Kitchen",
+    "xy": [
+     -0.194,
+     -14.427
+    ],
+    "tiles": {
+     "baseUrl": "tiles/kitchen-01/base.jpg",
+     "tileUrl": "tiles/kitchen-01/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-hallway",
+     "html": "Hallway",
+     "className": "room-label",
+     "position": {
+      "yaw": "146.81deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "Hallway",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>Hallway</h2>"
+    }
+   ]
+  },
+  {
+   "id": "kitchen-02",
+   "name": "Kitchen 02",
+   "caption": "Kitchen 02",
+   "panorama": "panos/kitchen-02.jpg",
+   "thumbnail": "thumbs/kitchen-02.jpg",
+   "sphereCorrection": {
+    "pan": "-182.5deg"
+   },
+   "links": [
+    {
+     "nodeId": "kitchen-01",
+     "position": {
+      "yaw": "205.4deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.266
+     },
+     "gps": [
+      8.6339995,
+      50.1018016,
+      58.32
+     ],
+     "data": {
+      "distance": 3.6,
+      "room": "Kitchen"
+     }
+    }
+   ],
+   "description": "<h2>Kitchen 02</h2><p>The kitchen. A serving hatch with a window looks into the meeting room.</p>",
+   "gps": [
+    8.6340209,
+    50.1018305,
+    60.0
+   ],
+   "map": {
+    "x": 58.5,
+    "y": 1146.1
+   },
+   "data": {
+    "room": "Kitchen",
+    "xy": [
+     -3.098,
+     -12.363
+    ],
+    "tiles": {
+     "baseUrl": "tiles/kitchen-02/base.jpg",
+     "tileUrl": "tiles/kitchen-02/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": []
+  },
+  {
+   "id": "kitchen-03",
+   "name": "Kitchen 03",
+   "caption": "Kitchen 03",
+   "panorama": "panos/kitchen-03.jpg",
+   "thumbnail": "thumbs/kitchen-03.jpg",
+   "sphereCorrection": {
+    "pan": "-158.21deg"
+   },
+   "links": [
+    {
+     "nodeId": "kitchen-01",
+     "position": {
+      "yaw": "-95.66deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.246
+     },
+     "gps": [
+      8.6339995,
+      50.1018016,
+      58.32
+     ],
+     "data": {
+      "distance": 3.8,
+      "room": "Kitchen"
+     }
+    },
+    {
+     "nodeId": "kitchen-04",
+     "position": {
+      "yaw": "14.95deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.467
+     },
+     "gps": [
+      8.63406,
+      50.1018244,
+      58.32
+     ],
+     "data": {
+      "distance": 2.2,
+      "room": "Kitchen"
+     }
+    }
+   ],
+   "description": "<h2>Kitchen 03</h2><p>The kitchen. A serving hatch with a window looks into the meeting room.</p>",
+   "gps": [
+    8.6340518,
+    50.1018049,
+    60.0
+   ],
+   "map": {
+    "x": 246.8,
+    "y": 1046.9
+   },
+   "data": {
+    "room": "Kitchen",
+    "xy": [
+     0.09,
+     -10.683
+    ],
+    "tiles": {
+     "baseUrl": "tiles/kitchen-03/base.jpg",
+     "tileUrl": "tiles/kitchen-03/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": []
+  },
+  {
+   "id": "kitchen-04",
+   "name": "Kitchen 04",
+   "caption": "Kitchen 04",
+   "panorama": "panos/kitchen-04.jpg",
+   "thumbnail": "thumbs/kitchen-04.jpg",
+   "sphereCorrection": {
+    "pan": "-218.33deg"
+   },
+   "links": [
+    {
+     "nodeId": "kitchen-03",
+     "position": {
+      "yaw": "194.95deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.467
+     },
+     "gps": [
+      8.6340518,
+      50.1018049,
+      58.32
+     ],
+     "data": {
+      "distance": 2.2,
+      "room": "Kitchen"
+     }
+    }
+   ],
+   "description": "<h2>Kitchen 04</h2><p>The kitchen. A serving hatch with a window looks into the meeting room.</p>",
+   "gps": [
+    8.63406,
+    50.1018244,
+    60.0
+   ],
+   "map": {
+    "x": 126.5,
+    "y": 990.9
+   },
+   "data": {
+    "room": "Kitchen",
+    "xy": [
+     -1.948,
+     -9.735
+    ],
+    "tiles": {
+     "baseUrl": "tiles/kitchen-04/base.jpg",
+     "tileUrl": "tiles/kitchen-04/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": []
+  },
+  {
+   "id": "meeting-room-01",
+   "name": "Meeting Room 01",
+   "caption": "Meeting Room 01",
+   "panorama": "panos/meeting-room-01.jpg",
+   "thumbnail": "thumbs/meeting-room-01.jpg",
+   "sphereCorrection": {
+    "pan": "85.22deg"
+   },
+   "links": [
+    {
+     "nodeId": "meeting-room-02",
+     "position": {
+      "yaw": "-27.82deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.302
+     },
+     "gps": [
+      8.6338827,
+      50.1018132,
+      58.32
+     ],
+     "data": {
+      "distance": 3.3,
+      "room": "Meeting room"
+     }
+    },
+    {
+     "nodeId": "meeting-room-03",
+     "position": {
+      "yaw": "48.91deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.181
+     },
+     "gps": [
+      8.6339517,
+      50.1018141,
+      58.32
+     ],
+     "data": {
+      "distance": 4.5,
+      "room": "Meeting room"
+     }
+    },
+    {
+     "nodeId": "west-side-03",
+     "position": {
+      "yaw": "170.26deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.316
+     },
+     "gps": [
+      8.6339114,
+      50.1017595,
+      58.32
+     ],
+     "data": {
+      "distance": 3.1,
+      "room": "West side"
+     }
+    }
+   ],
+   "description": "<h2>Meeting Room 01</h2><p>The meeting room, closed off with glass walls.</p>",
+   "gps": [
+    8.633904,
+    50.1017874,
+    60.0
+   ],
+   "map": {
+    "x": 252.1,
+    "y": 1681.0
+   },
+   "data": {
+    "room": "Meeting room",
+    "xy": [
+     0.179,
+     -21.42
+    ],
+    "tiles": {
+     "baseUrl": "tiles/meeting-room-01/base.jpg",
+     "tileUrl": "tiles/meeting-room-01/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-west-side",
+     "html": "West side",
+     "className": "room-label",
+     "position": {
+      "yaw": "170.26deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "West side",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>West side</h2>"
+    },
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "170.26deg",
+       "-48.24deg"
+      ],
+      [
+       "170.26deg",
+       "-40.03deg"
+      ],
+      [
+       "170.26deg",
+       "-33.9deg"
+      ],
+      [
+       "170.26deg",
+       "-29.25deg"
+      ],
+      [
+       "170.26deg",
+       "-28.13deg"
+      ],
+      [
+       "161.43deg",
+       "-29.47deg"
+      ],
+      [
+       "151.8deg",
+       "-30.24deg"
+      ],
+      [
+       "141.83deg",
+       "-30.3deg"
+      ],
+      [
+       "134.93deg",
+       "-29.89deg"
+      ],
+      [
+       "127.97deg",
+       "-27.31deg"
+      ],
+      [
+       "122.36deg",
+       "-24.87deg"
+      ],
+      [
+       "117.82deg",
+       "-22.67deg"
+      ],
+      [
+       "114.12deg",
+       "-20.72deg"
+      ],
+      [
+       "111.06deg",
+       "-19.01deg"
+      ],
+      [
+       "108.52deg",
+       "-17.52deg"
+      ],
+      [
+       "107.79deg",
+       "-17.09deg"
+      ],
+      [
+       "105.31deg",
+       "-15.89deg"
+      ],
+      [
+       "103.17deg",
+       "-14.83deg"
+      ],
+      [
+       "101.31deg",
+       "-13.88deg"
+      ],
+      [
+       "99.69deg",
+       "-13.04deg"
+      ],
+      [
+       "98.26deg",
+       "-12.28deg"
+      ],
+      [
+       "96.99deg",
+       "-11.59deg"
+      ],
+      [
+       "96.21deg",
+       "-11.17deg"
+      ],
+      [
+       "93.51deg",
+       "-11.58deg"
+      ],
+      [
+       "90.6deg",
+       "-11.99deg"
+      ],
+      [
+       "87.49deg",
+       "-12.39deg"
+      ],
+      [
+       "84.16deg",
+       "-12.79deg"
+      ],
+      [
+       "80.61deg",
+       "-13.16deg"
+      ],
+      [
+       "76.95deg",
+       "-13.49deg"
+      ],
+      [
+       "77.44deg",
+       "-12.63deg"
+      ],
+      [
+       "77.87deg",
+       "-11.87deg"
+      ],
+      [
+       "78.25deg",
+       "-11.19deg"
+      ],
+      [
+       "78.59deg",
+       "-10.59deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "meeting-room-02",
+   "name": "Meeting Room 02",
+   "caption": "Meeting Room 02",
+   "panorama": "panos/meeting-room-02.jpg",
+   "thumbnail": "thumbs/meeting-room-02.jpg",
+   "sphereCorrection": {
+    "pan": "12.86deg"
+   },
+   "links": [
+    {
+     "nodeId": "meeting-room-01",
+     "position": {
+      "yaw": "152.18deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.302
+     },
+     "gps": [
+      8.633904,
+      50.1017874,
+      58.32
+     ],
+     "data": {
+      "distance": 3.3,
+      "room": "Meeting room"
+     }
+    },
+    {
+     "nodeId": "meeting-room-03",
+     "position": {
+      "yaw": "88.87deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.154
+     },
+     "gps": [
+      8.6339517,
+      50.1018141,
+      58.32
+     ],
+     "data": {
+      "distance": 4.9,
+      "room": "Meeting room"
+     }
+    }
+   ],
+   "description": "<h2>Meeting Room 02</h2><p>The meeting room, closed off with glass walls.</p>",
+   "gps": [
+    8.6338827,
+    50.1018132,
+    60.0
+   ],
+   "map": {
+    "x": 69.3,
+    "y": 1739.7
+   },
+   "data": {
+    "room": "Meeting room",
+    "xy": [
+     -2.916,
+     -22.415
+    ],
+    "tiles": {
+     "baseUrl": "tiles/meeting-room-02/base.jpg",
+     "tileUrl": "tiles/meeting-room-02/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "152.18deg",
+       "-48.24deg"
+      ],
+      [
+       "152.18deg",
+       "-40.03deg"
+      ],
+      [
+       "152.18deg",
+       "-33.9deg"
+      ],
+      [
+       "152.18deg",
+       "-29.25deg"
+      ],
+      [
+       "152.18deg",
+       "-27.33deg"
+      ],
+      [
+       "154.56deg",
+       "-24.25deg"
+      ],
+      [
+       "156.4deg",
+       "-21.74deg"
+      ],
+      [
+       "157.86deg",
+       "-19.67deg"
+      ],
+      [
+       "159.05deg",
+       "-17.94deg"
+      ],
+      [
+       "160.03deg",
+       "-16.47deg"
+      ],
+      [
+       "160.85deg",
+       "-15.22deg"
+      ],
+      [
+       "161.06deg",
+       "-14.9deg"
+      ],
+      [
+       "156.6deg",
+       "-15.15deg"
+      ],
+      [
+       "152.0deg",
+       "-15.32deg"
+      ],
+      [
+       "147.32deg",
+       "-15.39deg"
+      ],
+      [
+       "144.02deg",
+       "-15.39deg"
+      ],
+      [
+       "140.07deg",
+       "-14.8deg"
+      ],
+      [
+       "136.44deg",
+       "-14.19deg"
+      ],
+      [
+       "133.12deg",
+       "-13.59deg"
+      ],
+      [
+       "130.09deg",
+       "-12.99deg"
+      ],
+      [
+       "127.33deg",
+       "-12.42deg"
+      ],
+      [
+       "124.82deg",
+       "-11.87deg"
+      ],
+      [
+       "124.07deg",
+       "-11.7deg"
+      ],
+      [
+       "121.59deg",
+       "-11.23deg"
+      ],
+      [
+       "119.31deg",
+       "-10.78deg"
+      ],
+      [
+       "101.19deg",
+       "-10.84deg"
+      ],
+      [
+       "98.82deg",
+       "-11.26deg"
+      ],
+      [
+       "98.01deg",
+       "-10.66deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "meeting-room-03",
+   "name": "Meeting Room 03",
+   "caption": "Meeting Room 03",
+   "panorama": "panos/meeting-room-03.jpg",
+   "thumbnail": "thumbs/meeting-room-03.jpg",
+   "sphereCorrection": {
+    "pan": "-125.43deg"
+   },
+   "links": [
+    {
+     "nodeId": "meeting-room-01",
+     "position": {
+      "yaw": "228.91deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.181
+     },
+     "gps": [
+      8.633904,
+      50.1017874,
+      58.32
+     ],
+     "data": {
+      "distance": 4.5,
+      "room": "Meeting room"
+     }
+    },
+    {
+     "nodeId": "meeting-room-02",
+     "position": {
+      "yaw": "-91.13deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.154
+     },
+     "gps": [
+      8.6338827,
+      50.1018132,
+      58.32
+     ],
+     "data": {
+      "distance": 4.9,
+      "room": "Meeting room"
+     }
+    }
+   ],
+   "description": "<h2>Meeting Room 03</h2><p>The meeting room, closed off with glass walls.</p>",
+   "gps": [
+    8.6339517,
+    50.1018141,
+    60.0
+   ],
+   "map": {
+    "x": 114.2,
+    "y": 1452.2
+   },
+   "data": {
+    "room": "Meeting room",
+    "xy": [
+     -2.156,
+     -17.547
+    ],
+    "tiles": {
+     "baseUrl": "tiles/meeting-room-03/base.jpg",
+     "tileUrl": "tiles/meeting-room-03/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "228.91deg",
+       "-48.24deg"
+      ],
+      [
+       "228.91deg",
+       "-40.03deg"
+      ],
+      [
+       "228.91deg",
+       "-33.9deg"
+      ],
+      [
+       "228.91deg",
+       "-29.25deg"
+      ],
+      [
+       "228.91deg",
+       "-25.64deg"
+      ],
+      [
+       "228.91deg",
+       "-22.78deg"
+      ],
+      [
+       "228.91deg",
+       "-20.47deg"
+      ],
+      [
+       "228.91deg",
+       "-20.38deg"
+      ],
+      [
+       "223.81deg",
+       "-19.28deg"
+      ],
+      [
+       "219.3deg",
+       "-18.18deg"
+      ],
+      [
+       "215.33deg",
+       "-17.12deg"
+      ],
+      [
+       "211.84deg",
+       "-16.1deg"
+      ],
+      [
+       "208.78deg",
+       "-15.16deg"
+      ],
+      [
+       "206.07deg",
+       "-14.28deg"
+      ],
+      [
+       "205.36deg",
+       "-14.04deg"
+      ],
+      [
+       "203.03deg",
+       "-14.95deg"
+      ],
+      [
+       "200.37deg",
+       "-15.95deg"
+      ],
+      [
+       "197.32deg",
+       "-17.04deg"
+      ],
+      [
+       "194.9deg",
+       "-17.87deg"
+      ],
+      [
+       "189.63deg",
+       "-18.42deg"
+      ],
+      [
+       "184.05deg",
+       "-18.84deg"
+      ],
+      [
+       "178.25deg",
+       "-19.1deg"
+      ],
+      [
+       "172.33deg",
+       "-19.18deg"
+      ],
+      [
+       "166.43deg",
+       "-19.07deg"
+      ],
+      [
+       "160.65deg",
+       "-18.78deg"
+      ],
+      [
+       "158.85deg",
+       "-18.65deg"
+      ],
+      [
+       "153.26deg",
+       "-18.33deg"
+      ],
+      [
+       "147.91deg",
+       "-17.86deg"
+      ],
+      [
+       "142.89deg",
+       "-17.29deg"
+      ],
+      [
+       "138.23deg",
+       "-16.64deg"
+      ],
+      [
+       "133.96deg",
+       "-15.95deg"
+      ],
+      [
+       "130.06deg",
+       "-15.24deg"
+      ],
+      [
+       "127.63deg",
+       "-14.76deg"
+      ],
+      [
+       "126.03deg",
+       "-15.88deg"
+      ],
+      [
+       "124.16deg",
+       "-17.16deg"
+      ],
+      [
+       "121.95deg",
+       "-18.63deg"
+      ],
+      [
+       "119.29deg",
+       "-20.33deg"
+      ],
+      [
+       "116.06deg",
+       "-22.29deg"
+      ],
+      [
+       "112.16deg",
+       "-24.5deg"
+      ],
+      [
+       "108.93deg",
+       "-22.11deg"
+      ],
+      [
+       "106.33deg",
+       "-20.09deg"
+      ],
+      [
+       "104.21deg",
+       "-18.36deg"
+      ],
+      [
+       "102.45deg",
+       "-16.89deg"
+      ],
+      [
+       "100.97deg",
+       "-15.62deg"
+      ],
+      [
+       "99.71deg",
+       "-14.51deg"
+      ],
+      [
+       "98.62deg",
+       "-13.54deg"
+      ],
+      [
+       "98.12deg",
+       "-13.1deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    },
+    {
+     "id": "kitchen-window",
+     "polygon": [
+      [
+       "62.43deg",
+       "10.3deg"
+      ],
+      [
+       "134.13deg",
+       "6.1deg"
+      ],
+      [
+       "134.23deg",
+       "-24.8deg"
+      ],
+      [
+       "62.73deg",
+       "-34.1deg"
+      ]
+     ],
+     "svgStyle": {
+      "fill": "rgba(240,179,90,0.14)",
+      "stroke": "#f0b35a",
+      "strokeWidth": "2px"
+     },
+     "tooltip": "Window to the kitchen",
+     "content": "<h2>Window to the kitchen</h2><p>The meeting room looks into the kitchen: the serving hatch (Durchreiche) that the October 2021 plan keeps and fits with a new window.</p><img src='assets/plan-2021.jpg' alt=''>",
+     "listContent": "Window to the kitchen",
+     "data": {
+      "group": "info",
+      "map": {
+       "distance": 106,
+       "color": "#f0b35a"
+      },
+      "compass": "#f0b35a"
+     }
+    }
+   ]
+  },
+  {
+   "id": "sr-16",
+   "name": "SR 16",
+   "caption": "SR 16",
+   "panorama": "panos/sr-16.jpg",
+   "thumbnail": "thumbs/sr-16.jpg",
+   "sphereCorrection": {
+    "pan": "-200.76deg"
+   },
+   "links": [
+    {
+     "nodeId": "sr-17",
+     "position": {
+      "yaw": "-61.79deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.267
+     },
+     "gps": [
+      8.6338262,
+      50.1017238,
+      58.32
+     ],
+     "data": {
+      "distance": 3.6,
+      "room": "SR"
+     }
+    },
+    {
+     "nodeId": "west-side-05",
+     "position": {
+      "yaw": "-8.48deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.101
+     },
+     "gps": [
+      8.6338578,
+      50.1017615,
+      58.32
+     ],
+     "data": {
+      "distance": 5.9,
+      "room": "West side"
+     }
+    },
+    {
+     "nodeId": "west-side-08",
+     "position": {
+      "yaw": "-98.64deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.096
+     },
+     "gps": [
+      8.6337861,
+      50.1017005,
+      58.32
+     ],
+     "data": {
+      "distance": 6.1,
+      "room": "West side"
+     }
+    }
+   ],
+   "description": "<h2>SR 16</h2><p>Part of the west side, the scans named \"SR\".</p>",
+   "gps": [
+    8.6338701,
+    50.1017087,
+    60.0
+   ],
+   "map": {
+    "x": 736.6,
+    "y": 1911.4
+   },
+   "data": {
+    "room": "SR",
+    "xy": [
+     8.384,
+     -25.322
+    ],
+    "tiles": {
+     "baseUrl": "tiles/sr-16/base.jpg",
+     "tileUrl": "tiles/sr-16/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-west-side",
+     "html": "West side",
+     "className": "room-label",
+     "position": {
+      "yaw": "-8.48deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "West side",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>West side</h2>"
+    },
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "-8.48deg",
+       "-48.24deg"
+      ],
+      [
+       "-8.48deg",
+       "-40.03deg"
+      ],
+      [
+       "-8.48deg",
+       "-33.9deg"
+      ],
+      [
+       "-8.48deg",
+       "-29.25deg"
+      ],
+      [
+       "-8.48deg",
+       "-25.64deg"
+      ],
+      [
+       "-8.48deg",
+       "-22.78deg"
+      ],
+      [
+       "-8.48deg",
+       "-20.47deg"
+      ],
+      [
+       "-8.48deg",
+       "-18.57deg"
+      ],
+      [
+       "-8.48deg",
+       "-16.99deg"
+      ],
+      [
+       "-8.48deg",
+       "-15.77deg"
+      ],
+      [
+       "-3.69deg",
+       "-15.98deg"
+      ],
+      [
+       "1.2deg",
+       "-16.09deg"
+      ],
+      [
+       "6.11deg",
+       "-16.08deg"
+      ],
+      [
+       "10.99deg",
+       "-15.96deg"
+      ],
+      [
+       "15.76deg",
+       "-15.74deg"
+      ],
+      [
+       "20.36deg",
+       "-15.43deg"
+      ],
+      [
+       "24.74deg",
+       "-15.04deg"
+      ],
+      [
+       "27.53deg",
+       "-14.75deg"
+      ],
+      [
+       "29.53deg",
+       "-13.83deg"
+      ],
+      [
+       "31.29deg",
+       "-13.0deg"
+      ],
+      [
+       "32.85deg",
+       "-12.26deg"
+      ],
+      [
+       "33.83deg",
+       "-11.78deg"
+      ],
+      [
+       "36.41deg",
+       "-11.32deg"
+      ],
+      [
+       "38.78deg",
+       "-10.87deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "sr-17",
+   "name": "SR 17",
+   "caption": "SR 17",
+   "panorama": "panos/sr-17.jpg",
+   "thumbnail": "thumbs/sr-17.jpg",
+   "sphereCorrection": {
+    "pan": "-166.23deg"
+   },
+   "links": [
+    {
+     "nodeId": "sr-16",
+     "position": {
+      "yaw": "118.21deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.267
+     },
+     "gps": [
+      8.6338701,
+      50.1017087,
+      58.32
+     ],
+     "data": {
+      "distance": 3.6,
+      "room": "SR"
+     }
+    },
+    {
+     "nodeId": "sr-18",
+     "position": {
+      "yaw": "-10.98deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.082
+     },
+     "gps": [
+      8.6338091,
+      50.1017803,
+      58.32
+     ],
+     "data": {
+      "distance": 6.4,
+      "room": "SR"
+     }
+    },
+    {
+     "nodeId": "west-side-05",
+     "position": {
+      "yaw": "28.23deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.164
+     },
+     "gps": [
+      8.6338578,
+      50.1017615,
+      58.32
+     ],
+     "data": {
+      "distance": 4.8,
+      "room": "West side"
+     }
+    },
+    {
+     "nodeId": "west-side-06",
+     "position": {
+      "yaw": "-51.71deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.168
+     },
+     "gps": [
+      8.6337744,
+      50.10175,
+      58.32
+     ],
+     "data": {
+      "distance": 4.7,
+      "room": "West side"
+     }
+    },
+    {
+     "nodeId": "west-side-08",
+     "position": {
+      "yaw": "227.85deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.236
+     },
+     "gps": [
+      8.6337861,
+      50.1017005,
+      58.32
+     ],
+     "data": {
+      "distance": 3.9,
+      "room": "West side"
+     }
+    }
+   ],
+   "description": "<h2>SR 17</h2><p>Part of the west side, the scans named \"SR\".</p>",
+   "gps": [
+    8.6338262,
+    50.1017238,
+    60.0
+   ],
+   "map": {
+    "x": 606.8,
+    "y": 2076.3
+   },
+   "data": {
+    "room": "SR",
+    "xy": [
+     6.185,
+     -28.115
+    ],
+    "tiles": {
+     "baseUrl": "tiles/sr-17/base.jpg",
+     "tileUrl": "tiles/sr-17/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-west-side",
+     "html": "West side",
+     "className": "room-label",
+     "position": {
+      "yaw": "227.85deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "West side",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>West side</h2>"
+    },
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "28.23deg",
+       "-48.24deg"
+      ],
+      [
+       "28.23deg",
+       "-40.03deg"
+      ],
+      [
+       "28.23deg",
+       "-33.9deg"
+      ],
+      [
+       "28.23deg",
+       "-29.25deg"
+      ],
+      [
+       "28.23deg",
+       "-25.64deg"
+      ],
+      [
+       "28.23deg",
+       "-22.78deg"
+      ],
+      [
+       "28.23deg",
+       "-20.47deg"
+      ],
+      [
+       "28.23deg",
+       "-19.41deg"
+      ],
+      [
+       "33.43deg",
+       "-18.57deg"
+      ],
+      [
+       "38.14deg",
+       "-17.69deg"
+      ],
+      [
+       "42.37deg",
+       "-16.79deg"
+      ],
+      [
+       "46.14deg",
+       "-15.9deg"
+      ],
+      [
+       "49.51deg",
+       "-15.05deg"
+      ],
+      [
+       "52.51deg",
+       "-14.24deg"
+      ],
+      [
+       "55.18deg",
+       "-13.49deg"
+      ],
+      [
+       "56.8deg",
+       "-13.01deg"
+      ],
+      [
+       "56.76deg",
+       "-12.2deg"
+      ],
+      [
+       "56.72deg",
+       "-11.49deg"
+      ],
+      [
+       "56.68deg",
+       "-10.85deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "sr-18",
+   "name": "SR 18",
+   "caption": "SR 18",
+   "panorama": "panos/sr-18.jpg",
+   "thumbnail": "thumbs/sr-18.jpg",
+   "sphereCorrection": {
+    "pan": "87.99deg"
+   },
+   "links": [
+    {
+     "nodeId": "sr-17",
+     "position": {
+      "yaw": "169.02deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.082
+     },
+     "gps": [
+      8.6338262,
+      50.1017238,
+      58.32
+     ],
+     "data": {
+      "distance": 6.4,
+      "room": "SR"
+     }
+    },
+    {
+     "nodeId": "sr-19",
+     "position": {
+      "yaw": "23.57deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.238
+     },
+     "gps": [
+      8.6338306,
+      50.1018119,
+      58.32
+     ],
+     "data": {
+      "distance": 3.8,
+      "room": "SR"
+     }
+    },
+    {
+     "nodeId": "west-side-05",
+     "position": {
+      "yaw": "120.98deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.218
+     },
+     "gps": [
+      8.6338578,
+      50.1017615,
+      58.32
+     ],
+     "data": {
+      "distance": 4.1,
+      "room": "West side"
+     }
+    },
+    {
+     "nodeId": "west-side-06",
+     "position": {
+      "yaw": "216.34deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.207
+     },
+     "gps": [
+      8.6337744,
+      50.10175,
+      58.32
+     ],
+     "data": {
+      "distance": 4.2,
+      "room": "West side"
+     }
+    },
+    {
+     "nodeId": "west-side-07",
+     "position": {
+      "yaw": "36.11deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.281
+     },
+     "gps": [
+      8.6338374,
+      50.1018052,
+      58.32
+     ],
+     "data": {
+      "distance": 3.4,
+      "room": "West side"
+     }
+    }
+   ],
+   "description": "<h2>SR 18</h2><p>Part of the west side, the scans named \"SR\".</p>",
+   "gps": [
+    8.6338091,
+    50.1017803,
+    60.0
+   ],
+   "map": {
+    "x": 228.5,
+    "y": 2082.8
+   },
+   "data": {
+    "room": "SR",
+    "xy": [
+     -0.22,
+     -28.225
+    ],
+    "tiles": {
+     "baseUrl": "tiles/sr-18/base.jpg",
+     "tileUrl": "tiles/sr-18/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-west-side",
+     "html": "West side",
+     "className": "room-label",
+     "position": {
+      "yaw": "36.11deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "West side",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>West side</h2>"
+    },
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "120.98deg",
+       "-48.24deg"
+      ],
+      [
+       "120.98deg",
+       "-40.03deg"
+      ],
+      [
+       "120.98deg",
+       "-33.9deg"
+      ],
+      [
+       "120.98deg",
+       "-29.25deg"
+      ],
+      [
+       "120.98deg",
+       "-25.64deg"
+      ],
+      [
+       "120.98deg",
+       "-22.78deg"
+      ],
+      [
+       "120.98deg",
+       "-22.51deg"
+      ],
+      [
+       "118.03deg",
+       "-20.46deg"
+      ],
+      [
+       "115.61deg",
+       "-18.7deg"
+      ],
+      [
+       "113.61deg",
+       "-17.2deg"
+      ],
+      [
+       "111.92deg",
+       "-15.9deg"
+      ],
+      [
+       "110.49deg",
+       "-14.76deg"
+      ],
+      [
+       "109.26deg",
+       "-13.77deg"
+      ],
+      [
+       "108.18deg",
+       "-12.9deg"
+      ],
+      [
+       "107.55deg",
+       "-12.37deg"
+      ],
+      [
+       "104.74deg",
+       "-11.89deg"
+      ],
+      [
+       "102.15deg",
+       "-11.42deg"
+      ],
+      [
+       "99.77deg",
+       "-10.96deg"
+      ],
+      [
+       "98.21deg",
+       "-10.65deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "sr-19",
+   "name": "SR 19",
+   "caption": "SR 19",
+   "panorama": "panos/sr-19.jpg",
+   "thumbnail": "thumbs/sr-19.jpg",
+   "sphereCorrection": {
+    "pan": "-31.21deg"
+   },
+   "links": [
+    {
+     "nodeId": "sr-18",
+     "position": {
+      "yaw": "203.57deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.238
+     },
+     "gps": [
+      8.6338091,
+      50.1017803,
+      58.32
+     ],
+     "data": {
+      "distance": 3.8,
+      "room": "SR"
+     }
+    },
+    {
+     "nodeId": "west-side-05",
+     "position": {
+      "yaw": "160.87deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.102
+     },
+     "gps": [
+      8.6338578,
+      50.1017615,
+      58.32
+     ],
+     "data": {
+      "distance": 5.9,
+      "room": "West side"
+     }
+    }
+   ],
+   "description": "<h2>SR 19</h2><p>Part of the west side, the scans named \"SR\".</p>",
+   "gps": [
+    8.6338306,
+    50.1018119,
+    60.0
+   ],
+   "map": {
+    "x": 39.8,
+    "y": 1957.6
+   },
+   "data": {
+    "room": "SR",
+    "xy": [
+     -3.415,
+     -26.105
+    ],
+    "tiles": {
+     "baseUrl": "tiles/sr-19/base.jpg",
+     "tileUrl": "tiles/sr-19/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-west-side",
+     "html": "West side",
+     "className": "room-label",
+     "position": {
+      "yaw": "160.87deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "West side",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>West side</h2>"
+    },
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "160.87deg",
+       "-48.24deg"
+      ],
+      [
+       "160.87deg",
+       "-40.03deg"
+      ],
+      [
+       "160.87deg",
+       "-33.9deg"
+      ],
+      [
+       "160.87deg",
+       "-29.25deg"
+      ],
+      [
+       "160.87deg",
+       "-25.64deg"
+      ],
+      [
+       "160.87deg",
+       "-22.78deg"
+      ],
+      [
+       "160.87deg",
+       "-20.47deg"
+      ],
+      [
+       "160.87deg",
+       "-18.57deg"
+      ],
+      [
+       "160.87deg",
+       "-16.99deg"
+      ],
+      [
+       "160.87deg",
+       "-15.82deg"
+      ],
+      [
+       "156.55deg",
+       "-15.31deg"
+      ],
+      [
+       "152.54deg",
+       "-14.76deg"
+      ],
+      [
+       "148.83deg",
+       "-14.18deg"
+      ],
+      [
+       "145.43deg",
+       "-13.6deg"
+      ],
+      [
+       "142.31deg",
+       "-13.03deg"
+      ],
+      [
+       "139.47deg",
+       "-12.47deg"
+      ],
+      [
+       "136.87deg",
+       "-11.93deg"
+      ],
+      [
+       "135.27deg",
+       "-11.58deg"
+      ],
+      [
+       "131.88deg",
+       "-11.43deg"
+      ],
+      [
+       "128.58deg",
+       "-11.25deg"
+      ],
+      [
+       "125.41deg",
+       "-11.05deg"
+      ],
+      [
+       "123.25deg",
+       "-10.88deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "storage-01",
+   "name": "Storage 01",
+   "caption": "Storage 01",
+   "panorama": "panos/storage-01.jpg",
+   "thumbnail": "thumbs/storage-01.jpg",
+   "sphereCorrection": {
+    "pan": "-213.02deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-09",
+     "position": {
+      "yaw": "-13.05deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.211
+     },
+     "gps": [
+      8.6341605,
+      50.1017961,
+      58.32
+     ],
+     "data": {
+      "distance": 4.1,
+      "room": "East side"
+     }
+    },
+    {
+     "nodeId": "storage-02",
+     "position": {
+      "yaw": "203.29deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.62
+     },
+     "gps": [
+      8.6341645,
+      50.1017463,
+      58.32
+     ],
+     "data": {
+      "distance": 1.6,
+      "room": "Storage"
+     }
+    }
+   ],
+   "description": "<h2>Storage 01</h2><p>Storage room off the east side.</p>",
+   "gps": [
+    8.6341736,
+    50.1017599,
+    60.0
+   ],
+   "map": {
+    "x": 627.4,
+    "y": 592.6
+   },
+   "data": {
+    "room": "Storage",
+    "xy": [
+     6.534,
+     -2.991
+    ],
+    "tiles": {
+     "baseUrl": "tiles/storage-01/base.jpg",
+     "tileUrl": "tiles/storage-01/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-east-side",
+     "html": "East side",
+     "className": "room-label",
+     "position": {
+      "yaw": "-13.05deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "East side",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>East side</h2>"
+    },
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "-13.05deg",
+       "-48.24deg"
+      ],
+      [
+       "-13.05deg",
+       "-40.03deg"
+      ],
+      [
+       "-13.05deg",
+       "-33.9deg"
+      ],
+      [
+       "-13.05deg",
+       "-29.25deg"
+      ],
+      [
+       "-13.05deg",
+       "-25.64deg"
+      ],
+      [
+       "-13.05deg",
+       "-22.78deg"
+      ],
+      [
+       "-13.05deg",
+       "-22.1deg"
+      ],
+      [
+       "-19.92deg",
+       "-21.9deg"
+      ],
+      [
+       "-26.55deg",
+       "-21.43deg"
+      ],
+      [
+       "-32.81deg",
+       "-20.75deg"
+      ],
+      [
+       "-38.58deg",
+       "-19.91deg"
+      ],
+      [
+       "-43.81deg",
+       "-18.98deg"
+      ],
+      [
+       "-44.9deg",
+       "-18.76deg"
+      ],
+      [
+       "-49.2deg",
+       "-17.69deg"
+      ],
+      [
+       "-52.99deg",
+       "-16.66deg"
+      ],
+      [
+       "-56.33deg",
+       "-15.69deg"
+      ],
+      [
+       "-59.27deg",
+       "-14.78deg"
+      ],
+      [
+       "-61.87deg",
+       "-13.94deg"
+      ],
+      [
+       "-64.18deg",
+       "-13.16deg"
+      ],
+      [
+       "-66.23deg",
+       "-12.45deg"
+      ],
+      [
+       "-67.0deg",
+       "-12.18deg"
+      ],
+      [
+       "-69.11deg",
+       "-11.59deg"
+      ],
+      [
+       "-71.01deg",
+       "-11.05deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "storage-02",
+   "name": "Storage 02",
+   "caption": "Storage 02",
+   "panorama": "panos/storage-02.jpg",
+   "thumbnail": "thumbs/storage-02.jpg",
+   "sphereCorrection": {
+    "pan": "-180.76deg"
+   },
+   "links": [
+    {
+     "nodeId": "storage-01",
+     "position": {
+      "yaw": "23.29deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.62
+     },
+     "gps": [
+      8.6341736,
+      50.1017599,
+      58.32
+     ],
+     "data": {
+      "distance": 1.6,
+      "room": "Storage"
+     }
+    }
+   ],
+   "description": "<h2>Storage 02</h2><p>Storage room off the east side.</p>",
+   "gps": [
+    8.6341645,
+    50.1017463,
+    60.0
+   ],
+   "map": {
+    "x": 708.7,
+    "y": 646.1
+   },
+   "data": {
+    "room": "Storage",
+    "xy": [
+     7.912,
+     -3.896
+    ],
+    "tiles": {
+     "baseUrl": "tiles/storage-02/base.jpg",
+     "tileUrl": "tiles/storage-02/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "23.29deg",
+       "-48.24deg"
+      ],
+      [
+       "23.29deg",
+       "-45.54deg"
+      ],
+      [
+       "15.08deg",
+       "-39.03deg"
+      ],
+      [
+       "9.72deg",
+       "-33.64deg"
+      ],
+      [
+       "6.01deg",
+       "-29.31deg"
+      ],
+      [
+       "3.31deg",
+       "-25.84deg"
+      ],
+      [
+       "1.27deg",
+       "-23.04deg"
+      ],
+      [
+       "-0.33deg",
+       "-20.74deg"
+      ],
+      [
+       "-1.61deg",
+       "-18.83deg"
+      ],
+      [
+       "-2.66deg",
+       "-17.23deg"
+      ],
+      [
+       "-2.91deg",
+       "-16.83deg"
+      ],
+      [
+       "-8.07deg",
+       "-16.99deg"
+      ],
+      [
+       "-13.28deg",
+       "-17.01deg"
+      ],
+      [
+       "-18.47deg",
+       "-16.91deg"
+      ],
+      [
+       "-23.55deg",
+       "-16.68deg"
+      ],
+      [
+       "-28.45deg",
+       "-16.34deg"
+      ],
+      [
+       "-29.5deg",
+       "-16.25deg"
+      ],
+      [
+       "-33.94deg",
+       "-15.71deg"
+      ],
+      [
+       "-38.06deg",
+       "-15.13deg"
+      ],
+      [
+       "-41.85deg",
+       "-14.52deg"
+      ],
+      [
+       "-45.33deg",
+       "-13.91deg"
+      ],
+      [
+       "-48.5deg",
+       "-13.31deg"
+      ],
+      [
+       "-51.39deg",
+       "-12.72deg"
+      ],
+      [
+       "-54.02deg",
+       "-12.16deg"
+      ],
+      [
+       "-55.04deg",
+       "-11.93deg"
+      ],
+      [
+       "-57.64deg",
+       "-11.46deg"
+      ],
+      [
+       "-60.04deg",
+       "-11.0deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "west-side-01",
+   "name": "West Side 01",
+   "caption": "West Side 01",
+   "panorama": "panos/west-side-01.jpg",
+   "thumbnail": "thumbs/west-side-01.jpg",
+   "sphereCorrection": {
+    "pan": "-192.62deg"
+   },
+   "links": [
+    {
+     "nodeId": "hallway-03",
+     "position": {
+      "yaw": "82.83deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.314
+     },
+     "gps": [
+      8.6339768,
+      50.1017724,
+      58.32
+     ],
+     "data": {
+      "distance": 3.2,
+      "room": "Hallway"
+     }
+    },
+    {
+     "nodeId": "west-side-02",
+     "position": {
+      "yaw": "167.61deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.373
+     },
+     "gps": [
+      8.6339412,
+      50.1017446,
+      58.32
+     ],
+     "data": {
+      "distance": 2.8,
+      "room": "West side"
+     }
+    },
+    {
+     "nodeId": "west-side-03",
+     "position": {
+      "yaw": "236.08deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.562
+     },
+     "gps": [
+      8.6339114,
+      50.1017595,
+      58.32
+     ],
+     "data": {
+      "distance": 1.9,
+      "room": "West side"
+     }
+    }
+   ],
+   "description": "<h2>West Side 01</h2><p>The open area on the west side of the floor.</p>",
+   "gps": [
+    8.6339329,
+    50.1017688,
+    60.0
+   ],
+   "map": {
+    "x": 393.3,
+    "y": 1581.8
+   },
+   "data": {
+    "room": "West side",
+    "xy": [
+     2.571,
+     -19.741
+    ],
+    "tiles": {
+     "baseUrl": "tiles/west-side-01/base.jpg",
+     "tileUrl": "tiles/west-side-01/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-hallway",
+     "html": "Hallway",
+     "className": "room-label",
+     "position": {
+      "yaw": "82.83deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "Hallway",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>Hallway</h2>"
+    },
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "82.83deg",
+       "-48.24deg"
+      ],
+      [
+       "82.83deg",
+       "-40.03deg"
+      ],
+      [
+       "82.83deg",
+       "-33.9deg"
+      ],
+      [
+       "82.83deg",
+       "-29.25deg"
+      ],
+      [
+       "82.83deg",
+       "-28.0deg"
+      ],
+      [
+       "82.04deg",
+       "-24.67deg"
+      ],
+      [
+       "81.44deg",
+       "-22.01deg"
+      ],
+      [
+       "80.96deg",
+       "-19.85deg"
+      ],
+      [
+       "80.58deg",
+       "-18.06deg"
+      ],
+      [
+       "80.27deg",
+       "-16.55deg"
+      ],
+      [
+       "80.01deg",
+       "-15.27deg"
+      ],
+      [
+       "79.85deg",
+       "-14.51deg"
+      ],
+      [
+       "75.67deg",
+       "-14.9deg"
+      ],
+      [
+       "71.27deg",
+       "-15.23deg"
+      ],
+      [
+       "66.69deg",
+       "-15.49deg"
+      ],
+      [
+       "61.98deg",
+       "-15.65deg"
+      ],
+      [
+       "57.2deg",
+       "-15.71deg"
+      ],
+      [
+       "52.51deg",
+       "-15.67deg"
+      ],
+      [
+       "54.86deg",
+       "-14.66deg"
+      ],
+      [
+       "56.92deg",
+       "-13.76deg"
+      ],
+      [
+       "58.73deg",
+       "-12.95deg"
+      ],
+      [
+       "60.32deg",
+       "-12.21deg"
+      ],
+      [
+       "61.74deg",
+       "-11.55deg"
+      ],
+      [
+       "63.01deg",
+       "-10.95deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "west-side-02",
+   "name": "West Side 02",
+   "caption": "West Side 02",
+   "panorama": "panos/west-side-02.jpg",
+   "thumbnail": "thumbs/west-side-02.jpg",
+   "sphereCorrection": {
+    "pan": "-252.45deg"
+   },
+   "links": [
+    {
+     "nodeId": "west-side-01",
+     "position": {
+      "yaw": "-12.39deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.373
+     },
+     "gps": [
+      8.6339329,
+      50.1017688,
+      58.32
+     ],
+     "data": {
+      "distance": 2.8,
+      "room": "West side"
+     }
+    }
+   ],
+   "description": "<h2>West Side 02</h2><p>The open area on the west side of the floor.</p>",
+   "gps": [
+    8.6339412,
+    50.1017446,
+    60.0
+   ],
+   "map": {
+    "x": 556.1,
+    "y": 1575.0
+   },
+   "data": {
+    "room": "West side",
+    "xy": [
+     5.327,
+     -19.626
+    ],
+    "tiles": {
+     "baseUrl": "tiles/west-side-02/base.jpg",
+     "tileUrl": "tiles/west-side-02/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "-12.39deg",
+       "-48.24deg"
+      ],
+      [
+       "-12.39deg",
+       "-40.03deg"
+      ],
+      [
+       "-12.39deg",
+       "-33.9deg"
+      ],
+      [
+       "-12.39deg",
+       "-31.34deg"
+      ],
+      [
+       "-1.99deg",
+       "-31.35deg"
+      ],
+      [
+       "8.08deg",
+       "-30.54deg"
+      ],
+      [
+       "17.28deg",
+       "-29.11deg"
+      ],
+      [
+       "25.32deg",
+       "-27.29deg"
+      ],
+      [
+       "32.14deg",
+       "-25.32deg"
+      ],
+      [
+       "37.85deg",
+       "-23.38deg"
+      ],
+      [
+       "39.47deg",
+       "-22.78deg"
+      ],
+      [
+       "43.44deg",
+       "-20.86deg"
+      ],
+      [
+       "46.72deg",
+       "-19.17deg"
+      ],
+      [
+       "49.46deg",
+       "-17.68deg"
+      ],
+      [
+       "51.78deg",
+       "-16.37deg"
+      ],
+      [
+       "53.76deg",
+       "-15.22deg"
+      ],
+      [
+       "55.47deg",
+       "-14.21deg"
+      ],
+      [
+       "56.5deg",
+       "-13.58deg"
+      ],
+      [
+       "52.38deg",
+       "-13.54deg"
+      ],
+      [
+       "48.32deg",
+       "-13.44deg"
+      ],
+      [
+       "44.34deg",
+       "-13.27deg"
+      ],
+      [
+       "40.47deg",
+       "-13.05deg"
+      ],
+      [
+       "36.76deg",
+       "-12.79deg"
+      ],
+      [
+       "33.28deg",
+       "-12.49deg"
+      ],
+      [
+       "36.1deg",
+       "-11.99deg"
+      ],
+      [
+       "38.69deg",
+       "-11.51deg"
+      ],
+      [
+       "41.07deg",
+       "-11.05deg"
+      ],
+      [
+       "43.26deg",
+       "-10.6deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "west-side-03",
+   "name": "West Side 03",
+   "caption": "West Side 03",
+   "panorama": "panos/west-side-03.jpg",
+   "thumbnail": "thumbs/west-side-03.jpg",
+   "sphereCorrection": {
+    "pan": "-183.65deg"
+   },
+   "links": [
+    {
+     "nodeId": "meeting-room-01",
+     "position": {
+      "yaw": "-9.74deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.316
+     },
+     "gps": [
+      8.633904,
+      50.1017874,
+      58.32
+     ],
+     "data": {
+      "distance": 3.1,
+      "room": "Meeting room"
+     }
+    },
+    {
+     "nodeId": "west-side-01",
+     "position": {
+      "yaw": "56.08deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.562
+     },
+     "gps": [
+      8.6339329,
+      50.1017688,
+      58.32
+     ],
+     "data": {
+      "distance": 1.9,
+      "room": "West side"
+     }
+    },
+    {
+     "nodeId": "west-side-04",
+     "position": {
+      "yaw": "185.84deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.206
+     },
+     "gps": [
+      8.6339054,
+      50.101722,
+      58.32
+     ],
+     "data": {
+      "distance": 4.2,
+      "room": "West side"
+     }
+    },
+    {
+     "nodeId": "west-side-05",
+     "position": {
+      "yaw": "-86.68deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.239
+     },
+     "gps": [
+      8.6338578,
+      50.1017615,
+      58.32
+     ],
+     "data": {
+      "distance": 3.8,
+      "room": "West side"
+     }
+    }
+   ],
+   "description": "<h2>West Side 03</h2><p>The open area on the west side of the floor.</p>",
+   "gps": [
+    8.6339114,
+    50.1017595,
+    60.0
+   ],
+   "map": {
+    "x": 437.7,
+    "y": 1681.8
+   },
+   "data": {
+    "room": "West side",
+    "xy": [
+     3.322,
+     -21.434
+    ],
+    "tiles": {
+     "baseUrl": "tiles/west-side-03/base.jpg",
+     "tileUrl": "tiles/west-side-03/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-meeting-room",
+     "html": "Meeting room",
+     "className": "room-label",
+     "position": {
+      "yaw": "-9.74deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "Meeting room",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>Meeting room</h2>"
+    },
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "56.08deg",
+       "-48.24deg"
+      ],
+      [
+       "56.08deg",
+       "-42.21deg"
+      ],
+      [
+       "61.67deg",
+       "-36.03deg"
+      ],
+      [
+       "65.39deg",
+       "-31.13deg"
+      ],
+      [
+       "68.02deg",
+       "-27.25deg"
+      ],
+      [
+       "69.98deg",
+       "-24.15deg"
+      ],
+      [
+       "71.48deg",
+       "-21.63deg"
+      ],
+      [
+       "72.67deg",
+       "-19.56deg"
+      ],
+      [
+       "73.0deg",
+       "-18.98deg"
+      ],
+      [
+       "73.38deg",
+       "-17.33deg"
+      ],
+      [
+       "73.69deg",
+       "-15.94deg"
+      ],
+      [
+       "73.95deg",
+       "-14.75deg"
+      ],
+      [
+       "74.17deg",
+       "-13.72deg"
+      ],
+      [
+       "74.37deg",
+       "-12.82deg"
+      ],
+      [
+       "74.54deg",
+       "-12.03deg"
+      ],
+      [
+       "74.64deg",
+       "-11.55deg"
+      ],
+      [
+       "71.26deg",
+       "-11.74deg"
+      ],
+      [
+       "67.78deg",
+       "-11.9deg"
+      ],
+      [
+       "64.21deg",
+       "-12.02deg"
+      ],
+      [
+       "60.59deg",
+       "-12.09deg"
+      ],
+      [
+       "56.93deg",
+       "-12.12deg"
+      ],
+      [
+       "53.35deg",
+       "-12.1deg"
+      ],
+      [
+       "55.14deg",
+       "-11.48deg"
+      ],
+      [
+       "56.74deg",
+       "-10.91deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    },
+    {
+     "id": "glass-wall",
+     "polygon": [
+      [
+       "288.55deg",
+       "16.9deg"
+      ],
+      [
+       "333.55deg",
+       "21.1deg"
+      ],
+      [
+       "333.55deg",
+       "-44.6deg"
+      ],
+      [
+       "288.55deg",
+       "-26.0deg"
+      ]
+     ],
+     "svgStyle": {
+      "fill": "rgba(240,179,90,0.14)",
+      "stroke": "#f0b35a",
+      "strokeWidth": "2px"
+     },
+     "tooltip": "Glass wall",
+     "content": "<h2>Glass wall</h2><p>The meeting room is closed off with glass walls, marked \"Glaswand\" on the plan for the 17th floor from October 2021.</p><img src='assets/plan-2021.jpg' alt=''>",
+     "listContent": "Glass wall",
+     "data": {
+      "group": "info",
+      "map": {
+       "distance": 89,
+       "color": "#f0b35a"
+      },
+      "compass": "#f0b35a"
+     }
+    }
+   ]
+  },
+  {
+   "id": "west-side-04",
+   "name": "West Side 04",
+   "caption": "West Side 04",
+   "panorama": "panos/west-side-04.jpg",
+   "thumbnail": "thumbs/west-side-04.jpg",
+   "sphereCorrection": {
+    "pan": "-184.47deg"
+   },
+   "links": [
+    {
+     "nodeId": "west-side-03",
+     "position": {
+      "yaw": "5.84deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.206
+     },
+     "gps": [
+      8.6339114,
+      50.1017595,
+      58.32
+     ],
+     "data": {
+      "distance": 4.2,
+      "room": "West side"
+     }
+    }
+   ],
+   "description": "<h2>West Side 04</h2><p>The open area on the west side of the floor.</p>",
+   "gps": [
+    8.6339054,
+    50.101722,
+    60.0
+   ],
+   "map": {
+    "x": 676.2,
+    "y": 1749.5
+   },
+   "data": {
+    "room": "West side",
+    "xy": [
+     7.361,
+     -22.58
+    ],
+    "tiles": {
+     "baseUrl": "tiles/west-side-04/base.jpg",
+     "tileUrl": "tiles/west-side-04/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "5.84deg",
+       "-48.24deg"
+      ],
+      [
+       "5.84deg",
+       "-40.03deg"
+      ],
+      [
+       "5.84deg",
+       "-33.9deg"
+      ],
+      [
+       "5.84deg",
+       "-29.25deg"
+      ],
+      [
+       "5.84deg",
+       "-25.64deg"
+      ],
+      [
+       "5.84deg",
+       "-22.78deg"
+      ],
+      [
+       "5.84deg",
+       "-21.81deg"
+      ],
+      [
+       "10.7deg",
+       "-20.33deg"
+      ],
+      [
+       "14.87deg",
+       "-18.93deg"
+      ],
+      [
+       "18.44deg",
+       "-17.63deg"
+      ],
+      [
+       "20.65deg",
+       "-16.79deg"
+      ],
+      [
+       "25.01deg",
+       "-16.11deg"
+      ],
+      [
+       "28.99deg",
+       "-15.4deg"
+      ],
+      [
+       "32.6deg",
+       "-14.69deg"
+      ],
+      [
+       "35.87deg",
+       "-14.0deg"
+      ],
+      [
+       "38.83deg",
+       "-13.33deg"
+      ],
+      [
+       "41.5deg",
+       "-12.7deg"
+      ],
+      [
+       "42.3deg",
+       "-12.5deg"
+      ],
+      [
+       "44.34deg",
+       "-11.87deg"
+      ],
+      [
+       "46.18deg",
+       "-11.29deg"
+      ],
+      [
+       "47.84deg",
+       "-10.75deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "west-side-05",
+   "name": "West Side 05",
+   "caption": "West Side 05",
+   "panorama": "panos/west-side-05.jpg",
+   "thumbnail": "thumbs/west-side-05.jpg",
+   "sphereCorrection": {
+    "pan": "-212.57deg"
+   },
+   "links": [
+    {
+     "nodeId": "sr-16",
+     "position": {
+      "yaw": "171.52deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.101
+     },
+     "gps": [
+      8.6338701,
+      50.1017087,
+      58.32
+     ],
+     "data": {
+      "distance": 5.9,
+      "room": "SR"
+     }
+    },
+    {
+     "nodeId": "sr-17",
+     "position": {
+      "yaw": "208.23deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.164
+     },
+     "gps": [
+      8.6338262,
+      50.1017238,
+      58.32
+     ],
+     "data": {
+      "distance": 4.8,
+      "room": "SR"
+     }
+    },
+    {
+     "nodeId": "sr-18",
+     "position": {
+      "yaw": "-59.02deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.218
+     },
+     "gps": [
+      8.6338091,
+      50.1017803,
+      58.32
+     ],
+     "data": {
+      "distance": 4.1,
+      "room": "SR"
+     }
+    },
+    {
+     "nodeId": "sr-19",
+     "position": {
+      "yaw": "-19.13deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.102
+     },
+     "gps": [
+      8.6338306,
+      50.1018119,
+      58.32
+     ],
+     "data": {
+      "distance": 5.9,
+      "room": "SR"
+     }
+    },
+    {
+     "nodeId": "west-side-03",
+     "position": {
+      "yaw": "93.32deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.239
+     },
+     "gps": [
+      8.6339114,
+      50.1017595,
+      58.32
+     ],
+     "data": {
+      "distance": 3.8,
+      "room": "West side"
+     }
+    },
+    {
+     "nodeId": "west-side-06",
+     "position": {
+      "yaw": "257.85deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.095
+     },
+     "gps": [
+      8.6337744,
+      50.10175,
+      58.32
+     ],
+     "data": {
+      "distance": 6.1,
+      "room": "West side"
+     }
+    },
+    {
+     "nodeId": "west-side-07",
+     "position": {
+      "yaw": "-16.69deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.145
+     },
+     "gps": [
+      8.6338374,
+      50.1018052,
+      58.32
+     ],
+     "data": {
+      "distance": 5.1,
+      "room": "West side"
+     }
+    }
+   ],
+   "description": "<h2>West Side 05</h2><p>The open area on the west side of the floor.</p>",
+   "gps": [
+    8.6338578,
+    50.1017615,
+    60.0
+   ],
+   "map": {
+    "x": 385.5,
+    "y": 1902.1
+   },
+   "data": {
+    "room": "West side",
+    "xy": [
+     2.439,
+     -25.164
+    ],
+    "tiles": {
+     "baseUrl": "tiles/west-side-05/base.jpg",
+     "tileUrl": "tiles/west-side-05/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-sr",
+     "html": "SR",
+     "className": "room-label",
+     "position": {
+      "yaw": "-59.02deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "SR",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>SR</h2>"
+    },
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "93.32deg",
+       "-48.24deg"
+      ],
+      [
+       "93.32deg",
+       "-40.03deg"
+      ],
+      [
+       "93.32deg",
+       "-33.9deg"
+      ],
+      [
+       "93.32deg",
+       "-29.25deg"
+      ],
+      [
+       "93.32deg",
+       "-25.64deg"
+      ],
+      [
+       "93.32deg",
+       "-23.67deg"
+      ],
+      [
+       "89.23deg",
+       "-21.61deg"
+      ],
+      [
+       "85.87deg",
+       "-19.79deg"
+      ],
+      [
+       "83.08deg",
+       "-18.2deg"
+      ],
+      [
+       "81.39deg",
+       "-17.21deg"
+      ],
+      [
+       "81.52deg",
+       "-15.83deg"
+      ],
+      [
+       "81.62deg",
+       "-14.65deg"
+      ],
+      [
+       "81.71deg",
+       "-13.64deg"
+      ],
+      [
+       "81.78deg",
+       "-12.75deg"
+      ],
+      [
+       "81.85deg",
+       "-11.97deg"
+      ],
+      [
+       "81.91deg",
+       "-11.28deg"
+      ],
+      [
+       "81.92deg",
+       "-11.07deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "west-side-06",
+   "name": "West Side 06",
+   "caption": "West Side 06",
+   "panorama": "panos/west-side-06.jpg",
+   "thumbnail": "thumbs/west-side-06.jpg",
+   "sphereCorrection": {
+    "pan": "-219.32deg"
+   },
+   "links": [
+    {
+     "nodeId": "sr-17",
+     "position": {
+      "yaw": "128.29deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.168
+     },
+     "gps": [
+      8.6338262,
+      50.1017238,
+      58.32
+     ],
+     "data": {
+      "distance": 4.7,
+      "room": "SR"
+     }
+    },
+    {
+     "nodeId": "sr-18",
+     "position": {
+      "yaw": "36.34deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.207
+     },
+     "gps": [
+      8.6338091,
+      50.1017803,
+      58.32
+     ],
+     "data": {
+      "distance": 4.2,
+      "room": "SR"
+     }
+    },
+    {
+     "nodeId": "west-side-05",
+     "position": {
+      "yaw": "77.85deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.095
+     },
+     "gps": [
+      8.6338578,
+      50.1017615,
+      58.32
+     ],
+     "data": {
+      "distance": 6.1,
+      "room": "West side"
+     }
+    },
+    {
+     "nodeId": "west-side-08",
+     "position": {
+      "yaw": "171.38deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.118
+     },
+     "gps": [
+      8.6337861,
+      50.1017005,
+      58.32
+     ],
+     "data": {
+      "distance": 5.6,
+      "room": "West side"
+     }
+    }
+   ],
+   "description": "<h2>West Side 06</h2><p>The open area on the west side of the floor.</p>",
+   "gps": [
+    8.6337744,
+    50.10175,
+    60.0
+   ],
+   "map": {
+    "x": 399.0,
+    "y": 2261.5
+   },
+   "data": {
+    "room": "West side",
+    "xy": [
+     2.667,
+     -31.25
+    ],
+    "tiles": {
+     "baseUrl": "tiles/west-side-06/base.jpg",
+     "tileUrl": "tiles/west-side-06/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-sr",
+     "html": "SR",
+     "className": "room-label",
+     "position": {
+      "yaw": "36.34deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "SR",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>SR</h2>"
+    },
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "77.85deg",
+       "-48.24deg"
+      ],
+      [
+       "77.85deg",
+       "-40.03deg"
+      ],
+      [
+       "77.85deg",
+       "-33.9deg"
+      ],
+      [
+       "77.85deg",
+       "-29.25deg"
+      ],
+      [
+       "77.85deg",
+       "-25.64deg"
+      ],
+      [
+       "77.85deg",
+       "-22.78deg"
+      ],
+      [
+       "77.85deg",
+       "-20.47deg"
+      ],
+      [
+       "77.85deg",
+       "-18.57deg"
+      ],
+      [
+       "77.85deg",
+       "-16.99deg"
+      ],
+      [
+       "77.85deg",
+       "-15.64deg"
+      ],
+      [
+       "77.85deg",
+       "-15.42deg"
+      ],
+      [
+       "79.02deg",
+       "-14.34deg"
+      ],
+      [
+       "80.02deg",
+       "-13.39deg"
+      ],
+      [
+       "80.89deg",
+       "-12.55deg"
+      ],
+      [
+       "81.66deg",
+       "-11.81deg"
+      ],
+      [
+       "82.34deg",
+       "-11.15deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "west-side-07",
+   "name": "West Side 07",
+   "caption": "West Side 07",
+   "panorama": "panos/west-side-07.jpg",
+   "thumbnail": "thumbs/west-side-07.jpg",
+   "sphereCorrection": {
+    "pan": "40.29deg"
+   },
+   "links": [
+    {
+     "nodeId": "sr-18",
+     "position": {
+      "yaw": "216.11deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.281
+     },
+     "gps": [
+      8.6338091,
+      50.1017803,
+      58.32
+     ],
+     "data": {
+      "distance": 3.4,
+      "room": "SR"
+     }
+    },
+    {
+     "nodeId": "west-side-05",
+     "position": {
+      "yaw": "163.31deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.145
+     },
+     "gps": [
+      8.6338578,
+      50.1017615,
+      58.32
+     ],
+     "data": {
+      "distance": 5.1,
+      "room": "West side"
+     }
+    }
+   ],
+   "description": "<h2>West Side 07</h2><p>The open area on the west side of the floor.</p>",
+   "gps": [
+    8.6338374,
+    50.1018052,
+    60.0
+   ],
+   "map": {
+    "x": 88.2,
+    "y": 1937.0
+   },
+   "data": {
+    "room": "West side",
+    "xy": [
+     -2.596,
+     -25.755
+    ],
+    "tiles": {
+     "baseUrl": "tiles/west-side-07/base.jpg",
+     "tileUrl": "tiles/west-side-07/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-sr",
+     "html": "SR",
+     "className": "room-label",
+     "position": {
+      "yaw": "216.11deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "SR",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>SR</h2>"
+    },
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "163.31deg",
+       "-48.24deg"
+      ],
+      [
+       "163.31deg",
+       "-40.03deg"
+      ],
+      [
+       "163.31deg",
+       "-33.9deg"
+      ],
+      [
+       "163.31deg",
+       "-29.25deg"
+      ],
+      [
+       "163.31deg",
+       "-25.64deg"
+      ],
+      [
+       "163.31deg",
+       "-22.78deg"
+      ],
+      [
+       "163.31deg",
+       "-20.47deg"
+      ],
+      [
+       "163.31deg",
+       "-18.57deg"
+      ],
+      [
+       "163.31deg",
+       "-18.33deg"
+      ],
+      [
+       "158.18deg",
+       "-17.71deg"
+      ],
+      [
+       "153.46deg",
+       "-17.01deg"
+      ],
+      [
+       "149.14deg",
+       "-16.27deg"
+      ],
+      [
+       "145.22deg",
+       "-15.51deg"
+      ],
+      [
+       "141.68deg",
+       "-14.77deg"
+      ],
+      [
+       "138.49deg",
+       "-14.04deg"
+      ],
+      [
+       "135.62deg",
+       "-13.35deg"
+      ],
+      [
+       "133.87deg",
+       "-12.91deg"
+      ],
+      [
+       "130.1deg",
+       "-12.71deg"
+      ],
+      [
+       "126.48deg",
+       "-12.46deg"
+      ],
+      [
+       "123.01deg",
+       "-12.18deg"
+      ],
+      [
+       "120.67deg",
+       "-11.96deg"
+      ],
+      [
+       "118.56deg",
+       "-11.4deg"
+      ],
+      [
+       "116.64deg",
+       "-10.88deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  },
+  {
+   "id": "west-side-08",
+   "name": "West Side 08",
+   "caption": "West Side 08",
+   "panorama": "panos/west-side-08.jpg",
+   "thumbnail": "thumbs/west-side-08.jpg",
+   "sphereCorrection": {
+    "pan": "9.81deg"
+   },
+   "links": [
+    {
+     "nodeId": "sr-16",
+     "position": {
+      "yaw": "81.36deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.096
+     },
+     "gps": [
+      8.6338701,
+      50.1017087,
+      58.32
+     ],
+     "data": {
+      "distance": 6.1,
+      "room": "SR"
+     }
+    },
+    {
+     "nodeId": "sr-17",
+     "position": {
+      "yaw": "47.85deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.236
+     },
+     "gps": [
+      8.6338262,
+      50.1017238,
+      58.32
+     ],
+     "data": {
+      "distance": 3.9,
+      "room": "SR"
+     }
+    },
+    {
+     "nodeId": "west-side-06",
+     "position": {
+      "yaw": "-8.62deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.118
+     },
+     "gps": [
+      8.6337744,
+      50.10175,
+      58.32
+     ],
+     "data": {
+      "distance": 5.6,
+      "room": "West side"
+     }
+    }
+   ],
+   "description": "<h2>West Side 08</h2><p>The open area on the west side of the floor.</p>",
+   "gps": [
+    8.6337861,
+    50.1017005,
+    60.0
+   ],
+   "map": {
+    "x": 728.1,
+    "y": 2269.4
+   },
+   "data": {
+    "room": "West side",
+    "xy": [
+     8.24,
+     -31.384
+    ],
+    "tiles": {
+     "baseUrl": "tiles/west-side-08/base.jpg",
+     "tileUrl": "tiles/west-side-08/{level}/{col}_{row}.jpg",
+     "levels": [
+      {
+       "width": 2048,
+       "cols": 4,
+       "rows": 2
+      },
+      {
+       "width": 4096,
+       "cols": 8,
+       "rows": 4
+      },
+      {
+       "width": 8192,
+       "cols": 16,
+       "rows": 8
+      },
+      {
+       "width": 16384,
+       "cols": 32,
+       "rows": 16
+      }
+     ]
+    }
+   },
+   "markers": [
+    {
+     "id": "room-sr",
+     "html": "SR",
+     "className": "room-label",
+     "position": {
+      "yaw": "47.85deg",
+      "pitch": "6deg"
+     },
+     "anchor": "bottom center",
+     "listContent": "SR",
+     "data": {
+      "group": "rooms"
+     },
+     "content": "<h2>SR</h2>"
+    },
+    {
+     "id": "route",
+     "polyline": [
+      [
+       "47.85deg",
+       "-48.24deg"
+      ],
+      [
+       "47.85deg",
+       "-40.03deg"
+      ],
+      [
+       "47.85deg",
+       "-33.9deg"
+      ],
+      [
+       "47.85deg",
+       "-29.25deg"
+      ],
+      [
+       "47.85deg",
+       "-25.64deg"
+      ],
+      [
+       "47.85deg",
+       "-23.51deg"
+      ],
+      [
+       "45.63deg",
+       "-21.18deg"
+      ],
+      [
+       "43.85deg",
+       "-19.23deg"
+      ],
+      [
+       "42.39deg",
+       "-17.59deg"
+      ],
+      [
+       "41.18deg",
+       "-16.2deg"
+      ],
+      [
+       "40.16deg",
+       "-14.99deg"
+      ],
+      [
+       "39.28deg",
+       "-13.95deg"
+      ],
+      [
+       "38.52deg",
+       "-13.04deg"
+      ],
+      [
+       "37.86deg",
+       "-12.24deg"
+      ],
+      [
+       "37.28deg",
+       "-11.52deg"
+      ],
+      [
+       "37.0deg",
+       "-11.17deg"
+      ],
+      [
+       "39.71deg",
+       "-10.82deg"
+      ]
+     ],
+     "tooltip": "The way to the kitchen",
+     "svgStyle": {
+      "stroke": "#f0b35a",
+      "strokeWidth": "5px",
+      "strokeLinecap": "round",
+      "strokeLinejoin": "round",
+      "strokeDasharray": "2 12"
+     },
+     "listContent": "Way to the kitchen",
+     "data": {
+      "group": "route"
+     },
+     "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+    }
+   ]
+  }
+ ]
+}

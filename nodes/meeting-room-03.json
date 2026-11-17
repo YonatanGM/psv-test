@@ -1,0 +1,338 @@
+{
+ "id": "meeting-room-03",
+ "name": "Meeting Room 03",
+ "caption": "Meeting Room 03",
+ "panorama": "panos/meeting-room-03.jpg",
+ "thumbnail": "thumbs/meeting-room-03.jpg",
+ "sphereCorrection": {
+  "pan": "-125.43deg"
+ },
+ "links": [
+  {
+   "nodeId": "meeting-room-01",
+   "position": {
+    "yaw": "228.91deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.181
+   },
+   "gps": [
+    8.633904,
+    50.1017874,
+    58.32
+   ],
+   "data": {
+    "distance": 4.5,
+    "room": "Meeting room"
+   }
+  },
+  {
+   "nodeId": "meeting-room-02",
+   "position": {
+    "yaw": "-91.13deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.154
+   },
+   "gps": [
+    8.6338827,
+    50.1018132,
+    58.32
+   ],
+   "data": {
+    "distance": 4.9,
+    "room": "Meeting room"
+   }
+  }
+ ],
+ "description": "<h2>Meeting Room 03</h2><p>The meeting room, closed off with glass walls.</p>",
+ "gps": [
+  8.6339517,
+  50.1018141,
+  60.0
+ ],
+ "map": {
+  "x": 114.2,
+  "y": 1452.2
+ },
+ "data": {
+  "room": "Meeting room",
+  "xy": [
+   -2.156,
+   -17.547
+  ],
+  "tiles": {
+   "baseUrl": "tiles/meeting-room-03/base.jpg",
+   "tileUrl": "tiles/meeting-room-03/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": [
+  {
+   "id": "route",
+   "polyline": [
+    [
+     "228.91deg",
+     "-48.24deg"
+    ],
+    [
+     "228.91deg",
+     "-40.03deg"
+    ],
+    [
+     "228.91deg",
+     "-33.9deg"
+    ],
+    [
+     "228.91deg",
+     "-29.25deg"
+    ],
+    [
+     "228.91deg",
+     "-25.64deg"
+    ],
+    [
+     "228.91deg",
+     "-22.78deg"
+    ],
+    [
+     "228.91deg",
+     "-20.47deg"
+    ],
+    [
+     "228.91deg",
+     "-20.38deg"
+    ],
+    [
+     "223.81deg",
+     "-19.28deg"
+    ],
+    [
+     "219.3deg",
+     "-18.18deg"
+    ],
+    [
+     "215.33deg",
+     "-17.12deg"
+    ],
+    [
+     "211.84deg",
+     "-16.1deg"
+    ],
+    [
+     "208.78deg",
+     "-15.16deg"
+    ],
+    [
+     "206.07deg",
+     "-14.28deg"
+    ],
+    [
+     "205.36deg",
+     "-14.04deg"
+    ],
+    [
+     "203.03deg",
+     "-14.95deg"
+    ],
+    [
+     "200.37deg",
+     "-15.95deg"
+    ],
+    [
+     "197.32deg",
+     "-17.04deg"
+    ],
+    [
+     "194.9deg",
+     "-17.87deg"
+    ],
+    [
+     "189.63deg",
+     "-18.42deg"
+    ],
+    [
+     "184.05deg",
+     "-18.84deg"
+    ],
+    [
+     "178.25deg",
+     "-19.1deg"
+    ],
+    [
+     "172.33deg",
+     "-19.18deg"
+    ],
+    [
+     "166.43deg",
+     "-19.07deg"
+    ],
+    [
+     "160.65deg",
+     "-18.78deg"
+    ],
+    [
+     "158.85deg",
+     "-18.65deg"
+    ],
+    [
+     "153.26deg",
+     "-18.33deg"
+    ],
+    [
+     "147.91deg",
+     "-17.86deg"
+    ],
+    [
+     "142.89deg",
+     "-17.29deg"
+    ],
+    [
+     "138.23deg",
+     "-16.64deg"
+    ],
+    [
+     "133.96deg",
+     "-15.95deg"
+    ],
+    [
+     "130.06deg",
+     "-15.24deg"
+    ],
+    [
+     "127.63deg",
+     "-14.76deg"
+    ],
+    [
+     "126.03deg",
+     "-15.88deg"
+    ],
+    [
+     "124.16deg",
+     "-17.16deg"
+    ],
+    [
+     "121.95deg",
+     "-18.63deg"
+    ],
+    [
+     "119.29deg",
+     "-20.33deg"
+    ],
+    [
+     "116.06deg",
+     "-22.29deg"
+    ],
+    [
+     "112.16deg",
+     "-24.5deg"
+    ],
+    [
+     "108.93deg",
+     "-22.11deg"
+    ],
+    [
+     "106.33deg",
+     "-20.09deg"
+    ],
+    [
+     "104.21deg",
+     "-18.36deg"
+    ],
+    [
+     "102.45deg",
+     "-16.89deg"
+    ],
+    [
+     "100.97deg",
+     "-15.62deg"
+    ],
+    [
+     "99.71deg",
+     "-14.51deg"
+    ],
+    [
+     "98.62deg",
+     "-13.54deg"
+    ],
+    [
+     "98.12deg",
+     "-13.1deg"
+    ]
+   ],
+   "tooltip": "The way to the kitchen",
+   "svgStyle": {
+    "stroke": "#f0b35a",
+    "strokeWidth": "5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "strokeDasharray": "2 12"
+   },
+   "listContent": "Way to the kitchen",
+   "data": {
+    "group": "route"
+   },
+   "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+  },
+  {
+   "id": "kitchen-window",
+   "polygon": [
+    [
+     "62.43deg",
+     "10.3deg"
+    ],
+    [
+     "134.13deg",
+     "6.1deg"
+    ],
+    [
+     "134.23deg",
+     "-24.8deg"
+    ],
+    [
+     "62.73deg",
+     "-34.1deg"
+    ]
+   ],
+   "svgStyle": {
+    "fill": "rgba(240,179,90,0.14)",
+    "stroke": "#f0b35a",
+    "strokeWidth": "2px"
+   },
+   "tooltip": "Window to the kitchen",
+   "content": "<h2>Window to the kitchen</h2><p>The meeting room looks into the kitchen: the serving hatch (Durchreiche) that the October 2021 plan keeps and fits with a new window.</p><img src='assets/plan-2021.jpg' alt=''>",
+   "listContent": "Window to the kitchen",
+   "data": {
+    "group": "info",
+    "map": {
+     "distance": 106,
+     "color": "#f0b35a"
+    },
+    "compass": "#f0b35a"
+   }
+  }
+ ]
+}

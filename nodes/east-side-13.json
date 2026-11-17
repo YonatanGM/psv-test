@@ -1,0 +1,305 @@
+{
+ "id": "east-side-13",
+ "name": "East Side 13",
+ "caption": "East Side 13",
+ "panorama": "panos/east-side-13.jpg",
+ "thumbnail": "thumbs/east-side-13.jpg",
+ "sphereCorrection": {
+  "pan": "-158.02deg"
+ },
+ "links": [
+  {
+   "nodeId": "east-side-11",
+   "position": {
+    "yaw": "166.31deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.227
+   },
+   "gps": [
+    8.6341247,
+    50.1017914,
+    58.32
+   ],
+   "data": {
+    "distance": 4.0,
+    "room": "East side"
+   }
+  },
+  {
+   "nodeId": "east-side-14",
+   "position": {
+    "yaw": "220.94deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.42
+   },
+   "gps": [
+    8.6340888,
+    50.101809,
+    58.32
+   ],
+   "data": {
+    "distance": 2.5,
+    "room": "East side"
+   }
+  }
+ ],
+ "description": "<h2>East Side 13</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+ "gps": [
+  8.6341116,
+  50.1018259,
+  60.0
+ ],
+ "map": {
+  "x": 154.6,
+  "y": 774.8
+ },
+ "data": {
+  "room": "East side",
+  "xy": [
+   -1.471,
+   -6.075
+  ],
+  "tiles": {
+   "baseUrl": "tiles/east-side-13/base.jpg",
+   "tileUrl": "tiles/east-side-13/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": [
+  {
+   "id": "route",
+   "polyline": [
+    [
+     "166.31deg",
+     "-48.24deg"
+    ],
+    [
+     "166.31deg",
+     "-40.03deg"
+    ],
+    [
+     "166.31deg",
+     "-33.9deg"
+    ],
+    [
+     "166.31deg",
+     "-29.25deg"
+    ],
+    [
+     "166.31deg",
+     "-25.64deg"
+    ],
+    [
+     "166.31deg",
+     "-23.0deg"
+    ],
+    [
+     "173.56deg",
+     "-23.14deg"
+    ],
+    [
+     "180.8deg",
+     "-22.94deg"
+    ],
+    [
+     "187.79deg",
+     "-22.43deg"
+    ],
+    [
+     "194.35deg",
+     "-21.68deg"
+    ],
+    [
+     "200.38deg",
+     "-20.75deg"
+    ],
+    [
+     "205.81deg",
+     "-19.72deg"
+    ],
+    [
+     "210.64deg",
+     "-18.66deg"
+    ],
+    [
+     "212.47deg",
+     "-18.22deg"
+    ],
+    [
+     "216.07deg",
+     "-17.05deg"
+    ],
+    [
+     "219.21deg",
+     "-15.97deg"
+    ],
+    [
+     "221.94deg",
+     "-14.98deg"
+    ],
+    [
+     "224.34deg",
+     "-14.08deg"
+    ],
+    [
+     "226.45deg",
+     "-13.26deg"
+    ],
+    [
+     "228.32deg",
+     "-12.52deg"
+    ],
+    [
+     "229.98deg",
+     "-11.84deg"
+    ],
+    [
+     "230.71deg",
+     "-11.54deg"
+    ],
+    [
+     "234.19deg",
+     "-11.59deg"
+    ],
+    [
+     "237.69deg",
+     "-11.6deg"
+    ],
+    [
+     "241.18deg",
+     "-11.57deg"
+    ],
+    [
+     "244.64deg",
+     "-11.5deg"
+    ],
+    [
+     "248.05deg",
+     "-11.39deg"
+    ],
+    [
+     "251.31deg",
+     "-11.25deg"
+    ],
+    [
+     "250.5deg",
+     "-11.91deg"
+    ],
+    [
+     "249.58deg",
+     "-12.66deg"
+    ],
+    [
+     "248.54deg",
+     "-13.5deg"
+    ],
+    [
+     "247.34deg",
+     "-14.46deg"
+    ],
+    [
+     "245.95deg",
+     "-15.54deg"
+    ],
+    [
+     "244.33deg",
+     "-16.79deg"
+    ],
+    [
+     "242.41deg",
+     "-18.23deg"
+    ],
+    [
+     "241.29deg",
+     "-19.05deg"
+    ]
+   ],
+   "tooltip": "The way to the kitchen",
+   "svgStyle": {
+    "stroke": "#f0b35a",
+    "strokeWidth": "5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "strokeDasharray": "2 12"
+   },
+   "listContent": "Way to the kitchen",
+   "data": {
+    "group": "route"
+   },
+   "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+  },
+  {
+   "id": "tv",
+   "imageLayer": "assets/screen.jpg",
+   "position": [
+    {
+     "yaw": "33.82deg",
+     "pitch": "1.4deg"
+    },
+    {
+     "yaw": "104.92deg",
+     "pitch": "2.6deg"
+    },
+    {
+     "yaw": "105.32deg",
+     "pitch": "-37.3deg"
+    },
+    {
+     "yaw": "34.02deg",
+     "pitch": "-30.1deg"
+    }
+   ],
+   "tooltip": "Screen",
+   "listContent": "TV (imageLayer / videoLayer / elementLayer)",
+   "data": {
+    "group": "media",
+    "tv": true,
+    "map": {
+     "distance": 83,
+     "color": "#f0b35a"
+    },
+    "compass": "#f0b35a",
+    "elementLayer": {
+     "_about": "for the YouTube variant (elementLayer is placed by centre + rotation + size, not corners); fitted to the 4 corners above",
+     "position": {
+      "yaw": "63.6deg",
+      "pitch": "-20.88deg"
+     },
+     "rotation": {
+      "yaw": "17.43deg",
+      "pitch": "0deg",
+      "roll": "-0.52deg"
+     },
+     "width": 1358,
+     "height": 789
+    }
+   },
+   "content": "<h2>TV</h2><p>One screen, three marker types: <code>imageLayer</code> (this plan), <code>videoLayer</code> (a clip) or <code>elementLayer</code> (YouTube's own player). Switch in Options → Screens.</p><img src='assets/screen.jpg' alt=''>"
+  }
+ ]
+}

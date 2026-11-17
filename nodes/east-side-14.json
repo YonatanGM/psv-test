@@ -1,0 +1,258 @@
+{
+ "id": "east-side-14",
+ "name": "East Side 14",
+ "caption": "East Side 14",
+ "panorama": "panos/east-side-14.jpg",
+ "thumbnail": "thumbs/east-side-14.jpg",
+ "sphereCorrection": {
+  "pan": "-67.19deg"
+ },
+ "links": [
+  {
+   "nodeId": "east-side-13",
+   "position": {
+    "yaw": "40.94deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.42
+   },
+   "gps": [
+    8.6341116,
+    50.1018259,
+    58.32
+   ],
+   "data": {
+    "distance": 2.5,
+    "room": "East side"
+   }
+  }
+ ],
+ "description": "<h2>East Side 14</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+ "gps": [
+  8.6340888,
+  50.101809,
+  60.0
+ ],
+ "map": {
+  "x": 247.1,
+  "y": 888.7
+ },
+ "data": {
+  "room": "East side",
+  "xy": [
+   0.095,
+   -8.005
+  ],
+  "tiles": {
+   "baseUrl": "tiles/east-side-14/base.jpg",
+   "tileUrl": "tiles/east-side-14/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": [
+  {
+   "id": "route",
+   "polyline": [
+    [
+     "40.94deg",
+     "-48.24deg"
+    ],
+    [
+     "40.94deg",
+     "-40.03deg"
+    ],
+    [
+     "40.94deg",
+     "-34.06deg"
+    ],
+    [
+     "51.46deg",
+     "-36.95deg"
+    ],
+    [
+     "64.1deg",
+     "-39.01deg"
+    ],
+    [
+     "78.05deg",
+     "-39.64deg"
+    ],
+    [
+     "91.79deg",
+     "-38.62deg"
+    ],
+    [
+     "103.95deg",
+     "-36.29deg"
+    ],
+    [
+     "113.92deg",
+     "-33.29deg"
+    ],
+    [
+     "121.79deg",
+     "-30.16deg"
+    ],
+    [
+     "127.48deg",
+     "-27.46deg"
+    ],
+    [
+     "134.44deg",
+     "-30.1deg"
+    ],
+    [
+     "143.05deg",
+     "-32.69deg"
+    ],
+    [
+     "153.43deg",
+     "-34.9deg"
+    ],
+    [
+     "165.31deg",
+     "-36.25deg"
+    ],
+    [
+     "177.86deg",
+     "-36.38deg"
+    ],
+    [
+     "189.96deg",
+     "-35.25deg"
+    ],
+    [
+     "200.68deg",
+     "-33.19deg"
+    ],
+    [
+     "204.58deg",
+     "-32.17deg"
+    ],
+    [
+     "212.05deg",
+     "-29.18deg"
+    ],
+    [
+     "217.93deg",
+     "-26.39deg"
+    ],
+    [
+     "222.6deg",
+     "-23.89deg"
+    ],
+    [
+     "226.34deg",
+     "-21.72deg"
+    ],
+    [
+     "229.39deg",
+     "-19.83deg"
+    ],
+    [
+     "231.9deg",
+     "-18.19deg"
+    ],
+    [
+     "234.0deg",
+     "-16.78deg"
+    ],
+    [
+     "234.88deg",
+     "-16.17deg"
+    ],
+    [
+     "239.83deg",
+     "-16.16deg"
+    ],
+    [
+     "244.73deg",
+     "-16.04deg"
+    ],
+    [
+     "249.51deg",
+     "-15.81deg"
+    ],
+    [
+     "254.13deg",
+     "-15.48deg"
+    ],
+    [
+     "258.52deg",
+     "-15.09deg"
+    ],
+    [
+     "-97.42deg",
+     "-14.65deg"
+    ],
+    [
+     "-97.57deg",
+     "-15.82deg"
+    ],
+    [
+     "-97.75deg",
+     "-17.19deg"
+    ],
+    [
+     "-97.96deg",
+     "-18.82deg"
+    ],
+    [
+     "-98.22deg",
+     "-20.77deg"
+    ],
+    [
+     "-98.54deg",
+     "-23.14deg"
+    ],
+    [
+     "-98.96deg",
+     "-26.09deg"
+    ],
+    [
+     "-99.53deg",
+     "-29.81deg"
+    ],
+    [
+     "-99.89deg",
+     "-32.1deg"
+    ]
+   ],
+   "tooltip": "The way to the kitchen",
+   "svgStyle": {
+    "stroke": "#f0b35a",
+    "strokeWidth": "5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "strokeDasharray": "2 12"
+   },
+   "listContent": "Way to the kitchen",
+   "data": {
+    "group": "route"
+   },
+   "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+  }
+ ]
+}

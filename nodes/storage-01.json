@@ -1,0 +1,220 @@
+{
+ "id": "storage-01",
+ "name": "Storage 01",
+ "caption": "Storage 01",
+ "panorama": "panos/storage-01.jpg",
+ "thumbnail": "thumbs/storage-01.jpg",
+ "sphereCorrection": {
+  "pan": "-213.02deg"
+ },
+ "links": [
+  {
+   "nodeId": "east-side-09",
+   "position": {
+    "yaw": "-13.05deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.211
+   },
+   "gps": [
+    8.6341605,
+    50.1017961,
+    58.32
+   ],
+   "data": {
+    "distance": 4.1,
+    "room": "East side"
+   }
+  },
+  {
+   "nodeId": "storage-02",
+   "position": {
+    "yaw": "203.29deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.62
+   },
+   "gps": [
+    8.6341645,
+    50.1017463,
+    58.32
+   ],
+   "data": {
+    "distance": 1.6,
+    "room": "Storage"
+   }
+  }
+ ],
+ "description": "<h2>Storage 01</h2><p>Storage room off the east side.</p>",
+ "gps": [
+  8.6341736,
+  50.1017599,
+  60.0
+ ],
+ "map": {
+  "x": 627.4,
+  "y": 592.6
+ },
+ "data": {
+  "room": "Storage",
+  "xy": [
+   6.534,
+   -2.991
+  ],
+  "tiles": {
+   "baseUrl": "tiles/storage-01/base.jpg",
+   "tileUrl": "tiles/storage-01/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": [
+  {
+   "id": "room-east-side",
+   "html": "East side",
+   "className": "room-label",
+   "position": {
+    "yaw": "-13.05deg",
+    "pitch": "6deg"
+   },
+   "anchor": "bottom center",
+   "listContent": "East side",
+   "data": {
+    "group": "rooms"
+   },
+   "content": "<h2>East side</h2>"
+  },
+  {
+   "id": "route",
+   "polyline": [
+    [
+     "-13.05deg",
+     "-48.24deg"
+    ],
+    [
+     "-13.05deg",
+     "-40.03deg"
+    ],
+    [
+     "-13.05deg",
+     "-33.9deg"
+    ],
+    [
+     "-13.05deg",
+     "-29.25deg"
+    ],
+    [
+     "-13.05deg",
+     "-25.64deg"
+    ],
+    [
+     "-13.05deg",
+     "-22.78deg"
+    ],
+    [
+     "-13.05deg",
+     "-22.1deg"
+    ],
+    [
+     "-19.92deg",
+     "-21.9deg"
+    ],
+    [
+     "-26.55deg",
+     "-21.43deg"
+    ],
+    [
+     "-32.81deg",
+     "-20.75deg"
+    ],
+    [
+     "-38.58deg",
+     "-19.91deg"
+    ],
+    [
+     "-43.81deg",
+     "-18.98deg"
+    ],
+    [
+     "-44.9deg",
+     "-18.76deg"
+    ],
+    [
+     "-49.2deg",
+     "-17.69deg"
+    ],
+    [
+     "-52.99deg",
+     "-16.66deg"
+    ],
+    [
+     "-56.33deg",
+     "-15.69deg"
+    ],
+    [
+     "-59.27deg",
+     "-14.78deg"
+    ],
+    [
+     "-61.87deg",
+     "-13.94deg"
+    ],
+    [
+     "-64.18deg",
+     "-13.16deg"
+    ],
+    [
+     "-66.23deg",
+     "-12.45deg"
+    ],
+    [
+     "-67.0deg",
+     "-12.18deg"
+    ],
+    [
+     "-69.11deg",
+     "-11.59deg"
+    ],
+    [
+     "-71.01deg",
+     "-11.05deg"
+    ]
+   ],
+   "tooltip": "The way to the kitchen",
+   "svgStyle": {
+    "stroke": "#f0b35a",
+    "strokeWidth": "5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "strokeDasharray": "2 12"
+   },
+   "listContent": "Way to the kitchen",
+   "data": {
+    "group": "route"
+   },
+   "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+  }
+ ]
+}

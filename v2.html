@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NSYNK Office · Photo Sphere Viewer v2</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="vendor/@photo-sphere-viewer/core/index.css">
+<link rel="stylesheet" href="vendor/@photo-sphere-viewer/markers-plugin/index.css">
+<link rel="stylesheet" href="vendor/@photo-sphere-viewer/virtual-tour-plugin/index.css">
+<link rel="stylesheet" href="vendor/@photo-sphere-viewer/gallery-plugin/index.css">
+<link rel="stylesheet" href="vendor/@photo-sphere-viewer/map-plugin/index.css">
+<link rel="stylesheet" href="vendor/@photo-sphere-viewer/plan-plugin/index.css">
+<link rel="stylesheet" href="vendor/@photo-sphere-viewer/compass-plugin/index.css">
+<link rel="stylesheet" href="vendor/@photo-sphere-viewer/settings-plugin/index.css">
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "./vendor/three/three.module.min.js",
+    "leaflet": "./vendor/leaflet/leaflet-src.esm.js",
+    "lil-gui": "./vendor/lil-gui/lil-gui.esm.js",
+    "@photo-sphere-viewer/core": "./vendor/@photo-sphere-viewer/core/index.module.js",
+    "@photo-sphere-viewer/markers-plugin": "./vendor/@photo-sphere-viewer/markers-plugin/index.module.js",
+    "@photo-sphere-viewer/virtual-tour-plugin": "./vendor/@photo-sphere-viewer/virtual-tour-plugin/index.module.js",
+    "@photo-sphere-viewer/gallery-plugin": "./vendor/@photo-sphere-viewer/gallery-plugin/index.module.js",
+    "@photo-sphere-viewer/visible-range-plugin": "./vendor/@photo-sphere-viewer/visible-range-plugin/index.module.js",
+    "@photo-sphere-viewer/map-plugin": "./vendor/@photo-sphere-viewer/map-plugin/index.module.js",
+    "@photo-sphere-viewer/plan-plugin": "./vendor/@photo-sphere-viewer/plan-plugin/index.module.js",
+    "@photo-sphere-viewer/compass-plugin": "./vendor/@photo-sphere-viewer/compass-plugin/index.module.js",
+    "@photo-sphere-viewer/autorotate-plugin": "./vendor/@photo-sphere-viewer/autorotate-plugin/index.module.js",
+    "@photo-sphere-viewer/settings-plugin": "./vendor/@photo-sphere-viewer/settings-plugin/index.module.js",
+    "@photo-sphere-viewer/overlays-plugin": "./vendor/@photo-sphere-viewer/overlays-plugin/index.module.js",
+    "@photo-sphere-viewer/gyroscope-plugin": "./vendor/@photo-sphere-viewer/gyroscope-plugin/index.module.js",
+    "@photo-sphere-viewer/stereo-plugin": "./vendor/@photo-sphere-viewer/stereo-plugin/index.module.js",
+    "@photo-sphere-viewer/equirectangular-tiles-adapter": "./vendor/@photo-sphere-viewer/equirectangular-tiles-adapter/index.module.js"
+  }
+}
+</script>
+<style>
+  html, body { margin: 0; height: 100%; background: #111; }
+  #viewer { width: 100%; height: 100%; }
+
+  /* page look of the library's own elements (classes named in the config) */
+  .spot { filter: drop-shadow(0 1px 3px rgb(0 0 0 / .5)); opacity: .85; transition: opacity .15s; }
+  .spot:hover { opacity: 1; }
+  .room-label { font: 600 12px/1 system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: #fff;
+                padding: 6px 10px; border-radius: 999px; background: rgb(18 18 22 / .55); backdrop-filter: blur(4px); white-space: nowrap; }
+  .psv-tooltip.light { background: rgb(255 255 255 / .94); color: #1b1424; text-shadow: none; }
+  .psv-tooltip.light .psv-tooltip-arrow { color: rgb(255 255 255 / .94); }
+  .psv-tooltip img { display: block; width: 220px; margin-top: 6px; border-radius: 4px; }
+  .psv-panel-content img, .psv-panel-content video { max-width: 100%; border-radius: 6px; }
+  .psv-panel-content h3 { margin: 22px 0 6px; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; opacity: .7; }
+  .marker-json { margin: 0; padding: 10px; border-radius: 6px; background: rgb(255 255 255 / .07); white-space: pre-wrap; word-break: break-word;
+                 font: 11px/1.45 ui-monospace, Consolas, monospace; }
+  .video-controls { display: flex; gap: 6px; }
+  .video-controls button { font: 600 12px system-ui, sans-serif; color: #fff; background: rgb(18 18 22 / .75); border: 1px solid rgb(255 255 255 / .3);
+                           border-radius: 999px; padding: 5px 10px; cursor: pointer; }
+  .video-controls button:hover { background: rgb(18 18 22 / .95); }
+
+  /* debug panel (lil-gui) */
+  .lil-gui.root { --width: 310px; --name-width: 52%; position: fixed; top: 0; right: 0; max-height: 100vh; overflow: auto; z-index: 1000; }
+  .log { margin: 0; padding: 6px 8px; max-height: 160px; overflow: auto; white-space: pre-wrap; font: 11px/1.4 ui-monospace, Consolas, monospace; color: #cfc9da; }
+  .log:empty::before { content: 'Events appear here. Click the photo to read yaw/pitch.'; color: #8f899b; }
+</style>
+</head>
+<body>
+<div id="viewer"></div>
+<script type="module">
+import * as THREE from 'three';
+import GUI from 'lil-gui';
+import { Viewer, DEFAULTS, utils } from '@photo-sphere-viewer/core';
+import { MarkersPlugin } from '@photo-sphere-viewer/markers-plugin';
+import { VirtualTourPlugin } from '@photo-sphere-viewer/virtual-tour-plugin';
+import { GalleryPlugin } from '@photo-sphere-viewer/gallery-plugin';
+import { VisibleRangePlugin } from '@photo-sphere-viewer/visible-range-plugin';
+import { MapPlugin } from '@photo-sphere-viewer/map-plugin';
+import { PlanPlugin } from '@photo-sphere-viewer/plan-plugin';
+import { CompassPlugin } from '@photo-sphere-viewer/compass-plugin';
+import { AutorotatePlugin } from '@photo-sphere-viewer/autorotate-plugin';
+import { SettingsPlugin } from '@photo-sphere-viewer/settings-plugin';
+import { OverlaysPlugin } from '@photo-sphere-viewer/overlays-plugin';
+import { GyroscopePlugin } from '@photo-sphere-viewer/gyroscope-plugin';
+import { StereoPlugin } from '@photo-sphere-viewer/stereo-plugin';
+import { EquirectangularTilesAdapter } from '@photo-sphere-viewer/equirectangular-tiles-adapter';
+
+const tour = await fetch('tour-v2.json').then(r => r.json());
+const START = tour.nodes.find(n => n.id === tour.startNodeId);
+
+// =====================================================================================
+// Every switch with its default. Names are the PSV option they set.
+// =====================================================================================
+const D = {
+  // panorama
+  image: '4k',
+  // virtual tour
+  renderMode: '3d', positionMode: 'gps', dataMode: 'client', arrowStyle: 'default', arrowSize: 46, linkTooltip: 'name',
+  preload: true, linksOnCompass: true, minPitch3d: 0.3, linkOverlapAngle: 45, linkPitchOffset: 0,
+  // transition
+  transition: 'object', effect: 'fade', speed: '20rpm', rotation: true, showLoader: true,
+  // viewer
+  zoom: 15, minFov: 10, maxFov: 90, fisheye: 0, moveSpeed: 1, zoomSpeed: 1, moveInertia: true, mousewheel: true,
+  mousewheelCtrlKey: false, keyboard: 'fullscreen', lang: 'en', canvasBackground: '#222222',
+  navZoom: true, navMove: false, navCaption: true, navDescription: false, navGallery: true, navMarkers: false, navMarkersList: false,
+  navDownload: false, navFullscreen: true,
+  descriptions: false, intro: false, notifications: false, welcome: false, shortcuts: false,
+  range: true, rangeMin: -57,
+  // markers
+  info: true, media: true, shapes: true, route: true, rooms: true,
+  image_: true, html: true, element: true, imageLayer: true, videoLayer: true, elementLayer: true,
+  polygon: true, polygonPixels: true, polyline: true, polylinePixels: true, circle: true, ellipse: true, square: true, rect: true, path: true,
+  accent: '#77ddff', strokeWidth: 2, fillOpacity: 0.15, dashed: false, pinSize: 34, hoverScale: false, scaleZoom: false,
+  tipTrigger: 'hover', tipPosition: 'top center', tipStyle: 'dark', tipImage: false, content: 'full', allTooltips: false,
+  // media
+  tv: 'image', youtube: 'aqz-KE-bpKQ', controls: true, muted: true, loop: true, rate: 1, layerOpacity: 1,
+  chroma: false, chromaColor: '#000000', similarity: 0.2, smoothness: 0.2,
+  // plugins
+  map: true, mapStatic: false, mapShape: 'round', mapSize: 220, mapPosition: 'bottom left', mapZoom: 100, coneColor: '#1e78e6', coneSize: 40,
+  spotColor: '#ffffff', spotSize: 15, mapMarkers: true,
+  plan: false, planZoom: 19,
+  compass: true, compassSize: 120, compassPosition: 'top left', compassNavigation: true, compassMarkers: true,
+  gallery: true, thumbWidth: 200, galleryHideOnClick: true, galleryVisibleOnLoad: false,
+  autorotate: false, autorotateSpeed: 2, autostartDelay: 3,
+  settings: false, gyroscope: false, grid: 'off',
+  // three.js
+  objects: false, envLight: true, shadows: true, lightYaw: 190,
+};
+
+// state <-> URL (only values that differ from the defaults are written)
+const S = structuredClone(D);
+for (const [k, raw] of new URLSearchParams(location.search)) {
+  if (!(k in D)) continue;
+  S[k] = typeof D[k] === 'boolean' ? raw === '1' : typeof D[k] === 'number' ? Number(raw) : raw;
+}
+function saveUrl() {
+  const q = new URLSearchParams();
+  for (const k in D) if (S[k] !== D[k]) q.set(k, typeof D[k] === 'boolean' ? (S[k] ? '1' : '0') : S[k]);
+  history.replaceState(null, '', q.size ? '?' + q : location.pathname);
+}
+
+// =====================================================================================
+// Node preparation: tour-v2.json -> what VirtualTourPlugin gets, depending on the switches
+// =====================================================================================
+const PIXEL_SCALE = { '8k': 1, '4k': 0.5, tiles: 0.25, debug: 0.25 };   // pixel markers are measured on the 8192 px photo; with tiles PSV counts pixels of the first level (2048)
+const LANG_DE = {
+  zoom: 'Zoom', zoomOut: 'Herauszoomen', zoomIn: 'Hineinzoomen', moveUp: 'Nach oben', moveDown: 'Nach unten', moveLeft: 'Nach links',
+  moveRight: 'Nach rechts', description: 'Beschreibung', download: 'Herunterladen', fullscreen: 'Vollbild', loading: 'Lädt…', menu: 'Menü',
+  close: 'Schließen', twoFingers: 'Zum Bewegen zwei Finger benutzen', ctrlZoom: 'Strg + Mausrad zum Zoomen', loadError: 'Das Panorama konnte nicht geladen werden',
+  markers: 'Markierungen', markersList: 'Liste der Markierungen', gallery: 'Galerie', map: 'Karte', mapMaximize: 'Vergrößern',
+  mapMinimize: 'Verkleinern', mapNorth: 'Nach Norden', mapReset: 'Zurücksetzen', autorotate: 'Automatisch drehen', settings: 'Einstellungen',
+  gyroscope: 'Gyroskop', stereo: 'Stereo-Ansicht', stereoNotification: 'Zum Beenden irgendwo tippen.', pleaseRotate: 'Bitte das Gerät drehen',
+  tapToContinue: '(oder tippen, um fortzufahren)',
+};
+const deg = s => parseFloat(s) * Math.PI / 180;               // '12.3deg' -> radians
+
+function prepareNode(src) {
+  const node = structuredClone(src);
+  if (S.image === '4k') node.panorama = node.panorama.replace('panos/', 'panos-4k/');
+  if (S.image === 'tiles' || S.image === 'debug') {
+    const t = S.image === 'debug'      // numbered tiles, same layout as the real ones (tools/make_debug_tiles.py)
+      ? { ...node.data.tiles, baseUrl: 'tiles-debug/base.jpg', tileUrl: 'tiles-debug/{level}/{col}_{row}.jpg' }
+      : node.data.tiles;
+    node.panorama = { ...t, tileUrl: (col, row, level) => t.tileUrl.replace('{level}', level).replace('{col}', col).replace('{row}', row) };
+  }
+  if (!S.descriptions) delete node.description;
+  if (S.positionMode === 'gps') node.links.forEach(l => { delete l.position; delete l.linkOffset; });
+  if (S.arrowStyle === 'default') node.links.forEach(l => delete l.arrowStyle);
+
+  const markers = [];
+  for (const m of node.markers) {
+    const json = escapeHtml(prettyJson(m));      // the marker exactly as written in tour-v2.json
+    m.data = { ...m.data, tip: m.tooltip, json };
+    for (const key of ['polygonPixels', 'polylinePixels'])
+      if (m[key]) m[key] = m[key].map(([x, y]) => [x * PIXEL_SCALE[S.image], y * PIXEL_SCALE[S.image]]);
+    if (m.data.tv) Object.assign(m, tvMarker(m));
+    m.data.desc = describe(m);
+    if (!S.mapMarkers) delete m.data.map;
+    if (!S.compassMarkers) delete m.data.compass;
+    markers.push(m);
+    if (m.id === 'monitor' && S.controls) markers.push(videoControls(m));
+  }
+  node.markers = markers;
+  return node;
+}
+
+// Marker content (side panel on click) is the marker's own "content" from tour-v2.json
+// JSON for reading: coordinate lists and small objects on one line
+function prettyJson(v, pad = '') {
+  const flat = x => typeof x !== 'object' || x === null;
+  if (Array.isArray(v) && v.every(x => flat(x) || (Array.isArray(x) && x.every(flat)))) return JSON.stringify(v).replace(/,/g, ', ');
+  if (v && typeof v === 'object' && !Array.isArray(v) && Object.values(v).every(flat) && JSON.stringify(v).length < 60)
+    return JSON.stringify(v).replace(/,"/g, ', "').replace(/":/g, '": ');
+  if (v && typeof v === 'object') {
+    const inner = pad + '  ', arr = Array.isArray(v);
+    const items = arr ? v.map(x => inner + prettyJson(x, inner)) : Object.entries(v).map(([k, x]) => `${inner}${JSON.stringify(k)}: ${prettyJson(x, inner)}`);
+    return (arr ? '[' : '{') + '\n' + items.join(',\n') + '\n' + pad + (arr ? ']' : '}');
+  }
+  return JSON.stringify(v);
+}
+const escapeHtml = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const describe = m => m.content ?? '';
+
+// The TV in East Side 13: same four corners, three kinds of layer marker
+function tvMarker(m) {
+  if (S.tv === 'video') return { imageLayer: undefined, videoLayer: 'assets/clip.mp4', tooltip: 'Click to play / pause', style: { cursor: 'pointer' } };
+  if (S.tv === 'youtube') {
+    // elementLayer: any HTML element placed in 3D (CSS3D), here YouTube's own embed. Placed by centre + rotation + size (data/markers.json).
+    const fit = m.data.elementLayer;
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube-nocookie.com/embed/${S.youtube}?autoplay=1&mute=1`;
+    iframe.allow = 'autoplay; fullscreen';
+    Object.assign(iframe.style, { width: fit.width + 'px', height: fit.height + 'px', border: 'none', background: '#000' });
+    return { imageLayer: undefined, elementLayer: iframe, position: fit.position, rotation: fit.rotation, tooltip: undefined };
+  }
+  return {};
+}
+
+// element marker: a small HTML control bar under the monitor, wired to the videoLayer's own <video>
+function videoControls(monitor) {
+  const el = document.createElement('div');
+  el.className = 'video-controls';
+  el.innerHTML = '<button data-a="play">Play / Pause</button><button data-a="mute">Sound on / off</button>';
+  el.addEventListener('click', e => {
+    const video = markers?.getMarker('monitor')?.video; if (!video) return;
+    if (e.target.dataset.a === 'play') video.paused ? video.play() : video.pause();
+    if (e.target.dataset.a === 'mute') { video.muted = !video.muted; S.muted = video.muted; gui.controllersRecursive().forEach(c => c.updateDisplay()); }
+    e.stopPropagation();
+  });
+  const [, , br, bl] = monitor.position;
+  return { id: 'monitor-controls', element: el, content: '<h2>Video controls</h2><p>An <code>element</code> marker: it holds a real DOM element (these two buttons), made by the page, so it has no JSON form.</p>', anchor: 'top center', listContent: 'Video controls (element)',
+           position: { yaw: (deg(br.yaw) + deg(bl.yaw)) / 2, pitch: (deg(br.pitch) + deg(bl.pitch)) / 2 - 0.04 }, data: { group: 'media' } };
+}
+
+// =====================================================================================
+// Viewer
+// =====================================================================================
+let viewer, vt, markers, firstBuild = true, mapClosed = false;
+
+function navbar() {
+  const items = [];
+  if (S.navZoom) items.push('zoom');
+  if (S.navMove) items.push('move');
+  if (S.autorotate) items.push('autorotate');
+  if (S.navMarkers) items.push('markers');
+  if (S.navMarkersList) items.push('markersList');
+  if (S.navDownload) items.push('download');
+  if (S.navCaption) items.push('caption');
+  if (S.navDescription) items.push('description');
+  if (S.navGallery && S.gallery && S.dataMode === 'client') items.push('gallery');
+  if (S.settings) items.push('settings');
+  if (S.gyroscope) items.push('gyroscope', 'stereo');
+  if (S.navFullscreen) items.push('fullscreen');
+  return items;
+}
+
+function viewerOptions() {
+  return {
+    minFov: S.minFov, maxFov: S.maxFov, fisheye: S.fisheye, moveSpeed: S.moveSpeed, zoomSpeed: S.zoomSpeed, moveInertia: S.moveInertia,
+    mousewheel: S.mousewheel, mousewheelCtrlKey: S.mousewheelCtrlKey, keyboard: S.shortcuts ? 'always' : S.keyboard === 'off' ? false : S.keyboard,
+    lang: S.lang === 'de' ? LANG_DE : DEFAULTS.lang, canvasBackground: S.canvasBackground, navbar: navbar(),
+    keyboardActions: S.shortcuts ? {
+      ...DEFAULTS.keyboardActions,
+      h: v => v.panel.isVisible('help') ? v.panel.hide() : v.panel.show({ id: 'help', content:
+        '<h2>Keys</h2><p>Arrows: look around<br>+ / −: zoom<br>G: gallery<br>M: map<br>L: markers list<br>H: this help</p>' }),
+      g: v => v.getPlugin(GalleryPlugin)?.toggle(),
+      m: v => { const m = v.getPlugin(MapPlugin); if (m) (mapClosed = !mapClosed) ? m.close() : m.open(); },
+      l: v => v.getPlugin(MarkersPlugin)?.toggleMarkersList(),
+    } : DEFAULTS.keyboardActions,
+  };
+}
+
+function transitionOptions() {
+  const base = { effect: S.effect, speed: /^\d+$/.test(S.speed) ? Number(S.speed) : S.speed, rotation: S.rotation, showLoader: S.showLoader };
+  if (S.transition === 'object') return base;
+  // transitionOptions as a callback: decided per move
+  return (toNode, fromNode, fromLink) => ({
+    ...base,
+    ...(S.transition === 'room' && fromNode && fromNode.data.room !== toNode.data.room ? { effect: 'black', speed: 1200 } : {}),
+    ...(S.transition === 'spot' && fromLink ? { rotateTo: vt.getLinkPosition(toNode.id), zoomTo: Math.min(S.zoom + 25, 100) } : {}),
+  });
+}
+
+function linkTooltip(content, link, node) {
+  if (S.linkTooltip === 'name') return node.name;
+  if (S.linkTooltip === 'distance') return `${content}<br><small>${link.data.distance} m · ${link.data.room}</small>`;
+  return content;
+}
+
+function build() {
+  const keep = viewer && vt.getCurrentNode()
+    ? { node: vt.getCurrentNode().id, ...viewer.getPosition(), zoom: viewer.getZoomLevel() }
+    : { node: tour.startNodeId, yaw: tour.defaultYaw, pitch: 0, zoom: S.zoom };
+  viewer?.destroy();
+  objects.group = null; objects.shadowsOn = false;
+
+  const server = S.dataMode === 'server';
+  const gps = S.positionMode === 'gps';
+  const plugins = [MarkersPlugin.withConfig({ defaultHoverScale: S.hoverScale || null })];
+  const tourPlugin = VirtualTourPlugin.withConfig({
+      renderMode: S.renderMode, positionMode: S.positionMode, preload: S.preload, startNodeId: keep.node,
+      linksOnCompass: S.linksOnCompass, showLinkTooltip: S.linkTooltip !== 'off', getLinkTooltip: linkTooltip,
+      arrowStyle: S.arrowStyle === 'spot' ? { image: 'assets/spot.svg', size: { width: S.arrowSize, height: S.arrowSize }, className: 'spot' } : undefined,
+      arrowsPosition: { minPitch: S.minPitch3d, linkOverlapAngle: S.linkOverlapAngle * Math.PI / 180, linkPitchOffset: S.linkPitchOffset },
+      transitionOptions: transitionOptions(),
+      ...(server
+        ? { dataMode: 'server', getNode: id => fetch(`nodes/${id}.json`).then(r => r.json()).then(n => (log(`getNode('${id}') → nodes/${id}.json`), prepareNode(n))) }
+        : { dataMode: 'client', nodes: tour.nodes.map(prepareNode), ...(S.map ? { map: tour.map } : {}) }),
+  });
+  if (S.range) plugins.push(VisibleRangePlugin.withConfig({ verticalRange: [`${S.rangeMin}deg`, '90deg'] }));
+  if (S.gallery && !server) plugins.push(GalleryPlugin.withConfig({ thumbnailSize: { width: S.thumbWidth, height: S.thumbWidth / 2 },
+    hideOnClick: S.galleryHideOnClick, visibleOnLoad: S.galleryVisibleOnLoad }));
+  if (S.map && !server) plugins.push(MapPlugin.withConfig({
+    rotation: tour.mapRotation, static: S.mapStatic, shape: S.mapShape, size: S.mapSize + 'px', position: S.mapPosition,
+    defaultZoom: S.mapZoom, coneColor: S.coneColor, coneSize: S.coneSize,
+    spotStyle: { color: S.spotColor, size: S.spotSize, hoverColor: '#f0b35a', hoverSize: S.spotSize + 4 } }));
+  if (S.plan && gps) plugins.push(PlanPlugin.withConfig({ coordinates: START.gps, defaultZoom: S.planZoom, position: 'top left', size: { width: '320px', height: '240px' },
+    spotStyle: { size: 8, color: '#ffffff', borderSize: 1, borderColor: '#1b1424', hoverSize: 12, hoverColor: '#f0b35a' } }));
+  if (S.compass) plugins.push(CompassPlugin.withConfig({ size: S.compassSize + 'px', position: S.compassPosition, navigation: S.compassNavigation }));
+  if (S.autorotate) plugins.push(AutorotatePlugin.withConfig({
+    autostartDelay: S.autorotate ? S.autostartDelay * 1000 : null, autostartOnIdle: S.autorotate, autorotateSpeed: `${S.autorotateSpeed}rpm`, autorotatePitch: 0 }));
+  if (S.settings) plugins.push(SettingsPlugin);
+  if (S.grid !== 'off') plugins.push(OverlaysPlugin.withConfig({ inheritSphereCorrection: S.grid === 'photo' }));   // grid added per place (node-changed)
+  if (S.gyroscope) plugins.push(GyroscopePlugin, StereoPlugin);
+  plugins.push(tourPlugin);   // last: it connects to the gallery, map, plan and compass plugins when it starts
+
+  viewer = new Viewer({
+    container: 'viewer',
+    ...(S.image === 'tiles' || S.image === 'debug' ? { adapter: EquirectangularTilesAdapter } : {}),
+    defaultYaw: keep.yaw, defaultPitch: keep.pitch, defaultZoomLvl: keep.zoom,
+    ...viewerOptions(),
+    plugins,
+  });
+  window.viewer = viewer;
+  vt = viewer.getPlugin(VirtualTourPlugin);
+  markers = viewer.getPlugin(MarkersPlugin);
+  wireEvents();
+}
+
+// =====================================================================================
+// Live updates (no rebuild): markers, media, viewer options, 3D objects
+// =====================================================================================
+function markerVisible(m) {
+  const group = m.data?.group;
+  const type = m.type === 'image' ? 'image_' : m.type;
+  return (!group || S[group]) && S[type] !== false;
+}
+
+function applyMarkers() {
+  if (!markers) return;
+  const accent = new THREE.Color(S.accent);
+  const fill = `rgba(${accent.r * 255 | 0},${accent.g * 255 | 0},${accent.b * 255 | 0},${S.fillOpacity})`;
+  for (const m of markers.getMarkers()) {
+    const d = m.data ?? {};
+    const update = { id: m.id, visible: markerVisible(m) };
+    if (d.tip) {
+      const img = S.tipImage && d.desc && /<img src=['"]([^'"]+)/.exec(d.desc);
+      update.tooltip = { content: d.tip + (img ? `<img src="${img[1]}" alt="">` : ''), trigger: S.tipTrigger, position: S.tipPosition, className: S.tipStyle === 'light' ? 'light' : null };
+    }
+    if (d.desc !== undefined) update.content = S.content === 'off' ? ''
+      : d.desc + (S.content === 'full' && d.json ? `<h3>This marker in tour-v2.json</h3><pre class="marker-json">${d.json}</pre>` : '');
+    if (d.group === 'shapes') {
+      update.svgStyle = m.type === 'polyline' || m.type === 'polylinePixels'
+        ? { stroke: S.accent, strokeWidth: S.strokeWidth * 2 + 'px', strokeLinecap: 'round', strokeDasharray: S.dashed ? '8 8' : 'none' }
+        : m.type === 'path'
+          ? { fill: S.accent, stroke: '#0b2530', strokeWidth: '2px' }
+          : { fill, stroke: S.accent, strokeWidth: S.strokeWidth + 'px', strokeDasharray: S.dashed ? '6 4' : 'none' };
+    }
+    if (m.type === 'image') update.size = { width: S.pinSize, height: S.pinSize };
+    if (!['imageLayer', 'videoLayer', 'elementLayer', 'polygon', 'polygonPixels', 'polyline', 'polylinePixels'].includes(m.type)) {
+      update.hoverScale = S.hoverScale;
+      update.scale = S.scaleZoom ? { zoom: [0.5, 1.6] } : null;
+    }
+    if (m.type === 'videoLayer' || m.type === 'imageLayer') {
+      update.opacity = S.layerOpacity;
+      update.chromaKey = { enabled: S.chroma, color: S.chromaColor, similarity: S.similarity, smoothness: S.smoothness };
+    }
+    try { markers.updateMarker(update); } catch (e) { log(`updateMarker(${m.id}): ${e.message}`); }
+    if (m.video) Object.assign(m.video, { muted: S.muted, loop: S.loop, playbackRate: S.rate });
+  }
+  S.allTooltips ? markers.showAllTooltips() : markers.hideAllTooltips();
+}
+
+function applyViewer() { viewer.setOptions(viewerOptions()); }
+
+// three.js objects in the scene: renderer.addObject() is PSV's public way to add your own meshes.
+// Lit by the panorama itself (envMap = the photo) and casting shadows onto an invisible floor.
+const objects = { group: null, textures: new Map() };
+const OBJECTS_AT = [4.25, 3.0];          // scan metres: the open floor in front of East Side 04
+function envTexture(id) {
+  if (!objects.textures.has(id)) {
+    const t = new THREE.TextureLoader().load(`panos-4k/${id}.jpg`, () => viewer.needsUpdate());
+    t.mapping = THREE.EquirectangularReflectionMapping;
+    objects.textures.set(id, t);
+  }
+  return objects.textures.get(id);
+}
+function applyObjects() {
+  if (!viewer) return;
+  if (objects.group) { viewer.renderer.removeObject(objects.group); objects.group = null; }
+  const node = vt.getCurrentNode();
+  if (!S.objects || !node?.id.startsWith('east-side')) { viewer.needsUpdate(); return; }
+
+  const [nx, ny] = node.data.xy, dx = OBJECTS_AT[0] - nx, dy = OBJECTS_AT[1] - ny;
+  const dist = Math.hypot(dx, dy);
+  if (dist > 9) { viewer.needsUpdate(); return; }
+  const bearing = Math.atan2(dx, dy) + 80 * Math.PI / 180;           // plan bearing -> compass (the tour's frame)
+  const centre = viewer.dataHelper.sphericalCoordsToVector3({ yaw: bearing, pitch: 0 }, new THREE.Vector3(), dist);
+  const floorY = -1.68;
+  const pan = deg(node.sphereCorrection.pan);
+  const env = S.envLight ? envTexture(node.id) : null;
+  const linear = hex => new THREE.Color().setHex(hex, THREE.LinearSRGBColorSpace);
+  const mat = (props) => Object.assign(new THREE.MeshStandardMaterial(props), env ? { envMap: env, envMapRotation: new THREE.Euler(0, -pan + Math.PI / 2, 0) } : {});
+
+  if (!objects.shadowsOn) {   // the official hook to reach three's WebGLRenderer; shadows must be on before materials compile
+    viewer.renderer.setCustomRenderer(r => { r.shadowMap.enabled = true; r.shadowMap.type = THREE.PCFShadowMap; return r; });
+    objects.shadowsOn = true;
+  }
+  const group = new THREE.Group();
+  group.position.set(centre.x, floorY, centre.z);
+  const ball = new THREE.Mesh(new THREE.SphereGeometry(0.28, 64, 32), mat({ color: linear(0xffffff), metalness: 1, roughness: 0.04 }));
+  ball.position.set(-0.45, 0.28, 0);
+  const knot = new THREE.Mesh(new THREE.TorusKnotGeometry(0.2, 0.065, 160, 24), mat({ color: linear(0xf0b35a), metalness: 0.3, roughness: 0.35 }));
+  knot.position.set(0.45, 0.42, 0);
+  const box = new THREE.Mesh(new THREE.BoxGeometry(0.34, 0.34, 0.34), mat({ color: linear(0xe8e4dc), metalness: 0, roughness: 0.8 }));
+  box.position.set(0.05, 0.17, 0.5); box.rotation.y = 0.5;
+  for (const [mesh, label] of [[ball, 'Chrome ball'], [knot, 'Torus knot'], [box, 'Box']]) {
+    mesh.castShadow = true; mesh.userData = { object3d: label }; group.add(mesh);
+  }
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(4, 4), new THREE.ShadowMaterial({ opacity: 0.45 }));
+  floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; group.add(floor);
+  group.add(new THREE.AmbientLight(0xffffff, env ? 0.2 : 1.2));
+  const sun = new THREE.DirectionalLight(0xffffff, 2.2);
+  viewer.dataHelper.sphericalCoordsToVector3({ yaw: S.lightYaw * Math.PI / 180, pitch: 0.9 }, sun.position, 4);   // from that compass direction, 50° up
+  sun.castShadow = S.shadows;
+  Object.assign(sun.shadow.camera, { left: -2, right: 2, top: 2, bottom: -2, near: 0.5, far: 8 });
+  sun.shadow.mapSize.set(2048, 2048); sun.shadow.radius = 3;
+  group.add(sun, sun.target);
+
+  viewer.renderer.addObject(group);
+  objects.group = group;
+  viewer.needsUpdate();
+}
+(function spin() {                                                // animate the knot: PSV redraws only when asked
+  if (objects.group) { objects.group.children[1].rotation.y += 0.01; viewer.needsUpdate(); }
+  requestAnimationFrame(spin);
+})();
+
+// =====================================================================================
+// Events + log
+// =====================================================================================
+function wireEvents() {
+  const rad2deg = r => (r * 180 / Math.PI).toFixed(1);
+  vt.addEventListener('node-changed', ({ node, data }) => {
+    log(`node-changed → ${node.id}` + (data.fromNode ? ` (from ${data.fromNode.id})` : ''));
+    if (S.notifications) viewer.notification.show({ content: node.name + (node.data?.room ? ` · ${node.data.room}` : ''), timeout: 2000 });
+    if (node.id !== tour.startNodeId) viewer.getPlugin(AutorotatePlugin)?.setKeypoints(null);
+    applyMarkers();
+    applyObjects();
+    // overlays take the place's sphereCorrection when added (autoclear removes them on every move)
+    viewer.getPlugin(OverlaysPlugin)?.addOverlay({ id: 'grid', path: 'assets/grid-overlay.png', opacity: 0.85 });
+  });
+  vt.addEventListener('enter-arrow', ({ link }) => log(`enter-arrow → ${link.nodeId}`));
+  for (const type of ['select-marker', 'unselect-marker']) markers.addEventListener(type, ({ marker }) => log(`${type} ${marker.id} (${marker.type})`));
+  markers.addEventListener('select-marker', ({ marker }) => {        // the official "layers" demo: click a video to play/pause
+    if (marker.video) marker.video.paused ? marker.video.play() : marker.video.pause();
+  });
+  viewer.addEventListener('click', ({ data }) => {
+    const pan = deg(vt.getCurrentNode()?.sphereCorrection?.pan ?? '0deg');
+    log(`click  yaw ${rad2deg(data.yaw)}° pitch ${rad2deg(data.pitch)}°  · photo yaw ${((data.yaw + pan) * 180 / Math.PI + 540) % 360 - 180 | 0}°  · x ${data.textureX | 0} y ${data.textureY | 0}`);
+  });
+  viewer.addEventListener('panorama-loaded', () => log('panorama-loaded'));
+  viewer.addEventListener('ready', onReady, { once: true });
+  viewer.observeObjects('object3d');
+  viewer.addEventListener('enter-object', ({ object }) => { viewer.setCursor('pointer'); log(`enter-object ${object.userData.object3d}`); });
+  viewer.addEventListener('leave-object', () => viewer.setCursor(null));
+  viewer.getPlugin(MapPlugin)?.addEventListener('select-hotspot', ({ hotspotId }) => log(`map select-hotspot ${hotspotId}`));
+  viewer.getPlugin(AutorotatePlugin)?.addEventListener('autorotate', e => log(`autorotate ${e.autorotateEnabled}`));
+}
+
+function onReady() {
+  if (S.settings) addSettings();
+  if (firstBuild && S.welcome) viewer.overlay.show({ id: 'welcome', title: 'NSYNK Office', text: '17th floor · scanned 24 November 2023<br><small>Click to enter</small>', dismissible: true });
+  if (firstBuild && S.intro) intro();
+  firstBuild = false;
+}
+
+// The official "intro animation" demo, adapted: from a fisheye view of the ceiling down into the room
+function intro() {
+  const end = viewer.getPosition();
+  viewer.setOptions({ fisheye: 2, maxFov: 130 });
+  viewer.rotate({ yaw: end.yaw + Math.PI, pitch: 1.2 }); viewer.zoom(0);
+  new utils.Animation({
+    properties: { yaw: { start: end.yaw + Math.PI, end: end.yaw }, pitch: { start: 1.2, end: end.pitch }, zoom: { start: 0, end: S.zoom },
+                  fisheye: { start: 2, end: S.fisheye }, maxFov: { start: 130, end: S.maxFov } },
+    duration: 3000, easing: 'inOutQuad', delay: 400,
+    onTick: p => { viewer.setOptions({ fisheye: p.fisheye, maxFov: p.maxFov }); viewer.rotate({ yaw: p.yaw, pitch: p.pitch }); viewer.zoom(p.zoom); },
+  });
+}
+
+function addSettings() {
+  const settings = viewer.getPlugin(SettingsPlugin);
+  settings.addSetting({ id: 'lang', label: 'Language', type: 'options', badge: () => S.lang.toUpperCase(), current: () => S.lang,
+    options: () => [{ id: 'en', label: 'English' }, { id: 'de', label: 'Deutsch' }], apply: v => set('lang', v) });
+  settings.addSetting({ id: 'info', label: 'Info points', type: 'toggle', active: () => S.info, toggle: () => set('info', !S.info) });
+  settings.addSetting({ id: 'route', label: 'Way to the kitchen', type: 'toggle', active: () => S.route, toggle: () => set('route', !S.route) });
+  settings.addSetting({ id: 'effect', label: 'Transition', type: 'options', current: () => S.effect,
+    options: () => ['fade', 'black', 'white', 'none'].map(id => ({ id, label: id })), apply: v => set('effect', v) });
+}
+
+// Tiles: PSV loads only the smallest level whose pixels cover the screen at the current zoom. Log each level as it's first requested.
+const tileLevels = new Set();
+new PerformanceObserver(list => {
+  for (const e of list.getEntries()) {
+    const m = /\/tiles(-debug)?\/(?:[a-z0-9-]+\/)?(\d)\/\d+_\d+\.jpg/.exec(e.name);
+    if (m && !tileLevels.has(m[2])) { tileLevels.add(m[2]); log(`tiles: level ${m[2]} (${[2048, 4096, 8192, 16384][m[2]]} px wide) requested`); }
+  }
+}).observe({ type: 'resource', buffered: true });
+
+const logEl = Object.assign(document.createElement('pre'), { className: 'log' });
+const lines = [];
+function log(t) { lines.unshift(t); lines.length = Math.min(lines.length, 40); logEl.textContent = lines.join('\n'); }
+
+// =====================================================================================
+// The panel (lil-gui). live: applied without rebuilding; everything else rebuilds the viewer in place.
+// =====================================================================================
+const LIVE = {
+  viewer: ['minFov', 'maxFov', 'fisheye', 'moveSpeed', 'zoomSpeed', 'moveInertia', 'mousewheel', 'mousewheelCtrlKey', 'keyboard', 'lang',
+           'canvasBackground', 'navZoom', 'navMove', 'navCaption', 'navDescription', 'navGallery', 'navMarkers', 'navMarkersList', 'navDownload',
+           'navFullscreen', 'shortcuts'],
+  markers: ['info', 'media', 'shapes', 'route', 'rooms', 'image_', 'html', 'element', 'imageLayer', 'videoLayer', 'elementLayer', 'polygon',
+            'polygonPixels', 'polyline', 'polylinePixels', 'circle', 'ellipse', 'square', 'rect', 'path', 'accent', 'strokeWidth', 'fillOpacity',
+            'dashed', 'pinSize', 'hoverScale', 'scaleZoom', 'tipTrigger', 'tipPosition', 'tipStyle', 'tipImage', 'content', 'allTooltips',
+            'muted', 'loop', 'rate', 'layerOpacity', 'chroma', 'chromaColor', 'similarity', 'smoothness'],
+  objects: ['envLight', 'shadows', 'lightYaw'],
+  other: ['zoom', 'notifications', 'welcome', 'intro', 'youtube'],
+};
+function change(key) {
+  saveUrl();
+  if (LIVE.viewer.includes(key)) applyViewer();
+  else if (LIVE.markers.includes(key)) applyMarkers();
+  else if (LIVE.objects.includes(key)) applyObjects();
+  else if (key === 'zoom') viewer.zoom(S.zoom);
+  else if (LIVE.other.includes(key)) { if (key === 'youtube' && S.tv === 'youtube') build(); }
+  else build();
+}
+function set(key, value) { S[key] = value; gui.controllersRecursive().forEach(c => c.updateDisplay()); change(key); }
+
+const gui = new GUI({ title: 'Options' });
+gui.close();
+const add = (folder, key, label, ...args) => folder.add(S, key, ...args).name(label).onFinishChange(() => change(key));
+const color = (folder, key, label) => folder.addColor(S, key).name(label).onFinishChange(() => change(key));
+
+let f = gui.addFolder('Panorama · adapter').close();
+add(f, 'image', 'panorama', { '4K JPEG': '4k', '8K JPEG': '8k', 'tiles to 16K · EquirectangularTilesAdapter': 'tiles', 'numbered debug tiles (same layout)': 'debug' });
+
+f = gui.addFolder('Virtual tour · VirtualTourPlugin').close();
+add(f, 'linkTooltip', 'link hover (tooltip)', { 'label only · getLinkTooltip': 'name', 'image + label · PSV default': 'default', 'label + distance + room · getLinkTooltip': 'distance', 'none · showLinkTooltip: false': 'off' });
+add(f, 'renderMode', 'renderMode', { '3d · floor arrows': '3d', '2d · markers': '2d' });
+add(f, 'positionMode', 'positionMode', { 'gps · lon/lat of every place': 'gps', 'manual · yaw/pitch': 'manual' });
+add(f, 'dataMode', 'dataMode', { 'client · one file': 'client', 'server · getNode() per place': 'server' });
+add(f, 'arrowStyle', 'arrowStyle', { 'PSV default button': 'default', 'image: floor spot': 'spot' });
+add(f, 'arrowSize', 'arrowStyle.size', 24, 96, 2);
+add(f, 'preload', 'preload');
+add(f, 'linksOnCompass', 'linksOnCompass');
+add(f, 'minPitch3d', 'arrowsPosition.minPitch (3d)', 0, 1.5, 0.05);
+add(f, 'linkOverlapAngle', 'arrowsPosition.linkOverlapAngle° (3d)', 0, 90, 1);
+add(f, 'linkPitchOffset', 'arrowsPosition.linkPitchOffset (2d+gps)', -0.6, 0.2, 0.01);
+
+f = gui.addFolder('Transition · transitionOptions').close();
+add(f, 'transition', 'form', { 'object': 'object', 'callback: black between rooms': 'room', 'callback: rotateTo the spot + zoomTo': 'spot' });
+add(f, 'effect', 'effect', ['fade', 'black', 'white', 'none']);
+add(f, 'speed', 'speed', { '20rpm': '20rpm', '10rpm': '10rpm', '40rpm': '40rpm', '600 ms': '600', '1500 ms': '1500' });
+add(f, 'rotation', 'rotation');
+add(f, 'showLoader', 'showLoader');
+
+f = gui.addFolder('Viewer · core options').close();
+add(f, 'zoom', 'zoom (defaultZoomLvl)', 0, 100, 1);
+add(f, 'minFov', 'minFov', 5, 60, 1); add(f, 'maxFov', 'maxFov', 60, 130, 1);
+add(f, 'fisheye', 'fisheye', 0, 2, 0.1);
+add(f, 'moveSpeed', 'moveSpeed', 0.2, 3, 0.1); add(f, 'zoomSpeed', 'zoomSpeed', 0.2, 3, 0.1);
+add(f, 'moveInertia', 'moveInertia'); add(f, 'mousewheel', 'mousewheel'); add(f, 'mousewheelCtrlKey', 'mousewheelCtrlKey');
+add(f, 'keyboard', 'keyboard', { 'fullscreen': 'fullscreen', always: 'always', off: 'off' });
+add(f, 'shortcuts', 'keyboardActions: H G M L');
+add(f, 'lang', 'lang', { English: 'en', Deutsch: 'de' });
+color(f, 'canvasBackground', 'canvasBackground');
+add(f, 'descriptions', 'node description (side panel)');
+add(f, 'notifications', 'notification on each move');
+add(f, 'welcome', 'overlay on load (next reload)');
+add(f, 'intro', 'intro animation (next reload)');
+const nav = f.addFolder('navbar').close();
+for (const [k, l] of [['navZoom', 'zoom'], ['navMove', 'move'], ['navCaption', 'caption'], ['navDescription', 'description'], ['navGallery', 'gallery'],
+                      ['navMarkers', 'markers'], ['navMarkersList', 'markersList'], ['navDownload', 'download'], ['navFullscreen', 'fullscreen']]) add(nav, k, l);
+
+f = gui.addFolder('Markers · MarkersPlugin').close();
+add(f, 'info', 'info points (image, polygon + content)');
+add(f, 'media', 'screens (image/video layers, element)');
+add(f, 'shapes', 'shapes on East Side 04');
+add(f, 'route', 'polyline: the way to the kitchen');
+add(f, 'rooms', 'html: room labels');
+const types = f.addFolder('types').close();
+for (const t of ['image_', 'html', 'element', 'imageLayer', 'videoLayer', 'elementLayer', 'polygon', 'polygonPixels', 'polyline', 'polylinePixels',
+                 'circle', 'ellipse', 'square', 'rect', 'path']) add(types, t, t.replace('_', ''));
+const look = f.addFolder('style').close();
+color(look, 'accent', 'svgStyle stroke (shapes)');
+add(look, 'strokeWidth', 'strokeWidth', 1, 8, 0.5);
+add(look, 'fillOpacity', 'fill opacity', 0, 0.8, 0.05);
+add(look, 'dashed', 'strokeDasharray');
+add(look, 'pinSize', 'size (image pins)', 16, 80, 1);
+add(look, 'hoverScale', 'hoverScale');
+add(look, 'scaleZoom', 'scale: { zoom: [0.5, 1.6] }');
+const tips = f.addFolder('tooltip + content').close();
+add(tips, 'tipTrigger', 'tooltip.trigger', ['hover', 'click']);
+add(tips, 'tipPosition', 'tooltip.position', ['top center', 'bottom center', 'center right', 'center left', 'top right', 'bottom left']);
+add(tips, 'tipStyle', 'tooltip.className', { 'default (dark)': 'dark', 'light': 'light' });
+add(tips, 'tipImage', 'image inside the tooltip');
+add(tips, 'content', 'content (side panel on click)', { 'description + media + JSON': 'full', 'description + media': 'text', 'off': 'off' });
+add(tips, 'allTooltips', 'showAllTooltips()');
+f.add({ list: () => markers.showMarkersList() }, 'list').name('showMarkersList()');
+f.add({ go: () => { set('info', true); vt.setCurrentNode('east-side-04'); setTimeout(() => markers.gotoMarker('folding-wall-pin', '6rpm'), 1500); } }, 'go').name("gotoMarker('folding-wall-pin')");
+
+f = gui.addFolder('Screens · video and layers').close();
+add(f, 'tv', 'TV in East Side 13', { 'imageLayer: the floor plan': 'image', 'videoLayer: clip': 'video', 'elementLayer: YouTube iframe': 'youtube' });
+add(f, 'youtube', 'YouTube video id');
+add(f, 'controls', 'element: play/mute buttons under the monitor');
+add(f, 'muted', 'video.muted'); add(f, 'loop', 'video.loop');
+add(f, 'rate', 'video.playbackRate', 0.25, 2, 0.25);
+add(f, 'layerOpacity', 'opacity', 0, 1, 0.05);
+add(f, 'chroma', 'chromaKey.enabled');
+color(f, 'chromaColor', 'chromaKey.color');
+add(f, 'similarity', 'chromaKey.similarity', 0, 1, 0.01);
+add(f, 'smoothness', 'chromaKey.smoothness', 0, 1, 0.01);
+f.add({ play: () => { set('media', true); vt.setCurrentNode('east-side-04'); setTimeout(() => markers.gotoMarker('monitor', '6rpm'), 1500); } }, 'play').name('go to the monitor');
+
+f = gui.addFolder('Map · MapPlugin (floor plan)').close();
+add(f, 'map', 'MapPlugin');
+add(f, 'mapStatic', 'static'); add(f, 'mapShape', 'shape', ['round', 'square']);
+add(f, 'mapSize', 'size px', 120, 480, 10);
+add(f, 'mapPosition', 'position', ['bottom left', 'bottom right', 'top left', 'top right']);
+add(f, 'mapZoom', 'defaultZoom', 20, 200, 5);
+color(f, 'coneColor', 'coneColor'); add(f, 'coneSize', 'coneSize', 10, 120, 2);
+color(f, 'spotColor', 'spotStyle.color'); add(f, 'spotSize', 'spotStyle.size', 6, 30, 1);
+add(f, 'mapMarkers', 'markers on the map (data.map)');
+
+f = gui.addFolder('Street map · PlanPlugin (needs gps)').close();
+add(f, 'plan', 'PlanPlugin (OpenStreetMap)');
+add(f, 'planZoom', 'defaultZoom', 14, 20, 1);
+
+f = gui.addFolder('Compass · CompassPlugin').close();
+add(f, 'compass', 'CompassPlugin');
+add(f, 'compassSize', 'size px', 80, 240, 10);
+add(f, 'compassPosition', 'position', ['top left', 'top right', 'bottom left', 'bottom right', 'top center']);
+add(f, 'compassNavigation', 'navigation');
+add(f, 'compassMarkers', 'markers on the compass (data.compass)');
+
+f = gui.addFolder('Gallery · GalleryPlugin').close();
+add(f, 'gallery', 'GalleryPlugin');
+add(f, 'thumbWidth', 'thumbnailSize.width', 100, 320, 10);
+add(f, 'galleryHideOnClick', 'hideOnClick'); add(f, 'galleryVisibleOnLoad', 'visibleOnLoad');
+
+f = gui.addFolder('Autorotate · AutorotatePlugin').close();
+add(f, 'autorotate', 'rotate when idle');
+add(f, 'autorotateSpeed', 'autorotateSpeed rpm', 0.5, 6, 0.5);
+add(f, 'autostartDelay', 'autostartDelay s', 1, 20, 1);
+f.add({ go: highlights }, 'go').name('guided look around (keypoints)');
+
+f = gui.addFolder('More plugins').close();
+add(f, 'range', 'VisibleRangePlugin (hide the tripod)');
+add(f, 'rangeMin', 'verticalRange min°', -90, -30, 1);
+add(f, 'settings', 'SettingsPlugin (gear menu)');
+add(f, 'gyroscope', 'GyroscopePlugin + StereoPlugin');
+add(f, 'grid', 'OverlaysPlugin: angle grid', { off: 'off', 'photo angles (data/markers.json)': 'photo', 'tour angles (tour-v2.json)': 'tour' });
+
+f = gui.addFolder('three.js objects · renderer.addObject').close();
+add(f, 'objects', 'objects on the floor (East side)');
+add(f, 'envLight', 'lit by the photo (envMap)');
+add(f, 'shadows', 'shadows');
+add(f, 'lightYaw', 'light direction°', 0, 360, 5);
+
+f = gui.addFolder('Log');
+f.$children.append(logEl);
+gui.add({ reset: () => { location.href = location.pathname; } }, 'reset').name('Reset all options');
+
+async function highlights() {
+  const auto = viewer.getPlugin(AutorotatePlugin);
+  if (!auto) { set('autorotate', true); return setTimeout(highlights, 500); }
+  if (vt.getCurrentNode().id !== tour.startNodeId) await vt.setCurrentNode(tour.startNodeId);
+  auto.setKeypoints(tour.highlights);
+  auto.start();
+}
+
+build();
+</script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+{
+ "id": "west-side-01",
+ "name": "West Side 01",
+ "caption": "West Side 01",
+ "panorama": "panos/west-side-01.jpg",
+ "thumbnail": "thumbs/west-side-01.jpg",
+ "sphereCorrection": {
+  "pan": "-192.62deg"
+ },
+ "links": [
+  {
+   "nodeId": "hallway-03",
+   "position": {
+    "yaw": "82.83deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.314
+   },
+   "gps": [
+    8.6339768,
+    50.1017724,
+    58.32
+   ],
+   "data": {
+    "distance": 3.2,
+    "room": "Hallway"
+   }
+  },
+  {
+   "nodeId": "west-side-02",
+   "position": {
+    "yaw": "167.61deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.373
+   },
+   "gps": [
+    8.6339412,
+    50.1017446,
+    58.32
+   ],
+   "data": {
+    "distance": 2.8,
+    "room": "West side"
+   }
+  },
+  {
+   "nodeId": "west-side-03",
+   "position": {
+    "yaw": "236.08deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.562
+   },
+   "gps": [
+    8.6339114,
+    50.1017595,
+    58.32
+   ],
+   "data": {
+    "distance": 1.9,
+    "room": "West side"
+   }
+  }
+ ],
+ "description": "<h2>West Side 01</h2><p>The open area on the west side of the floor.</p>",
+ "gps": [
+  8.6339329,
+  50.1017688,
+  60.0
+ ],
+ "map": {
+  "x": 393.3,
+  "y": 1581.8
+ },
+ "data": {
+  "room": "West side",
+  "xy": [
+   2.571,
+   -19.741
+  ],
+  "tiles": {
+   "baseUrl": "tiles/west-side-01/base.jpg",
+   "tileUrl": "tiles/west-side-01/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": [
+  {
+   "id": "room-hallway",
+   "html": "Hallway",
+   "className": "room-label",
+   "position": {
+    "yaw": "82.83deg",
+    "pitch": "6deg"
+   },
+   "anchor": "bottom center",
+   "listContent": "Hallway",
+   "data": {
+    "group": "rooms"
+   },
+   "content": "<h2>Hallway</h2>"
+  },
+  {
+   "id": "route",
+   "polyline": [
+    [
+     "82.83deg",
+     "-48.24deg"
+    ],
+    [
+     "82.83deg",
+     "-40.03deg"
+    ],
+    [
+     "82.83deg",
+     "-33.9deg"
+    ],
+    [
+     "82.83deg",
+     "-29.25deg"
+    ],
+    [
+     "82.83deg",
+     "-28.0deg"
+    ],
+    [
+     "82.04deg",
+     "-24.67deg"
+    ],
+    [
+     "81.44deg",
+     "-22.01deg"
+    ],
+    [
+     "80.96deg",
+     "-19.85deg"
+    ],
+    [
+     "80.58deg",
+     "-18.06deg"
+    ],
+    [
+     "80.27deg",
+     "-16.55deg"
+    ],
+    [
+     "80.01deg",
+     "-15.27deg"
+    ],
+    [
+     "79.85deg",
+     "-14.51deg"
+    ],
+    [
+     "75.67deg",
+     "-14.9deg"
+    ],
+    [
+     "71.27deg",
+     "-15.23deg"
+    ],
+    [
+     "66.69deg",
+     "-15.49deg"
+    ],
+    [
+     "61.98deg",
+     "-15.65deg"
+    ],
+    [
+     "57.2deg",
+     "-15.71deg"
+    ],
+    [
+     "52.51deg",
+     "-15.67deg"
+    ],
+    [
+     "54.86deg",
+     "-14.66deg"
+    ],
+    [
+     "56.92deg",
+     "-13.76deg"
+    ],
+    [
+     "58.73deg",
+     "-12.95deg"
+    ],
+    [
+     "60.32deg",
+     "-12.21deg"
+    ],
+    [
+     "61.74deg",
+     "-11.55deg"
+    ],
+    [
+     "63.01deg",
+     "-10.95deg"
+    ]
+   ],
+   "tooltip": "The way to the kitchen",
+   "svgStyle": {
+    "stroke": "#f0b35a",
+    "strokeWidth": "5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "strokeDasharray": "2 12"
+   },
+   "listContent": "Way to the kitchen",
+   "data": {
+    "group": "route"
+   },
+   "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+  }
+ ]
+}

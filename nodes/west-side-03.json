@@ -1,0 +1,299 @@
+{
+ "id": "west-side-03",
+ "name": "West Side 03",
+ "caption": "West Side 03",
+ "panorama": "panos/west-side-03.jpg",
+ "thumbnail": "thumbs/west-side-03.jpg",
+ "sphereCorrection": {
+  "pan": "-183.65deg"
+ },
+ "links": [
+  {
+   "nodeId": "meeting-room-01",
+   "position": {
+    "yaw": "-9.74deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.316
+   },
+   "gps": [
+    8.633904,
+    50.1017874,
+    58.32
+   ],
+   "data": {
+    "distance": 3.1,
+    "room": "Meeting room"
+   }
+  },
+  {
+   "nodeId": "west-side-01",
+   "position": {
+    "yaw": "56.08deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.562
+   },
+   "gps": [
+    8.6339329,
+    50.1017688,
+    58.32
+   ],
+   "data": {
+    "distance": 1.9,
+    "room": "West side"
+   }
+  },
+  {
+   "nodeId": "west-side-04",
+   "position": {
+    "yaw": "185.84deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.206
+   },
+   "gps": [
+    8.6339054,
+    50.101722,
+    58.32
+   ],
+   "data": {
+    "distance": 4.2,
+    "room": "West side"
+   }
+  },
+  {
+   "nodeId": "west-side-05",
+   "position": {
+    "yaw": "-86.68deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.239
+   },
+   "gps": [
+    8.6338578,
+    50.1017615,
+    58.32
+   ],
+   "data": {
+    "distance": 3.8,
+    "room": "West side"
+   }
+  }
+ ],
+ "description": "<h2>West Side 03</h2><p>The open area on the west side of the floor.</p>",
+ "gps": [
+  8.6339114,
+  50.1017595,
+  60.0
+ ],
+ "map": {
+  "x": 437.7,
+  "y": 1681.8
+ },
+ "data": {
+  "room": "West side",
+  "xy": [
+   3.322,
+   -21.434
+  ],
+  "tiles": {
+   "baseUrl": "tiles/west-side-03/base.jpg",
+   "tileUrl": "tiles/west-side-03/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": [
+  {
+   "id": "room-meeting-room",
+   "html": "Meeting room",
+   "className": "room-label",
+   "position": {
+    "yaw": "-9.74deg",
+    "pitch": "6deg"
+   },
+   "anchor": "bottom center",
+   "listContent": "Meeting room",
+   "data": {
+    "group": "rooms"
+   },
+   "content": "<h2>Meeting room</h2>"
+  },
+  {
+   "id": "route",
+   "polyline": [
+    [
+     "56.08deg",
+     "-48.24deg"
+    ],
+    [
+     "56.08deg",
+     "-42.21deg"
+    ],
+    [
+     "61.67deg",
+     "-36.03deg"
+    ],
+    [
+     "65.39deg",
+     "-31.13deg"
+    ],
+    [
+     "68.02deg",
+     "-27.25deg"
+    ],
+    [
+     "69.98deg",
+     "-24.15deg"
+    ],
+    [
+     "71.48deg",
+     "-21.63deg"
+    ],
+    [
+     "72.67deg",
+     "-19.56deg"
+    ],
+    [
+     "73.0deg",
+     "-18.98deg"
+    ],
+    [
+     "73.38deg",
+     "-17.33deg"
+    ],
+    [
+     "73.69deg",
+     "-15.94deg"
+    ],
+    [
+     "73.95deg",
+     "-14.75deg"
+    ],
+    [
+     "74.17deg",
+     "-13.72deg"
+    ],
+    [
+     "74.37deg",
+     "-12.82deg"
+    ],
+    [
+     "74.54deg",
+     "-12.03deg"
+    ],
+    [
+     "74.64deg",
+     "-11.55deg"
+    ],
+    [
+     "71.26deg",
+     "-11.74deg"
+    ],
+    [
+     "67.78deg",
+     "-11.9deg"
+    ],
+    [
+     "64.21deg",
+     "-12.02deg"
+    ],
+    [
+     "60.59deg",
+     "-12.09deg"
+    ],
+    [
+     "56.93deg",
+     "-12.12deg"
+    ],
+    [
+     "53.35deg",
+     "-12.1deg"
+    ],
+    [
+     "55.14deg",
+     "-11.48deg"
+    ],
+    [
+     "56.74deg",
+     "-10.91deg"
+    ]
+   ],
+   "tooltip": "The way to the kitchen",
+   "svgStyle": {
+    "stroke": "#f0b35a",
+    "strokeWidth": "5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "strokeDasharray": "2 12"
+   },
+   "listContent": "Way to the kitchen",
+   "data": {
+    "group": "route"
+   },
+   "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+  },
+  {
+   "id": "glass-wall",
+   "polygon": [
+    [
+     "288.55deg",
+     "16.9deg"
+    ],
+    [
+     "333.55deg",
+     "21.1deg"
+    ],
+    [
+     "333.55deg",
+     "-44.6deg"
+    ],
+    [
+     "288.55deg",
+     "-26.0deg"
+    ]
+   ],
+   "svgStyle": {
+    "fill": "rgba(240,179,90,0.14)",
+    "stroke": "#f0b35a",
+    "strokeWidth": "2px"
+   },
+   "tooltip": "Glass wall",
+   "content": "<h2>Glass wall</h2><p>The meeting room is closed off with glass walls, marked \"Glaswand\" on the plan for the 17th floor from October 2021.</p><img src='assets/plan-2021.jpg' alt=''>",
+   "listContent": "Glass wall",
+   "data": {
+    "group": "info",
+    "map": {
+     "distance": 89,
+     "color": "#f0b35a"
+    },
+    "compass": "#f0b35a"
+   }
+  }
+ ]
+}

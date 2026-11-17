@@ -1,0 +1,528 @@
+{
+ "id": "east-side-04",
+ "name": "East Side 04",
+ "caption": "East Side 04",
+ "panorama": "panos/east-side-04.jpg",
+ "thumbnail": "thumbs/east-side-04.jpg",
+ "sphereCorrection": {
+  "pan": "83.4deg"
+ },
+ "links": [
+  {
+   "nodeId": "east-side-01",
+   "position": {
+    "yaw": "205.49deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.193
+   },
+   "gps": [
+    8.634249,
+    50.101775,
+    58.32
+   ],
+   "data": {
+    "distance": 4.4,
+    "room": "East side"
+   }
+  },
+  {
+   "nodeId": "east-side-03",
+   "position": {
+    "yaw": "166.35deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.198
+   },
+   "gps": [
+    8.6342895,
+    50.1017728,
+    58.32
+   ],
+   "data": {
+    "distance": 4.3,
+    "room": "East side"
+   }
+  },
+  {
+   "nodeId": "east-side-05",
+   "position": {
+    "yaw": "-45.17deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.21
+   },
+   "gps": [
+    8.634234,
+    50.1018367,
+    58.32
+   ],
+   "data": {
+    "distance": 4.2,
+    "room": "East side"
+   }
+  },
+  {
+   "nodeId": "east-side-06",
+   "position": {
+    "yaw": "-3.06deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.132
+   },
+   "gps": [
+    8.6342713,
+    50.1018579,
+    58.32
+   ],
+   "data": {
+    "distance": 5.3,
+    "room": "East side"
+   }
+  },
+  {
+   "nodeId": "east-side-08",
+   "position": {
+    "yaw": "258.52deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.125
+   },
+   "gps": [
+    8.6342007,
+    50.1018007,
+    58.32
+   ],
+   "data": {
+    "distance": 5.4,
+    "room": "East side"
+   }
+  }
+ ],
+ "description": "<h2>East Side 04</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+ "gps": [
+  8.6342753,
+  50.1018104,
+  60.0
+ ],
+ "map": {
+  "x": 375.1,
+  "y": 112.7
+ },
+ "data": {
+  "room": "East side",
+  "xy": [
+   2.262,
+   5.136
+  ],
+  "tiles": {
+   "baseUrl": "tiles/east-side-04/base.jpg",
+   "tileUrl": "tiles/east-side-04/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": [
+  {
+   "id": "route",
+   "polyline": [
+    [
+     "258.52deg",
+     "-48.24deg"
+    ],
+    [
+     "258.52deg",
+     "-40.03deg"
+    ],
+    [
+     "258.52deg",
+     "-33.9deg"
+    ],
+    [
+     "258.52deg",
+     "-29.25deg"
+    ],
+    [
+     "258.52deg",
+     "-25.64deg"
+    ],
+    [
+     "258.52deg",
+     "-22.78deg"
+    ],
+    [
+     "258.52deg",
+     "-20.47deg"
+    ],
+    [
+     "258.52deg",
+     "-18.57deg"
+    ],
+    [
+     "258.52deg",
+     "-17.18deg"
+    ],
+    [
+     "258.65deg",
+     "-15.81deg"
+    ],
+    [
+     "258.75deg",
+     "-14.63deg"
+    ],
+    [
+     "258.84deg",
+     "-13.62deg"
+    ],
+    [
+     "258.92deg",
+     "-12.73deg"
+    ],
+    [
+     "258.99deg",
+     "-11.96deg"
+    ],
+    [
+     "259.04deg",
+     "-11.38deg"
+    ],
+    [
+     "259.0deg",
+     "-10.75deg"
+    ]
+   ],
+   "tooltip": "The way to the kitchen",
+   "svgStyle": {
+    "stroke": "#f0b35a",
+    "strokeWidth": "5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "strokeDasharray": "2 12"
+   },
+   "listContent": "Way to the kitchen",
+   "data": {
+    "group": "route"
+   },
+   "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+  },
+  {
+   "id": "monitor",
+   "videoLayer": "assets/clip.mp4",
+   "position": [
+    {
+     "yaw": "-49.4deg",
+     "pitch": "-9.3deg"
+    },
+    {
+     "yaw": "-30.0deg",
+     "pitch": "-11.4deg"
+    },
+    {
+     "yaw": "-30.1deg",
+     "pitch": "-23.7deg"
+    },
+    {
+     "yaw": "-49.4deg",
+     "pitch": "-20.0deg"
+    }
+   ],
+   "style": {
+    "cursor": "pointer"
+   },
+   "tooltip": "Click to play / pause",
+   "listContent": "Monitor (videoLayer)",
+   "data": {
+    "group": "media"
+   },
+   "content": "<h2>Monitor (videoLayer)</h2><p>Click to play / pause</p><video src=\"assets/clip.mp4\" controls muted loop autoplay playsinline></video>"
+  },
+  {
+   "id": "poster-plan",
+   "imageLayer": "assets/plan-2021.jpg",
+   "position": [
+    {
+     "yaw": "24.1deg",
+     "pitch": "8.5deg"
+    },
+    {
+     "yaw": "37.2deg",
+     "pitch": "11.4deg"
+    },
+    {
+     "yaw": "38.1deg",
+     "pitch": "-18.7deg"
+    },
+    {
+     "yaw": "24.4deg",
+     "pitch": "-14.6deg"
+    }
+   ],
+   "tooltip": "The 17th-floor plan, October 2021",
+   "listContent": "Poster (imageLayer)",
+   "data": {
+    "group": "media",
+    "map": {
+     "distance": 136,
+     "color": "#f0b35a"
+    },
+    "compass": "#f0b35a"
+   },
+   "content": "<h2>Poster (imageLayer)</h2><p>The 17th-floor plan, October 2021</p><img src=\"assets/plan-2021.jpg\" alt=\"\">"
+  },
+  {
+   "id": "folding-wall-pin",
+   "image": "assets/info.svg",
+   "size": {
+    "width": 34,
+    "height": 34
+   },
+   "position": {
+    "yaw": "-233.4deg",
+    "pitch": "4deg"
+   },
+   "tooltip": "Folding wall",
+   "content": "<h2>Folding wall</h2><p>The open studio can be split in two. This folding wall (Faltwand) is drawn on the studio plan from 2019 and on the 17th-floor plan from 2021.</p><img src='assets/plan-studio-2019.jpg' alt=''>",
+   "listContent": "Folding wall",
+   "data": {
+    "group": "info",
+    "map": {
+     "distance": 189,
+     "color": "#f0b35a"
+    },
+    "compass": "#f0b35a"
+   }
+  },
+  {
+   "id": "poster-outline",
+   "polygon": [
+    [
+     "10.5deg",
+     "5.2deg"
+    ],
+    [
+     "15.9deg",
+     "6.3deg"
+    ],
+    [
+     "16.2deg",
+     "-11.0deg"
+    ],
+    [
+     "10.7deg",
+     "-9.6deg"
+    ]
+   ],
+   "svgStyle": {
+    "fill": "rgba(125,221,255,0.15)",
+    "stroke": "#7df",
+    "strokeWidth": "2px"
+   },
+   "tooltip": "polygon · corners in yaw/pitch",
+   "listContent": "Poster (polygon)",
+   "data": {
+    "group": "shapes"
+   },
+   "content": "<h2>Poster (polygon)</h2><p>polygon · corners in yaw/pitch</p>"
+  },
+  {
+   "id": "poster-pixels",
+   "polygonPixels": [
+    [
+     4128,
+     1993
+    ],
+    [
+     4258,
+     1995
+    ],
+    [
+     4260,
+     2169
+    ],
+    [
+     4128,
+     2173
+    ]
+   ],
+   "svgStyle": {
+    "fill": "rgba(125,221,255,0.15)",
+    "stroke": "#7df",
+    "strokeWidth": "2px"
+   },
+   "tooltip": "polygonPixels · corners in image pixels",
+   "listContent": "Poster (polygonPixels)",
+   "data": {
+    "group": "shapes"
+   },
+   "content": "<h2>Poster (polygonPixels)</h2><p>polygonPixels · corners in image pixels</p>"
+  },
+  {
+   "id": "track",
+   "polylinePixels": [
+    [
+     1315,
+     1151
+    ],
+    [
+     1814,
+     1131
+    ],
+    [
+     2289,
+     1222
+    ],
+    [
+     2683,
+     1381
+    ],
+    [
+     3079,
+     1586
+    ],
+    [
+     3395,
+     1807
+    ]
+   ],
+   "svgStyle": {
+    "stroke": "#7df",
+    "strokeWidth": "4px",
+    "strokeLinecap": "round"
+   },
+   "tooltip": "polylinePixels · the folding wall's ceiling track",
+   "listContent": "Ceiling track (polylinePixels)",
+   "data": {
+    "group": "shapes"
+   },
+   "content": "<h2>Ceiling track (polylinePixels)</h2><p>polylinePixels · the folding wall's ceiling track</p>"
+  },
+  {
+   "id": "smoke-detector",
+   "circle": 16,
+   "position": {
+    "yaw": "-104.2deg",
+    "pitch": "47.2deg"
+   },
+   "svgStyle": {
+    "fill": "rgba(125,221,255,0.15)",
+    "stroke": "#7df",
+    "strokeWidth": "2px"
+   },
+   "tooltip": "circle · smoke detector",
+   "listContent": "Smoke detector (circle)",
+   "data": {
+    "group": "shapes"
+   },
+   "content": "<h2>Smoke detector (circle)</h2><p>circle · smoke detector</p>"
+  },
+  {
+   "id": "speaker",
+   "ellipse": {
+    "rx": 26,
+    "ry": 38
+   },
+   "position": {
+    "yaw": "-183.9deg",
+    "pitch": "0.5deg"
+   },
+   "svgStyle": {
+    "fill": "none",
+    "stroke": "#7df",
+    "strokeWidth": "2px",
+    "strokeDasharray": "6 4"
+   },
+   "tooltip": "ellipse · speaker",
+   "listContent": "Speaker (ellipse)",
+   "data": {
+    "group": "shapes"
+   },
+   "content": "<h2>Speaker (ellipse)</h2><p>ellipse · speaker</p>"
+  },
+  {
+   "id": "thermostat",
+   "square": 18,
+   "position": {
+    "yaw": "-123.0deg",
+    "pitch": "-1.4deg"
+   },
+   "svgStyle": {
+    "fill": "rgba(125,221,255,0.15)",
+    "stroke": "#7df",
+    "strokeWidth": "2px"
+   },
+   "tooltip": "square · thermostat",
+   "listContent": "Thermostat (square)",
+   "data": {
+    "group": "shapes"
+   },
+   "content": "<h2>Thermostat (square)</h2><p>square · thermostat</p>"
+  },
+  {
+   "id": "exit-sign",
+   "rect": {
+    "width": 30,
+    "height": 16
+   },
+   "position": {
+    "yaw": "-101.0deg",
+    "pitch": "3.4deg"
+   },
+   "svgStyle": {
+    "fill": "none",
+    "stroke": "#7df",
+    "strokeWidth": "2px"
+   },
+   "tooltip": "rect · exit sign",
+   "listContent": "Exit sign (rect)",
+   "data": {
+    "group": "shapes"
+   },
+   "content": "<h2>Exit sign (rect)</h2><p>rect · exit sign</p>"
+  },
+  {
+   "id": "corridor-arrow",
+   "path": "M 0 12 L 24 12 L 24 0 L 44 20 L 24 40 L 24 28 L 0 28 Z",
+   "position": {
+    "yaw": "-108.4deg",
+    "pitch": "-3deg"
+   },
+   "anchor": "center right",
+   "svgStyle": {
+    "fill": "#7df",
+    "stroke": "#0b2530",
+    "strokeWidth": "2px"
+   },
+   "tooltip": "path · to the corridor",
+   "listContent": "Arrow (path)",
+   "data": {
+    "group": "shapes"
+   },
+   "content": "<h2>Arrow (path)</h2><p>path · to the corridor</p>"
+  }
+ ]
+}

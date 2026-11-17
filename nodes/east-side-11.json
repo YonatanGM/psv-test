@@ -1,0 +1,274 @@
+{
+ "id": "east-side-11",
+ "name": "East Side 11",
+ "caption": "East Side 11",
+ "panorama": "panos/east-side-11.jpg",
+ "thumbnail": "thumbs/east-side-11.jpg",
+ "sphereCorrection": {
+  "pan": "25.88deg"
+ },
+ "links": [
+  {
+   "nodeId": "east-side-09",
+   "position": {
+    "yaw": "78.33deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.397
+   },
+   "gps": [
+    8.6341605,
+    50.1017961,
+    58.32
+   ],
+   "data": {
+    "distance": 2.6,
+    "room": "East side"
+   }
+  },
+  {
+   "nodeId": "east-side-12",
+   "position": {
+    "yaw": "176.27deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.422
+   },
+   "gps": [
+    8.634127,
+    50.1017692,
+    58.32
+   ],
+   "data": {
+    "distance": 2.5,
+    "room": "East side"
+   }
+  },
+  {
+   "nodeId": "east-side-13",
+   "position": {
+    "yaw": "-13.69deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.227
+   },
+   "gps": [
+    8.6341116,
+    50.1018259,
+    58.32
+   ],
+   "data": {
+    "distance": 4.0,
+    "room": "East side"
+   }
+  },
+  {
+   "nodeId": "hallway-02",
+   "position": {
+    "yaw": "-97.15deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.251
+   },
+   "gps": [
+    8.6340732,
+    50.1017872,
+    58.32
+   ],
+   "data": {
+    "distance": 3.7,
+    "room": "Hallway"
+   }
+  }
+ ],
+ "description": "<h2>East Side 11</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+ "gps": [
+  8.6341247,
+  50.1017914,
+  60.0
+ ],
+ "map": {
+  "x": 387.8,
+  "y": 759.7
+ },
+ "data": {
+  "room": "East side",
+  "xy": [
+   2.478,
+   -5.82
+  ],
+  "tiles": {
+   "baseUrl": "tiles/east-side-11/base.jpg",
+   "tileUrl": "tiles/east-side-11/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": [
+  {
+   "id": "room-hallway",
+   "html": "Hallway",
+   "className": "room-label",
+   "position": {
+    "yaw": "-97.15deg",
+    "pitch": "6deg"
+   },
+   "anchor": "bottom center",
+   "listContent": "Hallway",
+   "data": {
+    "group": "rooms"
+   },
+   "content": "<h2>Hallway</h2>"
+  },
+  {
+   "id": "route",
+   "polyline": [
+    [
+     "-97.15deg",
+     "-48.24deg"
+    ],
+    [
+     "-97.15deg",
+     "-40.03deg"
+    ],
+    [
+     "-97.15deg",
+     "-33.9deg"
+    ],
+    [
+     "-97.15deg",
+     "-29.25deg"
+    ],
+    [
+     "-97.15deg",
+     "-25.64deg"
+    ],
+    [
+     "-97.15deg",
+     "-24.39deg"
+    ],
+    [
+     "-97.97deg",
+     "-21.79deg"
+    ],
+    [
+     "-98.6deg",
+     "-19.67deg"
+    ],
+    [
+     "-99.12deg",
+     "-17.91deg"
+    ],
+    [
+     "-99.55deg",
+     "-16.43deg"
+    ],
+    [
+     "-99.91deg",
+     "-15.17deg"
+    ],
+    [
+     "259.79deg",
+     "-14.09deg"
+    ],
+    [
+     "259.53deg",
+     "-13.15deg"
+    ],
+    [
+     "259.41deg",
+     "-12.74deg"
+    ],
+    [
+     "-97.12deg",
+     "-12.41deg"
+    ],
+    [
+     "-93.85deg",
+     "-12.05deg"
+    ],
+    [
+     "-90.77deg",
+     "-11.68deg"
+    ],
+    [
+     "-87.89deg",
+     "-11.3deg"
+    ],
+    [
+     "-85.21deg",
+     "-10.93deg"
+    ],
+    [
+     "-82.0deg",
+     "-11.15deg"
+    ],
+    [
+     "-81.16deg",
+     "-11.8deg"
+    ],
+    [
+     "-80.21deg",
+     "-12.53deg"
+    ],
+    [
+     "-79.13deg",
+     "-13.35deg"
+    ],
+    [
+     "-77.9deg",
+     "-14.28deg"
+    ],
+    [
+     "-76.47deg",
+     "-15.34deg"
+    ],
+    [
+     "-74.81deg",
+     "-16.55deg"
+    ],
+    [
+     "-73.85deg",
+     "-17.23deg"
+    ]
+   ],
+   "tooltip": "The way to the kitchen",
+   "svgStyle": {
+    "stroke": "#f0b35a",
+    "strokeWidth": "5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "strokeDasharray": "2 12"
+   },
+   "listContent": "Way to the kitchen",
+   "data": {
+    "group": "route"
+   },
+   "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+  }
+ ]
+}

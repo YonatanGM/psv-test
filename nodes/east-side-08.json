@@ -1,0 +1,290 @@
+{
+ "id": "east-side-08",
+ "name": "East Side 08",
+ "caption": "East Side 08",
+ "panorama": "panos/east-side-08.jpg",
+ "thumbnail": "thumbs/east-side-08.jpg",
+ "sphereCorrection": {
+  "pan": "-235.65deg"
+ },
+ "links": [
+  {
+   "nodeId": "east-side-01",
+   "position": {
+    "yaw": "129.68deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.184
+   },
+   "gps": [
+    8.634249,
+    50.101775,
+    58.32
+   ],
+   "data": {
+    "distance": 4.5,
+    "room": "East side"
+   }
+  },
+  {
+   "nodeId": "east-side-02",
+   "position": {
+    "yaw": "167.66deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.114
+   },
+   "gps": [
+    8.6342176,
+    50.101751,
+    58.32
+   ],
+   "data": {
+    "distance": 5.7,
+    "room": "East side"
+   }
+  },
+  {
+   "nodeId": "east-side-04",
+   "position": {
+    "yaw": "78.52deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.125
+   },
+   "gps": [
+    8.6342753,
+    50.1018104,
+    58.32
+   ],
+   "data": {
+    "distance": 5.4,
+    "room": "East side"
+   }
+  },
+  {
+   "nodeId": "east-side-05",
+   "position": {
+    "yaw": "30.67deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.171
+   },
+   "gps": [
+    8.634234,
+    50.1018367,
+    58.32
+   ],
+   "data": {
+    "distance": 4.7,
+    "room": "East side"
+   }
+  },
+  {
+   "nodeId": "east-side-07",
+   "position": {
+    "yaw": "-10.7deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.118
+   },
+   "gps": [
+    8.6341862,
+    50.1018499,
+    58.32
+   ],
+   "data": {
+    "distance": 5.6,
+    "room": "East side"
+   }
+  },
+  {
+   "nodeId": "east-side-09",
+   "position": {
+    "yaw": "260.0deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.348
+   },
+   "gps": [
+    8.6341605,
+    50.1017961,
+    58.32
+   ],
+   "data": {
+    "distance": 2.9,
+    "room": "East side"
+   }
+  }
+ ],
+ "description": "<h2>East Side 08</h2><p>The open studio on the east side of the floor. A folding wall (Faltwand) can split it into two rooms.</p>",
+ "gps": [
+  8.6342007,
+  50.1018007,
+  60.0
+ ],
+ "map": {
+  "x": 383.4,
+  "y": 433.5
+ },
+ "data": {
+  "room": "East side",
+  "xy": [
+   2.402,
+   -0.297
+  ],
+  "tiles": {
+   "baseUrl": "tiles/east-side-08/base.jpg",
+   "tileUrl": "tiles/east-side-08/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": [
+  {
+   "id": "route",
+   "polyline": [
+    [
+     "260.0deg",
+     "-48.24deg"
+    ],
+    [
+     "260.0deg",
+     "-40.03deg"
+    ],
+    [
+     "260.0deg",
+     "-33.9deg"
+    ],
+    [
+     "260.0deg",
+     "-29.96deg"
+    ],
+    [
+     "259.76deg",
+     "-26.2deg"
+    ],
+    [
+     "259.57deg",
+     "-23.23deg"
+    ],
+    [
+     "259.43deg",
+     "-20.84deg"
+    ],
+    [
+     "259.32deg",
+     "-18.88deg"
+    ],
+    [
+     "259.23deg",
+     "-17.24deg"
+    ],
+    [
+     "259.21deg",
+     "-16.92deg"
+    ],
+    [
+     "259.51deg",
+     "-15.59deg"
+    ],
+    [
+     "259.77deg",
+     "-14.45deg"
+    ],
+    [
+     "259.99deg",
+     "-13.46deg"
+    ],
+    [
+     "-99.82deg",
+     "-12.59deg"
+    ],
+    [
+     "-99.66deg",
+     "-11.83deg"
+    ],
+    [
+     "-99.51deg",
+     "-11.16deg"
+    ]
+   ],
+   "tooltip": "The way to the kitchen",
+   "svgStyle": {
+    "stroke": "#f0b35a",
+    "strokeWidth": "5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "strokeDasharray": "2 12"
+   },
+   "listContent": "Way to the kitchen",
+   "data": {
+    "group": "route"
+   },
+   "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+  },
+  {
+   "id": "folding-wall",
+   "polygon": [
+    [
+     "176.55deg",
+     "52deg"
+    ],
+    [
+     "209.65deg",
+     "52deg"
+    ],
+    [
+     "209.65deg",
+     "-59deg"
+    ],
+    [
+     "176.55deg",
+     "-59deg"
+    ]
+   ],
+   "svgStyle": {
+    "fill": "rgba(240,179,90,0.14)",
+    "stroke": "#f0b35a",
+    "strokeWidth": "2px"
+   },
+   "tooltip": "Folding wall",
+   "content": "<h2>Folding wall</h2><p>The open studio can be split in two. This folding wall (Faltwand) is drawn on the studio plan from 2019.</p><img src='assets/plan-studio-2019.jpg' alt=''>",
+   "listContent": "Folding wall",
+   "data": {
+    "group": "info",
+    "map": {
+     "distance": 71,
+     "color": "#f0b35a"
+    },
+    "compass": "#f0b35a"
+   }
+  }
+ ]
+}

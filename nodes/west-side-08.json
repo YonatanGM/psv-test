@@ -1,0 +1,215 @@
+{
+ "id": "west-side-08",
+ "name": "West Side 08",
+ "caption": "West Side 08",
+ "panorama": "panos/west-side-08.jpg",
+ "thumbnail": "thumbs/west-side-08.jpg",
+ "sphereCorrection": {
+  "pan": "9.81deg"
+ },
+ "links": [
+  {
+   "nodeId": "sr-16",
+   "position": {
+    "yaw": "81.36deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.096
+   },
+   "gps": [
+    8.6338701,
+    50.1017087,
+    58.32
+   ],
+   "data": {
+    "distance": 6.1,
+    "room": "SR"
+   }
+  },
+  {
+   "nodeId": "sr-17",
+   "position": {
+    "yaw": "47.85deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.236
+   },
+   "gps": [
+    8.6338262,
+    50.1017238,
+    58.32
+   ],
+   "data": {
+    "distance": 3.9,
+    "room": "SR"
+   }
+  },
+  {
+   "nodeId": "west-side-06",
+   "position": {
+    "yaw": "-8.62deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.118
+   },
+   "gps": [
+    8.6337744,
+    50.10175,
+    58.32
+   ],
+   "data": {
+    "distance": 5.6,
+    "room": "West side"
+   }
+  }
+ ],
+ "description": "<h2>West Side 08</h2><p>The open area on the west side of the floor.</p>",
+ "gps": [
+  8.6337861,
+  50.1017005,
+  60.0
+ ],
+ "map": {
+  "x": 728.1,
+  "y": 2269.4
+ },
+ "data": {
+  "room": "West side",
+  "xy": [
+   8.24,
+   -31.384
+  ],
+  "tiles": {
+   "baseUrl": "tiles/west-side-08/base.jpg",
+   "tileUrl": "tiles/west-side-08/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": [
+  {
+   "id": "room-sr",
+   "html": "SR",
+   "className": "room-label",
+   "position": {
+    "yaw": "47.85deg",
+    "pitch": "6deg"
+   },
+   "anchor": "bottom center",
+   "listContent": "SR",
+   "data": {
+    "group": "rooms"
+   },
+   "content": "<h2>SR</h2>"
+  },
+  {
+   "id": "route",
+   "polyline": [
+    [
+     "47.85deg",
+     "-48.24deg"
+    ],
+    [
+     "47.85deg",
+     "-40.03deg"
+    ],
+    [
+     "47.85deg",
+     "-33.9deg"
+    ],
+    [
+     "47.85deg",
+     "-29.25deg"
+    ],
+    [
+     "47.85deg",
+     "-25.64deg"
+    ],
+    [
+     "47.85deg",
+     "-23.51deg"
+    ],
+    [
+     "45.63deg",
+     "-21.18deg"
+    ],
+    [
+     "43.85deg",
+     "-19.23deg"
+    ],
+    [
+     "42.39deg",
+     "-17.59deg"
+    ],
+    [
+     "41.18deg",
+     "-16.2deg"
+    ],
+    [
+     "40.16deg",
+     "-14.99deg"
+    ],
+    [
+     "39.28deg",
+     "-13.95deg"
+    ],
+    [
+     "38.52deg",
+     "-13.04deg"
+    ],
+    [
+     "37.86deg",
+     "-12.24deg"
+    ],
+    [
+     "37.28deg",
+     "-11.52deg"
+    ],
+    [
+     "37.0deg",
+     "-11.17deg"
+    ],
+    [
+     "39.71deg",
+     "-10.82deg"
+    ]
+   ],
+   "tooltip": "The way to the kitchen",
+   "svgStyle": {
+    "stroke": "#f0b35a",
+    "strokeWidth": "5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "strokeDasharray": "2 12"
+   },
+   "listContent": "Way to the kitchen",
+   "data": {
+    "group": "route"
+   },
+   "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+  }
+ ]
+}

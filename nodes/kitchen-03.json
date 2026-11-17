@@ -1,0 +1,94 @@
+{
+ "id": "kitchen-03",
+ "name": "Kitchen 03",
+ "caption": "Kitchen 03",
+ "panorama": "panos/kitchen-03.jpg",
+ "thumbnail": "thumbs/kitchen-03.jpg",
+ "sphereCorrection": {
+  "pan": "-158.21deg"
+ },
+ "links": [
+  {
+   "nodeId": "kitchen-01",
+   "position": {
+    "yaw": "-95.66deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.246
+   },
+   "gps": [
+    8.6339995,
+    50.1018016,
+    58.32
+   ],
+   "data": {
+    "distance": 3.8,
+    "room": "Kitchen"
+   }
+  },
+  {
+   "nodeId": "kitchen-04",
+   "position": {
+    "yaw": "14.95deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.467
+   },
+   "gps": [
+    8.63406,
+    50.1018244,
+    58.32
+   ],
+   "data": {
+    "distance": 2.2,
+    "room": "Kitchen"
+   }
+  }
+ ],
+ "description": "<h2>Kitchen 03</h2><p>The kitchen. A serving hatch with a window looks into the meeting room.</p>",
+ "gps": [
+  8.6340518,
+  50.1018049,
+  60.0
+ ],
+ "map": {
+  "x": 246.8,
+  "y": 1046.9
+ },
+ "data": {
+  "room": "Kitchen",
+  "xy": [
+   0.09,
+   -10.683
+  ],
+  "tiles": {
+   "baseUrl": "tiles/kitchen-03/base.jpg",
+   "tileUrl": "tiles/kitchen-03/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": []
+}

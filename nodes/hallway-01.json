@@ -1,0 +1,195 @@
+{
+ "id": "hallway-01",
+ "name": "Hallway 01",
+ "caption": "Hallway 01",
+ "panorama": "panos/hallway-01.jpg",
+ "thumbnail": "thumbs/hallway-01.jpg",
+ "sphereCorrection": {
+  "pan": "-150.6deg"
+ },
+ "links": [
+  {
+   "nodeId": "hallway-02",
+   "position": {
+    "yaw": "76.01deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.248
+   },
+   "gps": [
+    8.6340732,
+    50.1017872,
+    58.32
+   ],
+   "data": {
+    "distance": 3.7,
+    "room": "Hallway"
+   }
+  },
+  {
+   "nodeId": "hallway-03",
+   "position": {
+    "yaw": "257.03deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.292
+   },
+   "gps": [
+    8.6339768,
+    50.1017724,
+    58.32
+   ],
+   "data": {
+    "distance": 3.3,
+    "room": "Hallway"
+   }
+  },
+  {
+   "nodeId": "kitchen-01",
+   "position": {
+    "yaw": "-33.19deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.337
+   },
+   "gps": [
+    8.6339995,
+    50.1018016,
+    58.32
+   ],
+   "data": {
+    "distance": 3.0,
+    "room": "Kitchen"
+   }
+  }
+ ],
+ "description": "<h2>Hallway 01</h2><p>The corridor along the lifts and the stairwell. It joins the east and the west side.</p>",
+ "gps": [
+  8.6340224,
+  50.1017791,
+  60.0
+ ],
+ "map": {
+  "x": 392.3,
+  "y": 1198.5
+ },
+ "data": {
+  "room": "Hallway",
+  "xy": [
+   2.554,
+   -13.25
+  ],
+  "tiles": {
+   "baseUrl": "tiles/hallway-01/base.jpg",
+   "tileUrl": "tiles/hallway-01/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": [
+  {
+   "id": "room-kitchen",
+   "html": "Kitchen",
+   "className": "room-label",
+   "position": {
+    "yaw": "-33.19deg",
+    "pitch": "6deg"
+   },
+   "anchor": "bottom center",
+   "listContent": "Kitchen",
+   "data": {
+    "group": "rooms"
+   },
+   "content": "<h2>Kitchen</h2>"
+  },
+  {
+   "id": "route",
+   "polyline": [
+    [
+     "-33.19deg",
+     "-48.24deg"
+    ],
+    [
+     "-33.19deg",
+     "-40.03deg"
+    ],
+    [
+     "-33.19deg",
+     "-33.9deg"
+    ],
+    [
+     "-33.19deg",
+     "-29.33deg"
+    ],
+    [
+     "-24.05deg",
+     "-31.02deg"
+    ],
+    [
+     "-13.85deg",
+     "-32.1deg"
+    ],
+    [
+     "-3.1deg",
+     "-32.34deg"
+    ],
+    [
+     "7.47deg",
+     "-31.68deg"
+    ],
+    [
+     "17.21deg",
+     "-30.28deg"
+    ],
+    [
+     "25.74deg",
+     "-28.41deg"
+    ],
+    [
+     "32.97deg",
+     "-26.34deg"
+    ],
+    [
+     "36.17deg",
+     "-25.27deg"
+    ]
+   ],
+   "tooltip": "The way to the kitchen",
+   "svgStyle": {
+    "stroke": "#f0b35a",
+    "strokeWidth": "5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "strokeDasharray": "2 12"
+   },
+   "listContent": "Way to the kitchen",
+   "data": {
+    "group": "route"
+   },
+   "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+  }
+ ]
+}

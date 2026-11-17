@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NSYNK Office · Photo Sphere Viewer</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="vendor/@photo-sphere-viewer/core/index.css">
+<link rel="stylesheet" href="vendor/@photo-sphere-viewer/markers-plugin/index.css">
+<link rel="stylesheet" href="vendor/@photo-sphere-viewer/virtual-tour-plugin/index.css">
+<link rel="stylesheet" href="vendor/@photo-sphere-viewer/gallery-plugin/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "./vendor/three/three.module.min.js",
+    "@photo-sphere-viewer/core": "./vendor/@photo-sphere-viewer/core/index.module.js",
+    "@photo-sphere-viewer/markers-plugin": "./vendor/@photo-sphere-viewer/markers-plugin/index.module.js",
+    "@photo-sphere-viewer/virtual-tour-plugin": "./vendor/@photo-sphere-viewer/virtual-tour-plugin/index.module.js",
+    "@photo-sphere-viewer/gallery-plugin": "./vendor/@photo-sphere-viewer/gallery-plugin/index.module.js",
+    "@photo-sphere-viewer/visible-range-plugin": "./vendor/@photo-sphere-viewer/visible-range-plugin/index.module.js"
+  }
+}
+</script>
+<style>
+  html, body { margin: 0; height: 100%; background: #111; }
+  #viewer { width: 100%; height: 100%; }
+
+  /* Link markers: arrowStyle.className below */
+  .spot { filter: drop-shadow(0 1px 3px rgb(0 0 0 / .5)); opacity: .85; transition: opacity .15s; }
+  .spot:hover { opacity: 1; }
+</style>
+</head>
+<body>
+<div id="viewer"></div>
+<script type="module">
+import { Viewer } from '@photo-sphere-viewer/core';
+import { MarkersPlugin } from '@photo-sphere-viewer/markers-plugin';
+import { VirtualTourPlugin } from '@photo-sphere-viewer/virtual-tour-plugin';
+import { GalleryPlugin } from '@photo-sphere-viewer/gallery-plugin';
+import { VisibleRangePlugin } from '@photo-sphere-viewer/visible-range-plugin';
+
+// The places and links: VirtualTourPlugin's own format ({ startNodeId, nodes }) plus the start direction.
+const tour = await fetch('tour.json').then(response => response.json());
+
+new Viewer({
+  container: 'viewer',
+  defaultYaw: tour.defaultYaw,
+  defaultZoomLvl: 30,
+  navbar: ['zoom', 'caption', 'gallery', 'fullscreen'],
+  plugins: [
+    MarkersPlugin,
+    GalleryPlugin.withConfig({ thumbnailSize: { width: 200, height: 100 } }),
+    VisibleRangePlugin.withConfig({ verticalRange: ['-57deg', '90deg'] }),   // nothing below -57°: the tripod's blind spot
+    VirtualTourPlugin.withConfig({
+      startNodeId: tour.startNodeId,
+      nodes: tour.nodes,
+      renderMode: '2d',                                         // markers placed at each link's position (on the floor)
+      arrowStyle: { image: 'assets/spot.svg', size: { width: 46, height: 46 }, className: 'spot' },
+      transitionOptions: { effect: 'fade', speed: '20rpm', rotation: true },
+      preload: true,                                            // fetch linked panoramas in the background
+    }),
+  ],
+});
+</script>
+</body>
+</html>

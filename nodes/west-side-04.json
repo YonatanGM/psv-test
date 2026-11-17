@@ -1,0 +1,178 @@
+{
+ "id": "west-side-04",
+ "name": "West Side 04",
+ "caption": "West Side 04",
+ "panorama": "panos/west-side-04.jpg",
+ "thumbnail": "thumbs/west-side-04.jpg",
+ "sphereCorrection": {
+  "pan": "-184.47deg"
+ },
+ "links": [
+  {
+   "nodeId": "west-side-03",
+   "position": {
+    "yaw": "5.84deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.206
+   },
+   "gps": [
+    8.6339114,
+    50.1017595,
+    58.32
+   ],
+   "data": {
+    "distance": 4.2,
+    "room": "West side"
+   }
+  }
+ ],
+ "description": "<h2>West Side 04</h2><p>The open area on the west side of the floor.</p>",
+ "gps": [
+  8.6339054,
+  50.101722,
+  60.0
+ ],
+ "map": {
+  "x": 676.2,
+  "y": 1749.5
+ },
+ "data": {
+  "room": "West side",
+  "xy": [
+   7.361,
+   -22.58
+  ],
+  "tiles": {
+   "baseUrl": "tiles/west-side-04/base.jpg",
+   "tileUrl": "tiles/west-side-04/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": [
+  {
+   "id": "route",
+   "polyline": [
+    [
+     "5.84deg",
+     "-48.24deg"
+    ],
+    [
+     "5.84deg",
+     "-40.03deg"
+    ],
+    [
+     "5.84deg",
+     "-33.9deg"
+    ],
+    [
+     "5.84deg",
+     "-29.25deg"
+    ],
+    [
+     "5.84deg",
+     "-25.64deg"
+    ],
+    [
+     "5.84deg",
+     "-22.78deg"
+    ],
+    [
+     "5.84deg",
+     "-21.81deg"
+    ],
+    [
+     "10.7deg",
+     "-20.33deg"
+    ],
+    [
+     "14.87deg",
+     "-18.93deg"
+    ],
+    [
+     "18.44deg",
+     "-17.63deg"
+    ],
+    [
+     "20.65deg",
+     "-16.79deg"
+    ],
+    [
+     "25.01deg",
+     "-16.11deg"
+    ],
+    [
+     "28.99deg",
+     "-15.4deg"
+    ],
+    [
+     "32.6deg",
+     "-14.69deg"
+    ],
+    [
+     "35.87deg",
+     "-14.0deg"
+    ],
+    [
+     "38.83deg",
+     "-13.33deg"
+    ],
+    [
+     "41.5deg",
+     "-12.7deg"
+    ],
+    [
+     "42.3deg",
+     "-12.5deg"
+    ],
+    [
+     "44.34deg",
+     "-11.87deg"
+    ],
+    [
+     "46.18deg",
+     "-11.29deg"
+    ],
+    [
+     "47.84deg",
+     "-10.75deg"
+    ]
+   ],
+   "tooltip": "The way to the kitchen",
+   "svgStyle": {
+    "stroke": "#f0b35a",
+    "strokeWidth": "5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "strokeDasharray": "2 12"
+   },
+   "listContent": "Way to the kitchen",
+   "data": {
+    "group": "route"
+   },
+   "content": "<h2>Way to the kitchen</h2><p>The way to the kitchen</p>"
+  }
+ ]
+}

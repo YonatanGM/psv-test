@@ -1,0 +1,129 @@
+{
+ "id": "kitchen-01",
+ "name": "Kitchen 01",
+ "caption": "Kitchen 01",
+ "panorama": "panos/kitchen-01.jpg",
+ "thumbnail": "thumbs/kitchen-01.jpg",
+ "sphereCorrection": {
+  "pan": "-172.27deg"
+ },
+ "links": [
+  {
+   "nodeId": "hallway-01",
+   "position": {
+    "yaw": "146.81deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.337
+   },
+   "gps": [
+    8.6340224,
+    50.1017791,
+    58.32
+   ],
+   "data": {
+    "distance": 3.0,
+    "room": "Hallway"
+   }
+  },
+  {
+   "nodeId": "kitchen-02",
+   "position": {
+    "yaw": "25.4deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.266
+   },
+   "gps": [
+    8.6340209,
+    50.1018305,
+    58.32
+   ],
+   "data": {
+    "distance": 3.6,
+    "room": "Kitchen"
+   }
+  },
+  {
+   "nodeId": "kitchen-03",
+   "position": {
+    "yaw": "84.34deg",
+    "pitch": "-10deg"
+   },
+   "linkOffset": {
+    "pitch": -0.246
+   },
+   "gps": [
+    8.6340518,
+    50.1018049,
+    58.32
+   ],
+   "data": {
+    "distance": 3.8,
+    "room": "Kitchen"
+   }
+  }
+ ],
+ "description": "<h2>Kitchen 01</h2><p>The kitchen. A serving hatch with a window looks into the meeting room.</p>",
+ "gps": [
+  8.6339995,
+  50.1018016,
+  60.0
+ ],
+ "map": {
+  "x": 230.0,
+  "y": 1268.0
+ },
+ "data": {
+  "room": "Kitchen",
+  "xy": [
+   -0.194,
+   -14.427
+  ],
+  "tiles": {
+   "baseUrl": "tiles/kitchen-01/base.jpg",
+   "tileUrl": "tiles/kitchen-01/{level}/{col}_{row}.jpg",
+   "levels": [
+    {
+     "width": 2048,
+     "cols": 4,
+     "rows": 2
+    },
+    {
+     "width": 4096,
+     "cols": 8,
+     "rows": 4
+    },
+    {
+     "width": 8192,
+     "cols": 16,
+     "rows": 8
+    },
+    {
+     "width": 16384,
+     "cols": 32,
+     "rows": 16
+    }
+   ]
+  }
+ },
+ "markers": [
+  {
+   "id": "room-hallway",
+   "html": "Hallway",
+   "className": "room-label",
+   "position": {
+    "yaw": "146.81deg",
+    "pitch": "6deg"
+   },
+   "anchor": "bottom center",
+   "listContent": "Hallway",
+   "data": {
+    "group": "rooms"
+   },
+   "content": "<h2>Hallway</h2>"
+  }
+ ]
+}

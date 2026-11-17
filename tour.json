@@ -1,0 +1,1562 @@
+{
+ "defaultYaw": "180deg",
+ "startNodeId": "east-side-04",
+ "nodes": [
+  {
+   "id": "east-side-01",
+   "name": "East Side 01",
+   "caption": "East Side 01",
+   "panorama": "panos/east-side-01.jpg",
+   "thumbnail": "thumbs/east-side-01.jpg",
+   "sphereCorrection": {
+    "pan": "138.56deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-02",
+     "position": {
+      "yaw": "140.0deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.275
+     }
+    },
+    {
+     "nodeId": "east-side-03",
+     "position": {
+      "yaw": "14.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.35
+     }
+    },
+    {
+     "nodeId": "east-side-04",
+     "position": {
+      "yaw": "-54.5deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.193
+     }
+    },
+    {
+     "nodeId": "east-side-05",
+     "position": {
+      "yaw": "-88.8deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.063
+     }
+    },
+    {
+     "nodeId": "east-side-08",
+     "position": {
+      "yaw": "-130.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.184
+     }
+    }
+   ]
+  },
+  {
+   "id": "east-side-02",
+   "name": "East Side 02",
+   "caption": "East Side 02",
+   "panorama": "panos/east-side-02.jpg",
+   "thumbnail": "thumbs/east-side-02.jpg",
+   "sphereCorrection": {
+    "pan": "133.37deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-01",
+     "position": {
+      "yaw": "-40.0deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.275
+     }
+    },
+    {
+     "nodeId": "east-side-03",
+     "position": {
+      "yaw": "-15.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.113
+     }
+    },
+    {
+     "nodeId": "east-side-08",
+     "position": {
+      "yaw": "-92.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.114
+     }
+    }
+   ]
+  },
+  {
+   "id": "east-side-03",
+   "name": "East Side 03",
+   "caption": "East Side 03",
+   "panorama": "panos/east-side-03.jpg",
+   "thumbnail": "thumbs/east-side-03.jpg",
+   "sphereCorrection": {
+    "pan": "141.84deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-01",
+     "position": {
+      "yaw": "-165.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.35
+     }
+    },
+    {
+     "nodeId": "east-side-02",
+     "position": {
+      "yaw": "164.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.113
+     }
+    },
+    {
+     "nodeId": "east-side-04",
+     "position": {
+      "yaw": "-93.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.198
+     }
+    }
+   ]
+  },
+  {
+   "id": "east-side-04",
+   "name": "East Side 04",
+   "caption": "East Side 04",
+   "panorama": "panos/east-side-04.jpg",
+   "thumbnail": "thumbs/east-side-04.jpg",
+   "sphereCorrection": {
+    "pan": "163.4deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-01",
+     "position": {
+      "yaw": "125.5deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.193
+     }
+    },
+    {
+     "nodeId": "east-side-03",
+     "position": {
+      "yaw": "86.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.198
+     }
+    },
+    {
+     "nodeId": "east-side-05",
+     "position": {
+      "yaw": "-125.2deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.21
+     }
+    },
+    {
+     "nodeId": "east-side-06",
+     "position": {
+      "yaw": "-83.1deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.132
+     }
+    },
+    {
+     "nodeId": "east-side-08",
+     "position": {
+      "yaw": "178.5deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.125
+     }
+    }
+   ]
+  },
+  {
+   "id": "east-side-05",
+   "name": "East Side 05",
+   "caption": "East Side 05",
+   "panorama": "panos/east-side-05.jpg",
+   "thumbnail": "thumbs/east-side-05.jpg",
+   "sphereCorrection": {
+    "pan": "-159.29deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-01",
+     "position": {
+      "yaw": "91.2deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.063
+     }
+    },
+    {
+     "nodeId": "east-side-04",
+     "position": {
+      "yaw": "54.8deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.21
+     }
+    },
+    {
+     "nodeId": "east-side-06",
+     "position": {
+      "yaw": "-31.6deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.266
+     }
+    },
+    {
+     "nodeId": "east-side-07",
+     "position": {
+      "yaw": "-146.8deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.25
+     }
+    },
+    {
+     "nodeId": "east-side-08",
+     "position": {
+      "yaw": "130.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.171
+     }
+    }
+   ]
+  },
+  {
+   "id": "east-side-06",
+   "name": "East Side 06",
+   "caption": "East Side 06",
+   "panorama": "panos/east-side-06.jpg",
+   "thumbnail": "thumbs/east-side-06.jpg",
+   "sphereCorrection": {
+    "pan": "-165.42deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-04",
+     "position": {
+      "yaw": "96.9deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.132
+     }
+    },
+    {
+     "nodeId": "east-side-05",
+     "position": {
+      "yaw": "148.4deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.266
+     }
+    },
+    {
+     "nodeId": "east-side-07",
+     "position": {
+      "yaw": "-178.4deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.092
+     }
+    }
+   ]
+  },
+  {
+   "id": "east-side-07",
+   "name": "East Side 07",
+   "caption": "East Side 07",
+   "panorama": "panos/east-side-07.jpg",
+   "thumbnail": "thumbs/east-side-07.jpg",
+   "sphereCorrection": {
+    "pan": "-172.31deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-05",
+     "position": {
+      "yaw": "33.2deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.25
+     }
+    },
+    {
+     "nodeId": "east-side-06",
+     "position": {
+      "yaw": "1.6deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.092
+     }
+    },
+    {
+     "nodeId": "east-side-08",
+     "position": {
+      "yaw": "89.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.118
+     }
+    }
+   ]
+  },
+  {
+   "id": "east-side-08",
+   "name": "East Side 08",
+   "caption": "East Side 08",
+   "panorama": "panos/east-side-08.jpg",
+   "thumbnail": "thumbs/east-side-08.jpg",
+   "sphereCorrection": {
+    "pan": "-155.65deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-01",
+     "position": {
+      "yaw": "49.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.184
+     }
+    },
+    {
+     "nodeId": "east-side-02",
+     "position": {
+      "yaw": "87.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.114
+     }
+    },
+    {
+     "nodeId": "east-side-04",
+     "position": {
+      "yaw": "-1.5deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.125
+     }
+    },
+    {
+     "nodeId": "east-side-05",
+     "position": {
+      "yaw": "-49.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.171
+     }
+    },
+    {
+     "nodeId": "east-side-07",
+     "position": {
+      "yaw": "-90.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.118
+     }
+    },
+    {
+     "nodeId": "east-side-09",
+     "position": {
+      "yaw": "-180.0deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.348
+     }
+    }
+   ]
+  },
+  {
+   "id": "east-side-09",
+   "name": "East Side 09",
+   "caption": "East Side 09",
+   "panorama": "panos/east-side-09.jpg",
+   "thumbnail": "thumbs/east-side-09.jpg",
+   "sphereCorrection": {
+    "pan": "-158.26deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-08",
+     "position": {
+      "yaw": "0.0deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.348
+     }
+    },
+    {
+     "nodeId": "east-side-10",
+     "position": {
+      "yaw": "-99.6deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.099
+     }
+    },
+    {
+     "nodeId": "east-side-11",
+     "position": {
+      "yaw": "178.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.397
+     }
+    },
+    {
+     "nodeId": "storage-01",
+     "position": {
+      "yaw": "87.0deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.211
+     }
+    }
+   ]
+  },
+  {
+   "id": "east-side-10",
+   "name": "East Side 10",
+   "caption": "East Side 10",
+   "panorama": "panos/east-side-10.jpg",
+   "thumbnail": "thumbs/east-side-10.jpg",
+   "sphereCorrection": {
+    "pan": "6.53deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-09",
+     "position": {
+      "yaw": "80.4deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.099
+     }
+    }
+   ]
+  },
+  {
+   "id": "east-side-11",
+   "name": "East Side 11",
+   "caption": "East Side 11",
+   "panorama": "panos/east-side-11.jpg",
+   "thumbnail": "thumbs/east-side-11.jpg",
+   "sphereCorrection": {
+    "pan": "105.88deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-09",
+     "position": {
+      "yaw": "-1.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.397
+     }
+    },
+    {
+     "nodeId": "east-side-12",
+     "position": {
+      "yaw": "96.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.422
+     }
+    },
+    {
+     "nodeId": "east-side-13",
+     "position": {
+      "yaw": "-93.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.227
+     }
+    },
+    {
+     "nodeId": "hallway-02",
+     "position": {
+      "yaw": "-177.2deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.251
+     }
+    }
+   ]
+  },
+  {
+   "id": "east-side-12",
+   "name": "East Side 12",
+   "caption": "East Side 12",
+   "panorama": "panos/east-side-12.jpg",
+   "thumbnail": "thumbs/east-side-12.jpg",
+   "sphereCorrection": {
+    "pan": "98.19deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-11",
+     "position": {
+      "yaw": "-83.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.422
+     }
+    }
+   ]
+  },
+  {
+   "id": "east-side-13",
+   "name": "East Side 13",
+   "caption": "East Side 13",
+   "panorama": "panos/east-side-13.jpg",
+   "thumbnail": "thumbs/east-side-13.jpg",
+   "sphereCorrection": {
+    "pan": "-78.02deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-11",
+     "position": {
+      "yaw": "86.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.227
+     }
+    },
+    {
+     "nodeId": "east-side-14",
+     "position": {
+      "yaw": "140.9deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.42
+     }
+    }
+   ]
+  },
+  {
+   "id": "east-side-14",
+   "name": "East Side 14",
+   "caption": "East Side 14",
+   "panorama": "panos/east-side-14.jpg",
+   "thumbnail": "thumbs/east-side-14.jpg",
+   "sphereCorrection": {
+    "pan": "12.81deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-13",
+     "position": {
+      "yaw": "-39.1deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.42
+     }
+    }
+   ]
+  },
+  {
+   "id": "hallway-01",
+   "name": "Hallway 01",
+   "caption": "Hallway 01",
+   "panorama": "panos/hallway-01.jpg",
+   "thumbnail": "thumbs/hallway-01.jpg",
+   "sphereCorrection": {
+    "pan": "-70.6deg"
+   },
+   "links": [
+    {
+     "nodeId": "hallway-02",
+     "position": {
+      "yaw": "-4.0deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.248
+     }
+    },
+    {
+     "nodeId": "hallway-03",
+     "position": {
+      "yaw": "177.0deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.292
+     }
+    },
+    {
+     "nodeId": "kitchen-01",
+     "position": {
+      "yaw": "-113.2deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.337
+     }
+    }
+   ]
+  },
+  {
+   "id": "hallway-02",
+   "name": "Hallway 02",
+   "caption": "Hallway 02",
+   "panorama": "panos/hallway-02.jpg",
+   "thumbnail": "thumbs/hallway-02.jpg",
+   "sphereCorrection": {
+    "pan": "109.69deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-11",
+     "position": {
+      "yaw": "2.8deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.251
+     }
+    },
+    {
+     "nodeId": "hallway-01",
+     "position": {
+      "yaw": "176.0deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.248
+     }
+    }
+   ]
+  },
+  {
+   "id": "hallway-03",
+   "name": "Hallway 03",
+   "caption": "Hallway 03",
+   "panorama": "panos/hallway-03.jpg",
+   "thumbnail": "thumbs/hallway-03.jpg",
+   "sphereCorrection": {
+    "pan": "-27.17deg"
+   },
+   "links": [
+    {
+     "nodeId": "hallway-01",
+     "position": {
+      "yaw": "-3.0deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.292
+     }
+    },
+    {
+     "nodeId": "west-side-01",
+     "position": {
+      "yaw": "-177.2deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.314
+     }
+    }
+   ]
+  },
+  {
+   "id": "kitchen-01",
+   "name": "Kitchen 01",
+   "caption": "Kitchen 01",
+   "panorama": "panos/kitchen-01.jpg",
+   "thumbnail": "thumbs/kitchen-01.jpg",
+   "sphereCorrection": {
+    "pan": "-92.27deg"
+   },
+   "links": [
+    {
+     "nodeId": "hallway-01",
+     "position": {
+      "yaw": "66.8deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.337
+     }
+    },
+    {
+     "nodeId": "kitchen-02",
+     "position": {
+      "yaw": "-54.6deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.266
+     }
+    },
+    {
+     "nodeId": "kitchen-03",
+     "position": {
+      "yaw": "4.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.246
+     }
+    }
+   ]
+  },
+  {
+   "id": "kitchen-02",
+   "name": "Kitchen 02",
+   "caption": "Kitchen 02",
+   "panorama": "panos/kitchen-02.jpg",
+   "thumbnail": "thumbs/kitchen-02.jpg",
+   "sphereCorrection": {
+    "pan": "-102.5deg"
+   },
+   "links": [
+    {
+     "nodeId": "kitchen-01",
+     "position": {
+      "yaw": "125.4deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.266
+     }
+    }
+   ]
+  },
+  {
+   "id": "kitchen-03",
+   "name": "Kitchen 03",
+   "caption": "Kitchen 03",
+   "panorama": "panos/kitchen-03.jpg",
+   "thumbnail": "thumbs/kitchen-03.jpg",
+   "sphereCorrection": {
+    "pan": "-78.21deg"
+   },
+   "links": [
+    {
+     "nodeId": "kitchen-01",
+     "position": {
+      "yaw": "-175.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.246
+     }
+    },
+    {
+     "nodeId": "kitchen-04",
+     "position": {
+      "yaw": "-65.1deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.467
+     }
+    }
+   ]
+  },
+  {
+   "id": "kitchen-04",
+   "name": "Kitchen 04",
+   "caption": "Kitchen 04",
+   "panorama": "panos/kitchen-04.jpg",
+   "thumbnail": "thumbs/kitchen-04.jpg",
+   "sphereCorrection": {
+    "pan": "-138.33deg"
+   },
+   "links": [
+    {
+     "nodeId": "kitchen-03",
+     "position": {
+      "yaw": "114.9deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.467
+     }
+    }
+   ]
+  },
+  {
+   "id": "meeting-room-01",
+   "name": "Meeting Room 01",
+   "caption": "Meeting Room 01",
+   "panorama": "panos/meeting-room-01.jpg",
+   "thumbnail": "thumbs/meeting-room-01.jpg",
+   "sphereCorrection": {
+    "pan": "165.22deg"
+   },
+   "links": [
+    {
+     "nodeId": "meeting-room-02",
+     "position": {
+      "yaw": "-107.8deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.302
+     }
+    },
+    {
+     "nodeId": "meeting-room-03",
+     "position": {
+      "yaw": "-31.1deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.181
+     }
+    },
+    {
+     "nodeId": "west-side-03",
+     "position": {
+      "yaw": "90.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.316
+     }
+    }
+   ]
+  },
+  {
+   "id": "meeting-room-02",
+   "name": "Meeting Room 02",
+   "caption": "Meeting Room 02",
+   "panorama": "panos/meeting-room-02.jpg",
+   "thumbnail": "thumbs/meeting-room-02.jpg",
+   "sphereCorrection": {
+    "pan": "92.86deg"
+   },
+   "links": [
+    {
+     "nodeId": "meeting-room-01",
+     "position": {
+      "yaw": "72.2deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.302
+     }
+    },
+    {
+     "nodeId": "meeting-room-03",
+     "position": {
+      "yaw": "8.9deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.154
+     }
+    }
+   ]
+  },
+  {
+   "id": "meeting-room-03",
+   "name": "Meeting Room 03",
+   "caption": "Meeting Room 03",
+   "panorama": "panos/meeting-room-03.jpg",
+   "thumbnail": "thumbs/meeting-room-03.jpg",
+   "sphereCorrection": {
+    "pan": "-45.43deg"
+   },
+   "links": [
+    {
+     "nodeId": "meeting-room-01",
+     "position": {
+      "yaw": "148.9deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.181
+     }
+    },
+    {
+     "nodeId": "meeting-room-02",
+     "position": {
+      "yaw": "-171.1deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.154
+     }
+    }
+   ]
+  },
+  {
+   "id": "sr-16",
+   "name": "SR 16",
+   "caption": "SR 16",
+   "panorama": "panos/sr-16.jpg",
+   "thumbnail": "thumbs/sr-16.jpg",
+   "sphereCorrection": {
+    "pan": "-120.76deg"
+   },
+   "links": [
+    {
+     "nodeId": "sr-17",
+     "position": {
+      "yaw": "-141.8deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.267
+     }
+    },
+    {
+     "nodeId": "west-side-05",
+     "position": {
+      "yaw": "-88.5deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.101
+     }
+    },
+    {
+     "nodeId": "west-side-08",
+     "position": {
+      "yaw": "-178.6deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.096
+     }
+    }
+   ]
+  },
+  {
+   "id": "sr-17",
+   "name": "SR 17",
+   "caption": "SR 17",
+   "panorama": "panos/sr-17.jpg",
+   "thumbnail": "thumbs/sr-17.jpg",
+   "sphereCorrection": {
+    "pan": "-86.23deg"
+   },
+   "links": [
+    {
+     "nodeId": "sr-16",
+     "position": {
+      "yaw": "38.2deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.267
+     }
+    },
+    {
+     "nodeId": "sr-18",
+     "position": {
+      "yaw": "-91.0deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.082
+     }
+    },
+    {
+     "nodeId": "west-side-05",
+     "position": {
+      "yaw": "-51.8deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.164
+     }
+    },
+    {
+     "nodeId": "west-side-06",
+     "position": {
+      "yaw": "-131.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.168
+     }
+    },
+    {
+     "nodeId": "west-side-08",
+     "position": {
+      "yaw": "147.8deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.236
+     }
+    }
+   ]
+  },
+  {
+   "id": "sr-18",
+   "name": "SR 18",
+   "caption": "SR 18",
+   "panorama": "panos/sr-18.jpg",
+   "thumbnail": "thumbs/sr-18.jpg",
+   "sphereCorrection": {
+    "pan": "167.99deg"
+   },
+   "links": [
+    {
+     "nodeId": "sr-17",
+     "position": {
+      "yaw": "89.0deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.082
+     }
+    },
+    {
+     "nodeId": "sr-19",
+     "position": {
+      "yaw": "-56.4deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.238
+     }
+    },
+    {
+     "nodeId": "west-side-05",
+     "position": {
+      "yaw": "41.0deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.218
+     }
+    },
+    {
+     "nodeId": "west-side-06",
+     "position": {
+      "yaw": "136.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.207
+     }
+    },
+    {
+     "nodeId": "west-side-07",
+     "position": {
+      "yaw": "-43.9deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.281
+     }
+    }
+   ]
+  },
+  {
+   "id": "sr-19",
+   "name": "SR 19",
+   "caption": "SR 19",
+   "panorama": "panos/sr-19.jpg",
+   "thumbnail": "thumbs/sr-19.jpg",
+   "sphereCorrection": {
+    "pan": "48.79deg"
+   },
+   "links": [
+    {
+     "nodeId": "sr-18",
+     "position": {
+      "yaw": "123.6deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.238
+     }
+    },
+    {
+     "nodeId": "west-side-05",
+     "position": {
+      "yaw": "80.9deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.102
+     }
+    }
+   ]
+  },
+  {
+   "id": "storage-01",
+   "name": "Storage 01",
+   "caption": "Storage 01",
+   "panorama": "panos/storage-01.jpg",
+   "thumbnail": "thumbs/storage-01.jpg",
+   "sphereCorrection": {
+    "pan": "-133.02deg"
+   },
+   "links": [
+    {
+     "nodeId": "east-side-09",
+     "position": {
+      "yaw": "-93.0deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.211
+     }
+    },
+    {
+     "nodeId": "storage-02",
+     "position": {
+      "yaw": "123.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.62
+     }
+    }
+   ]
+  },
+  {
+   "id": "storage-02",
+   "name": "Storage 02",
+   "caption": "Storage 02",
+   "panorama": "panos/storage-02.jpg",
+   "thumbnail": "thumbs/storage-02.jpg",
+   "sphereCorrection": {
+    "pan": "-100.76deg"
+   },
+   "links": [
+    {
+     "nodeId": "storage-01",
+     "position": {
+      "yaw": "-56.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.62
+     }
+    }
+   ]
+  },
+  {
+   "id": "west-side-01",
+   "name": "West Side 01",
+   "caption": "West Side 01",
+   "panorama": "panos/west-side-01.jpg",
+   "thumbnail": "thumbs/west-side-01.jpg",
+   "sphereCorrection": {
+    "pan": "-112.62deg"
+   },
+   "links": [
+    {
+     "nodeId": "hallway-03",
+     "position": {
+      "yaw": "2.8deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.314
+     }
+    },
+    {
+     "nodeId": "west-side-02",
+     "position": {
+      "yaw": "87.6deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.373
+     }
+    },
+    {
+     "nodeId": "west-side-03",
+     "position": {
+      "yaw": "156.1deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.562
+     }
+    }
+   ]
+  },
+  {
+   "id": "west-side-02",
+   "name": "West Side 02",
+   "caption": "West Side 02",
+   "panorama": "panos/west-side-02.jpg",
+   "thumbnail": "thumbs/west-side-02.jpg",
+   "sphereCorrection": {
+    "pan": "-172.45deg"
+   },
+   "links": [
+    {
+     "nodeId": "west-side-01",
+     "position": {
+      "yaw": "-92.4deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.373
+     }
+    }
+   ]
+  },
+  {
+   "id": "west-side-03",
+   "name": "West Side 03",
+   "caption": "West Side 03",
+   "panorama": "panos/west-side-03.jpg",
+   "thumbnail": "thumbs/west-side-03.jpg",
+   "sphereCorrection": {
+    "pan": "-103.65deg"
+   },
+   "links": [
+    {
+     "nodeId": "meeting-room-01",
+     "position": {
+      "yaw": "-89.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.316
+     }
+    },
+    {
+     "nodeId": "west-side-01",
+     "position": {
+      "yaw": "-23.9deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.562
+     }
+    },
+    {
+     "nodeId": "west-side-04",
+     "position": {
+      "yaw": "105.8deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.206
+     }
+    },
+    {
+     "nodeId": "west-side-05",
+     "position": {
+      "yaw": "-166.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.239
+     }
+    }
+   ]
+  },
+  {
+   "id": "west-side-04",
+   "name": "West Side 04",
+   "caption": "West Side 04",
+   "panorama": "panos/west-side-04.jpg",
+   "thumbnail": "thumbs/west-side-04.jpg",
+   "sphereCorrection": {
+    "pan": "-104.47deg"
+   },
+   "links": [
+    {
+     "nodeId": "west-side-03",
+     "position": {
+      "yaw": "-74.2deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.206
+     }
+    }
+   ]
+  },
+  {
+   "id": "west-side-05",
+   "name": "West Side 05",
+   "caption": "West Side 05",
+   "panorama": "panos/west-side-05.jpg",
+   "thumbnail": "thumbs/west-side-05.jpg",
+   "sphereCorrection": {
+    "pan": "-132.57deg"
+   },
+   "links": [
+    {
+     "nodeId": "sr-16",
+     "position": {
+      "yaw": "91.5deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.101
+     }
+    },
+    {
+     "nodeId": "sr-17",
+     "position": {
+      "yaw": "128.2deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.164
+     }
+    },
+    {
+     "nodeId": "sr-18",
+     "position": {
+      "yaw": "-139.0deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.218
+     }
+    },
+    {
+     "nodeId": "sr-19",
+     "position": {
+      "yaw": "-99.1deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.102
+     }
+    },
+    {
+     "nodeId": "west-side-03",
+     "position": {
+      "yaw": "13.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.239
+     }
+    },
+    {
+     "nodeId": "west-side-06",
+     "position": {
+      "yaw": "177.9deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.095
+     }
+    },
+    {
+     "nodeId": "west-side-07",
+     "position": {
+      "yaw": "-96.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.145
+     }
+    }
+   ]
+  },
+  {
+   "id": "west-side-06",
+   "name": "West Side 06",
+   "caption": "West Side 06",
+   "panorama": "panos/west-side-06.jpg",
+   "thumbnail": "thumbs/west-side-06.jpg",
+   "sphereCorrection": {
+    "pan": "-139.32deg"
+   },
+   "links": [
+    {
+     "nodeId": "sr-17",
+     "position": {
+      "yaw": "48.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.168
+     }
+    },
+    {
+     "nodeId": "sr-18",
+     "position": {
+      "yaw": "-43.7deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.207
+     }
+    },
+    {
+     "nodeId": "west-side-05",
+     "position": {
+      "yaw": "-2.1deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.095
+     }
+    },
+    {
+     "nodeId": "west-side-08",
+     "position": {
+      "yaw": "91.4deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.118
+     }
+    }
+   ]
+  },
+  {
+   "id": "west-side-07",
+   "name": "West Side 07",
+   "caption": "West Side 07",
+   "panorama": "panos/west-side-07.jpg",
+   "thumbnail": "thumbs/west-side-07.jpg",
+   "sphereCorrection": {
+    "pan": "120.29deg"
+   },
+   "links": [
+    {
+     "nodeId": "sr-18",
+     "position": {
+      "yaw": "136.1deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.281
+     }
+    },
+    {
+     "nodeId": "west-side-05",
+     "position": {
+      "yaw": "83.3deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.145
+     }
+    }
+   ]
+  },
+  {
+   "id": "west-side-08",
+   "name": "West Side 08",
+   "caption": "West Side 08",
+   "panorama": "panos/west-side-08.jpg",
+   "thumbnail": "thumbs/west-side-08.jpg",
+   "sphereCorrection": {
+    "pan": "89.81deg"
+   },
+   "links": [
+    {
+     "nodeId": "sr-16",
+     "position": {
+      "yaw": "1.4deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.096
+     }
+    },
+    {
+     "nodeId": "sr-17",
+     "position": {
+      "yaw": "-32.2deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.236
+     }
+    },
+    {
+     "nodeId": "west-side-06",
+     "position": {
+      "yaw": "-88.6deg",
+      "pitch": "-10deg"
+     },
+     "linkOffset": {
+      "pitch": -0.118
+     }
+    }
+   ]
+  }
+ ]
+}
