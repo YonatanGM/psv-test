@@ -94,7 +94,7 @@ const D = {
   // panorama
   image: '4k',
   // virtual tour
-  renderMode: '3d', positionMode: 'gps', dataMode: 'client', arrowStyle: 'default', arrowSize: 46, linkTooltip: 'name',
+  renderMode: '2d', positionMode: 'gps', dataMode: 'client', arrowStyle: 'default', arrowSize: 46, linkTooltip: 'name',
   preload: true, linksOnCompass: true, minPitch3d: 0.3, linkOverlapAngle: 45, linkPitchOffset: 0,
   // transition
   transition: 'object', effect: 'fade', speed: '20rpm', rotation: true, showLoader: true,
@@ -555,7 +555,7 @@ add(f, 'image', 'panorama', { '4K JPEG': '4k', '8K JPEG': '8k', 'tiles to 16K ·
 
 f = gui.addFolder('Virtual tour · VirtualTourPlugin').close();
 add(f, 'linkTooltip', 'link hover (tooltip)', { 'label only · getLinkTooltip': 'name', 'image + label · PSV default': 'default', 'label + distance + room · getLinkTooltip': 'distance', 'none · showLinkTooltip: false': 'off' });
-add(f, 'renderMode', 'renderMode', { '3d · floor arrows': '3d', '2d · markers': '2d' });
+add(f, 'renderMode', 'renderMode', { '2d · markers': '2d', '3d · floor arrows': '3d' });
 add(f, 'positionMode', 'positionMode', { 'gps · lon/lat of every place': 'gps', 'manual · yaw/pitch': 'manual' });
 add(f, 'dataMode', 'dataMode', { 'client · one file': 'client', 'server · getNode() per place': 'server' });
 add(f, 'arrowStyle', 'arrowStyle', { 'PSV default button': 'default', 'image: floor spot': 'spot' });
